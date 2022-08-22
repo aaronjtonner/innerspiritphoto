@@ -1,0 +1,36 @@
+module.exports = {
+  siteMetadata: {
+    title: "Inner Spirit Photo",
+    titleTemplate: "%s",
+    description: "Inner Spirit",
+    url: "https://www.innerspiritphoto.com", // No trailing slash allowed!
+    siteUrl: "https://www.innerspiritphoto.com",
+    image: "/logo.svg", // Path to your image you placed in the 'static' folder
+    twitterUsername: "",
+  },
+  plugins: [
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        url: `http://staging.innerspiritphoto.com/graphql`,
+      },
+    },
+    // sitemap
+    // GA
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    // `gatsby-plugin-offline`,
+  ],
+}
