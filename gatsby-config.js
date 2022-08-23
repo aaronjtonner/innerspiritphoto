@@ -22,7 +22,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        url: `http://staging.innerspiritphoto.com/graphql`,
+        url: `http://www.staging.innerspiritphoto.com/graphql`,
       },
     },
     // sitemap

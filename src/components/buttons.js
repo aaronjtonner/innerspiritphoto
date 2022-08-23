@@ -230,8 +230,8 @@ export const AnchorUnderline = styled.a`
 export const AnchorInline = styled.a`
   cursor: pointer;
   display: inline;
-  color: var(--clr-accent);
-  text-decoration: none;
+  color: blue;
+  text-decoration: underline;
 
   span.light {
     color: var(--txt-light);

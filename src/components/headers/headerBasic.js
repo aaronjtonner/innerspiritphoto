@@ -25,6 +25,7 @@ const Headertop = styled.div`
   padding: 1em 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   ul {
     display: flex;
@@ -33,8 +34,17 @@ const Headertop = styled.div`
     margin: 0;
     list-style-type: none;
 
+    @media screen and (max-width: 38em) {
+      flex-direction: column;
+    }
+
     & > * + * {
       margin-left: 1.5em;
+
+      @media screen and (max-width: 38em) {
+        margin-top: 5px;
+        margin-left: 0;
+      }
     }
   }
 `
@@ -57,10 +67,6 @@ const NavPhone = styled.a`
   :focus {
     opacity: 0.7;
   }
-
-  @media screen and (max-width: 32em) {
-    display: none;
-  }
 `
 
 const Headerbottom = styled.div`
@@ -74,6 +80,14 @@ const LogoContainer = styled.div`
   img {
     height: 100px;
     transition: 0.4s;
+
+    @media screen and (max-width: 32em) {
+      height: 70px;
+    }
+
+    @media screen and (max-width: 22em) {
+      height: 40px;
+    }
 
     &[data-active="true"] {
       height: 90px;
@@ -105,14 +119,18 @@ const NavList = styled.ul`
     position: absolute;
     top: 194px;
 
+    @media screen and (max-width: 32em) {
+      top: 173.8px;
+    }
+
     left: 0;
     right: 0;
     flex-direction: column;
     width: 100%;
-    background: var(--clr-dark);
+    background: var(--clr-accent);
     box-shadow: var(--shadow-bottom);
     border-radius: var(--br);
-    border-top: 1px solid var(--txt-dark-secondary);
+    border-top: 1px solid var(--clr-light);
     padding: 1em 2em 2em;
 
     & > * + * {
@@ -201,7 +219,7 @@ const Burger = styled.div`
     width: 25px;
     height: 3px;
     margin: 5px;
-    background-color: var(--clr-accent);
+    background-color: var(--clr-light);
 
     :nth-child(1) {
       transform: ${({ nav }) =>
@@ -244,12 +262,12 @@ export default function HeaderBasic() {
             <ul>
               <li className="center">
                 <NavPhone href="tel: (403) 252-2662">
-                  call now: <br /> +1 (403) 252-2662
+                  +1 (403) 252-2662
                 </NavPhone>
               </li>
               <li>
                 <GetQuote to="/book-now">
-                  <span>book planning session &#x2192;</span>
+                  <span>book now &#x2192;</span>
                 </GetQuote>
               </li>
             </ul>

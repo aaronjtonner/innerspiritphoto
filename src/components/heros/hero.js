@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Container, Flex, Actions } from "../layoutComponents"
+import { Container, Flex } from "../layoutComponents"
 import {
   ButtonPrimary,
   ButtonLight,
@@ -30,6 +30,67 @@ const Video = styled.div`
   }
 `
 
+const ActionsDesktop = styled.div`
+  display: flex;
+  align-items: center;
+
+  & > * {
+    width: 100%;
+    text-align: center;
+  }
+
+  & > * + * {
+    margin-left: 10px;
+  }
+
+  @media screen and (max-width: 103em) {
+    flex-direction: column;
+    text-align: center;
+    & > * {
+      width: 100%;
+    }
+
+    & > * + * {
+      margin-left: 0;
+      margin-top: var(--spacer);
+    }
+  }
+
+  @media screen and (max-width: 31em) {
+    display: none;
+  }
+`
+const ActionsMobile = styled.div`
+  display: flex;
+  align-items: center;
+
+  & > * {
+    width: 100%;
+    text-align: center;
+  }
+
+  & > * + * {
+    margin-left: 10px;
+  }
+
+  @media screen and (max-width: 103em) {
+    flex-direction: column;
+    text-align: center;
+    & > * {
+      width: 100%;
+    }
+
+    & > * + * {
+      margin-left: 0;
+      margin-top: var(--spacer);
+    }
+  }
+
+  @media screen and (min-width: 31em) {
+    display: none;
+  }
+`
+
 export default function HeroBasic() {
   return (
     <HeroWrapper>
@@ -52,14 +113,20 @@ export default function HeroBasic() {
               “When I saw my photos, I broke into tears because I thought, I
               can't believe how beautiful that person is.” - Deanna
             </p>
-            <Actions>
+            <ActionsDesktop>
               <ButtonOutlineLight to="/experience">
                 explore the experience &#x2192;
               </ButtonOutlineLight>
               <ButtonLight to="/book-now">
                 book planning session now &#x2192;
               </ButtonLight>
-            </Actions>
+            </ActionsDesktop>
+            <ActionsMobile>
+              <ButtonOutlineLight to="/experience">
+                the experience &#x2192;
+              </ButtonOutlineLight>
+              <ButtonLight to="/book-now">book now &#x2192;</ButtonLight>
+            </ActionsMobile>
           </Text>
         </Flex>
       </Container>
