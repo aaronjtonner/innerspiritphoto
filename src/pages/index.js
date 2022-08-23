@@ -1,6 +1,11 @@
 import React from "react"
+import HeroBasic from "../components/heros/hero"
 import Layout from "../components/layout"
 
 export default function Index() {
-  return <h1>index</h1>
+  return (
+    <Layout>
+      <HeroBasic />
+    </Layout>
+  )
 }

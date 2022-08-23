@@ -27,10 +27,11 @@ export const PageTitle = styled.div`
 
 export const Actions = styled.div`
   display: flex;
+  align-items: center;
 
   & > * {
     width: 100%;
-    text-align: center;
+    // text-align: center;
   }
 
   & > * + * {

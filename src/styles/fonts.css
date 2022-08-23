@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Trajan Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/TrajanPro-Regular.woff') format('woff');
+    }
+    
+    @font-face {
+    font-family: 'Trajan Pro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/TrajanPro-Bold.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: normal;
+        src: url('../fonts/OPTIMA.woff') format('woff');
+        }
+        
+    
+        @font-face {
+        font-family: 'Optima Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: url('../fonts/Optima_Italic.woff') format('woff');
+        }
+        
+    
+        @font-face {
+        font-family: 'Optima Medium';
+        font-style: normal;
+        font-weight: normal;
+        src: url('../fonts/Optima-Medium.woff') format('woff');
+        }
+        
+    
+        @font-face {
+        font-family: 'Optima Bold';
+        font-style: normal;
+        font-weight: normal;
+        src: url('../fonts/OPTIMA_B.woff') format('woff');
+        }

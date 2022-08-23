@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "./fonts.css";
+
 /* global */
 :root {
-  --ff: "Montserrat", sans-serif;
+  --ff-optima-r: "Optima", sans-serif;
+  --ff-optima-b: "Optima Bold", sans-serif;
+
+  --ff-trajan: "Trajan Pro Regular", sans-serif;
 
   --fw-100: 100;
   --fw-300: 300;
@@ -24,15 +28,15 @@
 
   --txt-dark: #120a0e;
   --txt-light: #fff;
-  --txt-dark-secondary: #777;
+  --txt-dark-secondary: #454547;
   --txt-light-secondary: rgb(218, 218, 218);
 
   --clr-dark: #010101;
   --clr-light: #fff;
   --clr-light-secondary: #F0F0F0;
-  --clr-accent: #EE1A25;
+  --clr-accent: #6C0B3A;
   --clr-accent-lighter: #aa83a5;
-  --clr-accent-darker: #DB1B25;
+  --clr-accent-darker: rgb(87, 30, 39);
   --clr-overlay: rgba(0, 0, 0, 0.6);
   --clr-overlay-darker: rgba(0, 0, 0, 0.8);
 
@@ -91,6 +95,11 @@ p {
   margin: 0;
 }
 
+p{
+  font-family: var(--ff-optima-r);
+  line-height: 1.6;
+}
+
 h2,
 h2,
 h3 {
@@ -110,15 +119,30 @@ hr {
 /* typography */
 .title {
   font-size: var(--fs-1);
-  font-weight: var(--fw-300);
   text-transform: capitalize;
   line-height: 1.1;
+  font-family: var(--ff-trajan);
 }
-
+.headline {
+  font-size: var(--fs-1);
+  line-height: 1.1;
+  font-family: var(--ff-trajan);
+}
+.subhead {
+  font-size: var(--fs-2);
+  line-height: 1.1;
+  font-family: var(--ff-optima-r);
+  color: var(--txt-dark-secondary);
+}
+.teriatary {
+  font-size: var(--fs-3);
+  line-height: 1.1;
+  font-family: var(--ff-optima-r);
+  text-transform: uppercase;
+}
 .title--bold {
   font-size: var(--fs-1);
   font-weight: var(--fw-700);
-  text-transform: capitalize;
 
   line-height: 1.1;
 }
@@ -129,7 +153,14 @@ hr {
   text-transform: capitalize;
   line-height: 1.1;
 }
-
+.body {
+  font-family: var(--ff-optima-r);
+  line-height: 1.6;
+}
+.highlight {
+  font-family: var(--ff-optima-b);
+  text-transform: uppercase;
+}
 .body--large {
   font-weight: var(--fw-500);
   font-size: var(--fs-3);
