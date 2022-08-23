@@ -9,7 +9,7 @@ import BeyondSexy from "../components/overlap/beyondSexy"
 import Why from "../components/overlap/why"
 import Stats from "../components/stats"
 import Team from "../components/team"
-import BannerImg from "../images/banner.jpg"
+import BannerImg from "../images/banner-1.png"
 
 export default function About() {
   return (

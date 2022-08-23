@@ -10,27 +10,21 @@ import { FaStar } from "react-icons/fa"
 import { FcGoogle } from "react-icons/fc"
 
 const Wrapper = styled.div`
-  .slider {
-    margin-left: 20px;
-    margin-right: 20px;
+  .slick-prev:before,
+  .slick-next:before {
+    color: var(--clr-accent);
   }
 `
 
 const ItemGrid = styled.div`
-  display: grid;
-  grid-template-rows: 500px 300px auto;
+  // display: grid;
+  // grid-template-rows: auto 2em auto;
+  position: relative;
 
   .slider-img {
-    grid-row: 1 / span 2;
-    grid-column: 1 / -1;
-    z-index: 1;
-    border-radius: var(--br);
-  }
-
-  .review-box {
-    grid-row: 2 / -1;
-    grid-column: 1 / -1;
-    z-index: 2;
+    // grid-row: 1 / span 2;
+    // grid-column: 1 / -1;
+    // z-index: 1;
   }
 `
 
@@ -41,6 +35,12 @@ const ReviewWrapper = styled.div`
   border: 1px solid var(--clr-accent);
   text-align: center;
   padding: 2em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  // grid-row: 2 / -1;
+  // grid-column: 1 / -1;
+  // z-index: 2;
 `
 
 const FlexStars = styled.div`
@@ -108,7 +108,6 @@ export default function ReviewSlider() {
                 src="../../images/calgary-boudoir-joy.jpg"
               />
               <ReviewBox
-                className="review-box"
                 review="At first I resisted, saying it was extravagant and unnecessary, but the more I talked to Mark and saw his work I realized it was a fantastic opportunity. We shot a mix of boudoir, sexy and sporty poses and once I saw the completed album,  my confidence soared! I was a huge fan from that point on. Do this now for yourself or a loved one. You will never stop enjoying the results!"
                 name="Joy Buckley"
               />
@@ -116,7 +115,7 @@ export default function ReviewSlider() {
             <ItemGrid>
               <StaticImage
                 className="slider-img"
-                src="../../images/calgary-boudoir-kolbi.jpg"
+                src="../../images/calgary-boudoir-joy.jpg"
               />
               <ReviewBox
                 className="review-box"
@@ -127,7 +126,7 @@ export default function ReviewSlider() {
             <ItemGrid>
               <StaticImage
                 className="slider-img"
-                src="../../images/calgary-boudoir-robin.jpg"
+                src="../../images/calgary-boudoir-joy.jpg"
               />
               <ReviewBox
                 className="review-box"

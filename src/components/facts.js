@@ -1,6 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
-import { Container, Flex, GridAuto, Section } from "./layoutComponents"
+import { Container, Flex, Section } from "./layoutComponents"
 import styled from "styled-components"
 
 const Wrapper = styled.div`
@@ -8,20 +8,42 @@ const Wrapper = styled.div`
   color: var(--txt-light);
 `
 
-const Item = styled.div``
+const GridAuto = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+  grid-gap: 2em;
+`
+
+const Item = styled.div`
+  display: flex;
+
+  & > * {
+    width: 100%;
+  }
+
+  & > * + * {
+    margin-left: 5px;
+  }
+
+  .sprite-img {
+    height: 20px;
+    width: 20px;
+  }
+`
 
 export default function Facts() {
   return (
     <Wrapper>
       <Section>
-        <Container>
+        <Container className="spacing">
           <h2 className="headline italics">
             what you might not know about inner spirit...
           </h2>
           <GridAuto>
             <Item>
               <StaticImage
-                src="../images/sprite-white.jpg"
+                className="sprite-img"
+                src="../images/small-sprite.png"
                 alt="what you might not know about inner spirit photography"
               />
               <p>
@@ -31,7 +53,8 @@ export default function Facts() {
             </Item>
             <Item>
               <StaticImage
-                src="../images/sprite-white.jpg"
+                className="sprite-img"
+                src="../images/small-sprite.png"
                 alt="what you might not know about inner spirit photography"
               />
               <p>
@@ -43,7 +66,8 @@ export default function Facts() {
             </Item>
             <Item>
               <StaticImage
-                src="../images/sprite-white.jpg"
+                className="sprite-img"
+                src="../images/small-sprite.png"
                 alt="what you might not know about inner spirit photography"
               />
               <p>
@@ -54,7 +78,8 @@ export default function Facts() {
             </Item>
             <Item>
               <StaticImage
-                src="../images/sprite-white.jpg"
+                className="sprite-img"
+                src="../images/small-sprite.png"
                 alt="what you might not know about inner spirit photography"
               />
               <p>
@@ -64,7 +89,8 @@ export default function Facts() {
             </Item>
             <Item>
               <StaticImage
-                src="../images/sprite-white.jpg"
+                className="sprite-img"
+                src="../images/small-sprite.png"
                 alt="what you might not know about inner spirit photography"
               />
               <p>
@@ -74,7 +100,8 @@ export default function Facts() {
             </Item>
             <Item>
               <StaticImage
-                src="../images/sprite-white.jpg"
+                className="sprite-img"
+                src="../images/small-sprite.png"
                 alt="what you might not know about inner spirit photography"
               />
               <p>
@@ -85,7 +112,8 @@ export default function Facts() {
             </Item>
             <Item>
               <StaticImage
-                src="../images/sprite-white.jpg"
+                className="sprite-img"
+                src="../images/small-sprite.png"
                 alt="what you might not know about inner spirit photography"
               />
               <p>Mark has published 5 books</p>

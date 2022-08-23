@@ -2,7 +2,12 @@ import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import styled from "styled-components"
 import { Section, Container } from "../layoutComponents"
-import { TextBox, WrapperTextLeft, WrapperTextRight } from "./overlapStyles"
+import {
+  TextBoxRight,
+  TextBoxLeft,
+  WrapperTextLeft,
+  WrapperTextRight,
+} from "./overlapStyles"
 
 const BottomWrapper = styled.div`
     display: grid;
@@ -10,6 +15,19 @@ const BottomWrapper = styled.div`
 
     .img-top {grid-row: 1 / span 2; grid-column: 1 / -1; z-index: 1;}
     .text-bottom {grid-row: 2 / -1; grid-column: 1 / -1; z-index 2;}
+`
+
+const TextBox = styled.div`
+  background: var(--clr-light);
+  color: var(--clr-accent);
+  padding: 2em;
+  border: 1px solid var(--clr-accent);
+  border-radius: var(--br);
+
+  grid-column: 2 / -1;
+  grid-row: 1 / -1;
+  z-index: 2;
+  align-self: center;
 `
 
 export default function Why() {
@@ -22,10 +40,10 @@ export default function Why() {
         <WrapperTextRight>
           <StaticImage
             className="img-left"
-            src="../../images/why-we-do-boudoir.jpg"
+            src="../../images/why-inner-spirit-does-boudoir.jpg"
             alt="why we do boudoir, nudes, & beauty"
           />
-          <TextBox className="spacing text-right">
+          <TextBoxRight className="spacing text-right">
             <p>
               There’s profound power in pivotal moments to change someone’s life
               for the better. These are the moments you point to years later,
@@ -44,7 +62,7 @@ export default function Why() {
                 alter your life or mindset for the better…
               </span>
             </p>
-          </TextBox>
+          </TextBoxRight>
         </WrapperTextRight>
       </Container>
       <BottomWrapper>
@@ -56,7 +74,7 @@ export default function Why() {
         <Container className="text-bottom">
           <TextBox>
             <p className="headline italics">
-              … by doing something bold and vulnerable, something you’ve never
+              …by doing something bold and vulnerable, something you’ve never
               done before, challenging limiting beliefs about yourself.
             </p>
           </TextBox>
@@ -64,7 +82,7 @@ export default function Why() {
       </BottomWrapper>
       <Container>
         <WrapperTextLeft>
-          <TextBox className="spacing text-left">
+          <TextBoxLeft className="spacing text-left">
             <p>Something like: nude, boudoir, & beauty photography.</p>
             <p>
               After working with more than 5,100 women, Mark has witnessed
@@ -78,7 +96,7 @@ export default function Why() {
               than the photograph.
             </p>
             <p>If this resonates with you, you’re in the right place.</p>
-          </TextBox>
+          </TextBoxLeft>
           <StaticImage
             className="img-right"
             src="../../images/nude-boudoir-beauty.jpg"

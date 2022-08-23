@@ -8,7 +8,7 @@ import { FcGoogle } from "react-icons/fc"
 
 const Wrapper = styled.div`
   display: grid;
-  grid-template-rows: auto 300px auto;
+  grid-template-rows: auto 2em auto;
 
   .review-img {
     grid-row: 1 / span 2;
@@ -18,9 +18,7 @@ const Wrapper = styled.div`
   }
 
   .review-box {
-    grid-row: 2 / -1;
-    grid-column: 1 / -1;
-    z-index: 2;
+    // i was trying to put grid row on this but it wasn't working - needs to be on the component
   }
 `
 
@@ -31,6 +29,12 @@ const ReviewWrapper = styled.div`
   border: 1px solid var(--clr-accent);
   text-align: center;
   padding: 2em;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  grid-row: 2 / -1;
+  grid-column: 1 / -1;
+  z-index: 2;
 `
 
 const FlexStars = styled.div`
@@ -69,9 +73,7 @@ const ReviewBox = props => {
       </div>
       <p className="italics">"{props.review}"</p>
       <p className="upper">{props.name}</p>
-      <ButtonUnderline to="/experience">
-        explore the experience &#x2192;
-      </ButtonUnderline>
+      <ButtonUnderline to={props.to}>{props.link}</ButtonUnderline>
     </ReviewWrapper>
   )
 }
@@ -81,12 +83,12 @@ export default function FullImageTestimonial(props) {
     <Section>
       <Container>
         <Wrapper>
-          <img className="review-img" src={props.img} alt={props.alt} />
-          <ReviewBox
-            className="review-box"
-            review={props.review}
-            name={props.name}
+          <StaticImage
+            className="review-img"
+            src="../../images/calgary-boudoir-joy.jpg"
+            alt={props.alt}
           />
+          <ReviewBox review={props.review} name={props.name} />
         </Wrapper>
       </Container>
     </Section>

@@ -45,7 +45,7 @@ const Video2 = styled.div`
   }
 `
 
-export default function MainPageTestimonials() {
+export default function ReassuranceVideoTestimonial() {
   return (
     <Section className="spacing-lg">
       <Wrapper>
@@ -56,10 +56,12 @@ export default function MainPageTestimonials() {
         <Video>
           <Container className="spacing">
             <Text className="center">
-              <h3 className="subhead upper">what can you expect?</h3>{" "}
+              <h3 className="subhead upper">
+                hear from our clients who have been there
+              </h3>{" "}
               <h2 className="headline">
-                we'll let <span className="italics">our clients</span> answer
-                that...{" "}
+                need some reassurance that this{" "}
+                <span className="italics">is</span> for you?
               </h2>
             </Text>
             <iframe

@@ -9,10 +9,9 @@ const Wrapper = styled.div`
   padding: 4em 0;
 
   .container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-
     @media screen and (max-width: 74em) {
       display: grid;
       grid-template-rows: auto 2em auto;

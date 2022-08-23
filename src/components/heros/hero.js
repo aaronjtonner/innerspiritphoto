@@ -16,7 +16,7 @@ const device = {
 const HeroWrapper = styled.div`
   background: var(--clr-accent);
   color: var(--txt-light);
-  padding: 4em;
+  padding: 4em 0;
 `
 
 const Text = styled.div``
