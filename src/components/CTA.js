@@ -6,6 +6,11 @@ import { Actions, Container, Flex, Section } from "./layoutComponents"
 
 const Wrapper = styled.div`
   background: var(--clr-dark);
+
+  .cta-img {
+    border-radius: vavr(--br);
+    border: 1px solid var(--clr-light);
+  }
 `
 
 const Text = styled.div`
@@ -19,26 +24,19 @@ export default function CTA(props) {
         <Container>
           <Flex>
             <StaticImage
-              src="../images/get-your-quote.svg"
-              alt="call now to get your quote"
+              className="stretch cta-img"
+              src="../images/book-your-calgary-boudoir-session.jpg"
+              alt="cbook your calgary boudoir session"
             />
             <Text className="spacing">
               <div>
-                <p className="italics caps">{props.subtitle}</p>
-                <h3 className="title bold">book your glass service today!</h3>
+                <h2 className="headline">{props.headline}</h2>
+                <h3 className="subhead">{props.subhead}</h3>
               </div>
-              <p>
-                By giving us a call, or writing us a message using our online
-                contact form, our experienced team can provide you with an
-                estimate on your next window or door project!
-              </p>
-              <Actions>
-                <ButtonPrimary to="/contact">book online</ButtonPrimary>
-                <AnchorInline className="bold italics" href="tel: 403-891-3172">
-                  <span className="light">Or Call Us:</span> <br />
-                  403-891-3172
-                </AnchorInline>
-              </Actions>
+              <p>{props.description}</p>
+              <ButtonPrimary to="/book-now">
+                yes, i want to take the leap &#x2192;
+              </ButtonPrimary>
             </Text>
           </Flex>
         </Container>

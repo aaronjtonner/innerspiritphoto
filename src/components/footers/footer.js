@@ -6,13 +6,18 @@ import { Info } from "../info"
 import { Container } from "../layoutComponents"
 import { ButtonInline } from "../buttons"
 
-import Logo from "../../images/logo-light.jpg"
+import Logo from "../../images/logo-white.svg"
 import AaronTonnerWebSolutionsLogo from "../../images/aaron-tonner-web-solutions-logo-white-white.svg"
 import Facebook from "../../images/socials/facebook.svg"
 import Instagram from "../../images/socials/instagram.svg"
 import Twitter from "../../images/socials/twitter.svg"
 import Linkedin from "../../images/socials/linkedin.svg"
 import Youtube from "../../images/socials/youtube.svg"
+import Pinterest from "../../images/socials/pinterest.svg"
+
+import { FaPhoneAlt } from "react-icons/fa"
+import { MdOutlineAlternateEmail } from "react-icons/md"
+import { AiOutlineClockCircle } from "react-icons/ai"
 
 const device = {
   sm: "43em",
@@ -44,7 +49,7 @@ export const Flex = styled.div`
 
     @media screen and (max-width: ${device.md}) {
       margin-left: 0;
-      margin-top: var(--spacer);
+      margin-top: 3em;
     }
   }
 `
@@ -198,34 +203,83 @@ export default function Footer() {
               <ul>
                 <li>
                   <FlexContact>
-                    <a href="tel: 403-891-3172">403-891-3172</a>
+                    <FaPhoneAlt />
+                    <a href="tel: 403-252-2662"> +1 (403) 252-2662</a>
                   </FlexContact>
                 </li>
                 <li>
                   <FlexContact>
-                    <a href="mailto: info@klaadglass.ca">info@klaadglass.ca</a>
+                    <MdOutlineAlternateEmail />
+                    <a href="mailto: info@innerspiritphoto.com">
+                      info@innerspiritphoto.com
+                    </a>
                   </FlexContact>
                 </li>
                 <li>
                   <FlexContact>
-                    <p>{Info.hours}</p>
+                    <AiOutlineClockCircle />
+                    <p>
+                      {Info.hours} <br />
+                      Hours by appointment
+                    </p>
                   </FlexContact>
                 </li>
               </ul>
               <ul>
                 <li>{Info.street1}</li>
-                <li>{Info.city1}</li>
                 <li>Canada</li>
               </ul>
               <Socials>
                 <div>
                   <a
                     target="_blank"
-                    href="https://www.facebook.com/KLAADGLASS/"
+                    href="https://www.instagram.com/boudoirphotographycalgary/"
+                  >
+                    <img
+                      src={Instagram}
+                      alt="Inner Spirit Photography Instagram - Boudoir Photographer in Calgary"
+                    />
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/innerspiritphoto"
                   >
                     <img
                       src={Facebook}
-                      alt="3'D revolution technologies - 3d printing services in calgary"
+                      alt="Inner Spirit Photography Facebook - Boudoir Photography Calgary"
+                    />
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/marklauriephotographer/"
+                  >
+                    <img
+                      src={Linkedin}
+                      alt="Inner Spirit Photography Linkedin - Boudoir Photographer Calgary"
+                    />
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.youtube.com/c/InnerSpiritPhotographyCalgary/videos"
+                  >
+                    <img
+                      src={Youtube}
+                      alt="Inner Spirit Photography Linkedin - Boudoir Photographer Calgary"
+                    />
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.pinterest.ca/innerspiritphot/_saved/"
+                  >
+                    <img
+                      src={Pinterest}
+                      alt="Inner Spirit Photography Linkedin - Boudoir Photographer Calgary"
+                    />
+                  </a>
+                  <a target="_blank" href="https://twitter.com/marklaurie">
+                    <img
+                      src={Twitter}
+                      alt="Inner Spirit Photography Linkedin - Boudoir Photographer Calgary"
                     />
                   </a>
                 </div>
@@ -241,52 +295,30 @@ export default function Footer() {
                   <StyledLink to="/about">about</StyledLink>
                 </li>
                 <li>
-                  <StyledLink to="/services">services</StyledLink>
+                  <StyledLink to="/experience">experience</StyledLink>
                 </li>
                 <li>
-                  <StyledLink to="/services/home-window-repair-calgary">
-                    home window repair
-                  </StyledLink>
+                  <StyledLink to="/portfolios">portfolios</StyledLink>
                 </li>
                 <li>
-                  <StyledLink to="/services/commercial-window-repair-calgary">
-                    commercial window repair
-                  </StyledLink>
-                </li>
-                <li>
-                  <StyledLink to="/services/storm-doors-calgary">
-                    storm doors
-                  </StyledLink>
-                </li>
-                <li>
-                  <StyledLink to="/gallery">gallery</StyledLink>
-                </li>
-                <li>
-                  <StyledLink to="/contact">contact</StyledLink>
+                  <StyledLink to="/book-now">Contact & Booking</StyledLink>
                 </li>
               </ul>
             </FlexItem>
             <FlexItem className="spacing">
               <p className="heading">about us</p>
               <p>
-                <ButtonInline to=""></ButtonInline>
-                <ButtonInline to="/">KLAAD Glass Ltd.</ButtonInline> is a
-                reliable window & door repair contractor servicing Calgary, AB
-                and surrounding areas. With extensive
-                <ButtonInline to="/services/home-window-repair-calgary">
-                  residential
-                </ButtonInline>{" "}
-                &{" "}
-                <ButtonInline to="/services/commercial-window-repair-calgary">
-                  commercial
-                </ButtonInline>{" "}
-                experience, we can handle your window installation & glass
-                replacement needs,{" "}
-                <ButtonInline to="/services/storm-doors-calgary">
-                  storm door installation
-                </ButtonInline>
-                & repairs, shower systems, commercial mirrors, and more! Call us
-                today to request a free estimate!
+                Canadian Portrait Photographer of the Year, Mark Laurie, is the
+                photographer for Inner Spirit Photography. Internationally
+                renowned, his clients fly in from all over the world or fly Mark
+                out. He has done portraits in 16 countries plus every province
+                in Canada **** Inner Spirit creates a transformational
+                experience with imagery that has been described as life
+                changing. Timeless images that portray the soul, desires and
+                personality of his clients. We create an enviroment that is so
+                safe and creative it becomes easy to express anything you want,
+                to experiment, to indulge in exploring you. Everyone is amazed
+                how easy and fun the session is.
               </p>
             </FlexItem>
           </Flex>
@@ -297,14 +329,17 @@ export default function Footer() {
               <li>{Info.name}</li>
               <li>All Rights Reserved</li>
               <li>
-                <a target="blank" href="https://www.klaadglass.ca/terms-of-use">
+                <a
+                  target="_blank"
+                  href="https://www.innerspiritphoto.com/terms-of-use"
+                >
                   Terms of use
                 </a>
               </li>
               <li>
                 <a
-                  target="blank"
-                  href="https://www.klaadglass.ca/privacy-policy"
+                  target="_blank"
+                  href="https://www.innerspiritphoto.com/privacy-policy"
                 >
                   Privacy Policy
                 </a>

@@ -5,7 +5,7 @@ import {
   ButtonPrimary,
   ButtonLight,
   ButtonSecondaryDark,
-  ButtonUnderlineLight,
+  ButtonOutlineLight,
 } from "../buttons"
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -17,7 +17,6 @@ const HeroWrapper = styled.div`
   background: var(--clr-accent);
   color: var(--txt-light);
   padding: 4em;
-  height: 85vh;
 `
 
 const Text = styled.div``
@@ -26,6 +25,8 @@ const Video = styled.div`
   iframe {
     height: 550px;
     width: 100%;
+    border-radius: var(--br);
+    object-fit: cover;
   }
 `
 
@@ -37,7 +38,6 @@ export default function HeroBasic() {
           <Video>
             <iframe
               src="https://player.vimeo.com/video/741244788?h=49cdbe3471&badge=0&autopause=0&player_id=0&app_id=58479"
-              frameBorder={0}
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
               title="Square Sample.mov"
@@ -53,9 +53,9 @@ export default function HeroBasic() {
               can't believe how beautiful that person is.” - Deanna
             </p>
             <Actions>
-              <ButtonUnderlineLight to="/experience">
+              <ButtonOutlineLight to="/experience">
                 explore the experience &#x2192;
-              </ButtonUnderlineLight>
+              </ButtonOutlineLight>
               <ButtonLight to="/book-now">
                 book planning session now &#x2192;
               </ButtonLight>

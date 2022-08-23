@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { Container } from "../layoutComponents"
 import { IoMdArrowDropdown } from "react-icons/io"
 
-import Logo from "../../images/logo-light.jpg"
+import Logo from "../../images/logo-white.svg"
 
 const device = {
   sm: "18em",
@@ -12,7 +12,7 @@ const device = {
 }
 
 const Header = styled.header`
-  background: var(--clr-dark);
+  background: var(--clr-accent);
   border-bottom: 1px solid var(--clr-accent);
   top: 0;
   left: 0;
@@ -133,16 +133,11 @@ const GetQuote = styled(props => <Link {...props} />)`
   padding: 1em 1.33em;
   transition: all 0.25s linear;
 
-  background: var(--clr-accent);
-  color: var(--txt-light);
-  border: 1px solid var(--clr-accent);
+  background: var(--clr-light);
+  color: var(--clr-accent);
+  border: 1px solid var(--clr-light);
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
-
-  &:hover {
-    background: var(--clr-accent-darker);
-    color: var(--txt-light);
-  }
 `
 
 const Dropdown = styled.li`
@@ -243,16 +238,18 @@ export default function HeaderBasic() {
           <Headertop>
             <LogoContainer>
               <Link to="/">
-                <img src={Logo} alt="klaad glass logo" />
+                <img src={Logo} alt="inner spirit photography logo" />
               </Link>
             </LogoContainer>
             <ul>
-              <li>
-                <NavPhone href="tel: 403-891-3172">(403) 891-3172</NavPhone>
+              <li className="center">
+                <NavPhone href="tel: (403) 252-2662">
+                  call now: <br /> +1 (403) 252-2662
+                </NavPhone>
               </li>
               <li>
-                <GetQuote to="/contact">
-                  <span>book service</span>
+                <GetQuote to="/book-now">
+                  <span>book planning session &#x2192;</span>
                 </GetQuote>
               </li>
             </ul>
@@ -268,20 +265,23 @@ export default function HeaderBasic() {
                 <li>
                   <StyledLink to="/about">about</StyledLink>
                 </li>
+                <li>
+                  <StyledLink to="/experience">experience</StyledLink>
+                </li>
                 <Dropdown>
                   <StyledLink to="/services">
-                    services
+                    Portfolios
                     <IoMdArrowDropdown size={20} />
                   </StyledLink>
                   <ul>
                     <li>
                       <StyledLink to="/services/home-window-repair-calgary">
-                        home window repair & installation
+                        Gallery
                       </StyledLink>
                     </li>
                     <li>
                       <StyledLink to="/services/commercial-window-repair-calgary">
-                        commercial window repair & installation
+                        Wall Art
                       </StyledLink>
                     </li>
                     <li>

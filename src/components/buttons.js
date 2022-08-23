@@ -71,15 +71,42 @@ export const ButtonLight = styled(props => <Link {...props} />)`
   }
 `
 
+export const ButtonOutlineLight = styled(props => <Link {...props} />)`
+  cursor: pointer;
+  display: inline-block;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-button);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 1.33em;
+  transition: all 0.25s linear;
+  color: var(--txt-light);
+  border-radius: 4px;
+  border: 1px solid var(--clr-light);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+
+  // this is for when an icon is used inside too
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > * + * {
+      margin-left: 0;
+      padding-left: 0;
+    }
+  }
+`
+
 export const ButtonUnderline = styled(props => <Link {...props} />)`
   cursor: pointer;
   display: inline-block;
   font-size: var(--fs-sm);
   font-weight: var(--fw-button);
-  font-style: italic;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--clr-accent);
+  color: blue;
 
   // this is for when an icon is used inside too
   div {
@@ -184,10 +211,9 @@ export const AnchorUnderline = styled.a`
   display: inline-block;
   font-size: var(--fs-sm);
   font-weight: var(--fw-button);
-  font-style: italic;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--clr-accent);
+  color: blue;
 
   // this is for when an icon is used inside too
   div {

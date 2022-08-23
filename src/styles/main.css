@@ -132,7 +132,6 @@ hr {
   font-size: var(--fs-2);
   line-height: 1.1;
   font-family: var(--ff-optima-r);
-  color: var(--txt-dark-secondary);
 }
 .teriatary {
   font-size: var(--fs-3);
@@ -247,6 +246,7 @@ hr {
 
 .stretch {
   align-self: stretch;
+  border-radius: var(--br);
 }
 
 /* clip paths */
