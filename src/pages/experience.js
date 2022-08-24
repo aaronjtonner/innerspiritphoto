@@ -4,7 +4,7 @@ import Banner from "../components/banners/bannerPrimary"
 import Stats from "../components/stats"
 import FullImageTestimonial from "../components/testimonials/fullImageTestimonial"
 
-import BannerImg from "../images/nude-in-water-experience-banner.jpg"
+import BannerImg from "../images/banners/nude-in-water-experience-banner.jpg"
 import { Mercedes } from "../images/calgary-boudoir-photographer-mercedes.jpg"
 import HowItWorks from "../components/overlap/howItWorks"
 import Investment from "../components/overlap/investment"

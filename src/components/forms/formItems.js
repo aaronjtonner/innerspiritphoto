@@ -9,30 +9,53 @@ export const Label = styled.label`
 export const Input = styled.input`
   display: block;
   width: 100%;
-  border-radius: var(--br);
-  border: 1px solid var(--txt-dark-secondary);
-  padding: 1.2em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid var(--txt-dark-secondary);
+  padding: 1.2em 1.2em 1.2em 0;
   font-size: var(--fs-sm);
   font-family: var(--ff);
 
   &:focus {
-    outline: 1px solid var(--txt-dark-secondary);
+    outline: none;
+    border-bottom: 2px solid var(--clr-accent);
+  }
+`
+export const Select = styled.select`
+  display: block;
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid var(--txt-dark-secondary);
+  padding: 1.2em 1.2em 1.2em 0;
+  font-size: var(--fs-sm);
+  font-family: var(--ff);
+
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid var(--clr-accent);
   }
 `
 
 export const TextArea = styled.textarea`
   display: block;
-  width: 100%;
-  border: 1px solid var(--txt-dark-secondary);
+  width: 100%;-
   box-shadow: none;
   outline: none;
-  padding: 1.2em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid var(--txt-dark-secondary);
+  padding: 1.2em 1.2em 1.2em 0;
   font-size: var(--fs-sm);
   font-family: var(--ff);
   resize: none;
 
   &:focus {
-    outline: 1px solid var(--txt-dark-secondary);
+    utline: none;
+    border-bottom: 2px solid var(--clr-accent);
   }
 `
 

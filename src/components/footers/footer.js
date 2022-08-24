@@ -301,6 +301,18 @@ export default function Footer() {
                   <StyledLink to="/portfolios">portfolios</StyledLink>
                 </li>
                 <li>
+                  <StyledLink to="/portfolios/gallery">gallery</StyledLink>
+                </li>
+                <li>
+                  <StyledLink to="/portfolios/books">books</StyledLink>
+                </li>
+                <li>
+                  <StyledLink to="/portfolios/wall-art">wall art</StyledLink>
+                </li>
+                <li>
+                  <StyledLink to="/portfolios/projects">projects</StyledLink>
+                </li>
+                <li>
                   <StyledLink to="/book-now">Contact & Booking</StyledLink>
                 </li>
               </ul>

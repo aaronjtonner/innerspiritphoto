@@ -117,7 +117,7 @@ const NavList = styled.ul`
     display: ${({ nav }) => (nav ? "flex" : "none")};
     align-items: center;
     position: absolute;
-    top: 194px;
+    top: 133px;
 
     @media screen and (max-width: 32em) {
       top: 173.8px;
@@ -253,7 +253,7 @@ export default function HeaderBasic() {
     <div>
       <Header>
         <Container>
-          <Headertop>
+          {/* <Headertop>
             <LogoContainer>
               <Link to="/">
                 <img src={Logo} alt="inner spirit photography logo" />
@@ -271,14 +271,20 @@ export default function HeaderBasic() {
                 </GetQuote>
               </li>
             </ul>
-          </Headertop>
+          </Headertop> */}
           <Headerbottom>
+            <LogoContainer>
+              <Link to="/">
+                <img src={Logo} alt="inner spirit photography logo" />
+              </Link>
+            </LogoContainer>
             <Nav>
               <Burger nav={nav} onClick={toggleMenu}>
                 <div />
                 <div />
                 <div />
               </Burger>
+
               <NavList nav={nav}>
                 <li>
                   <StyledLink to="/about">about</StyledLink>
@@ -287,38 +293,39 @@ export default function HeaderBasic() {
                   <StyledLink to="/experience">experience</StyledLink>
                 </li>
                 <Dropdown>
-                  <StyledLink to="/services">
+                  <StyledLink to="/portfolios">
                     Portfolios
                     <IoMdArrowDropdown size={20} />
                   </StyledLink>
                   <ul>
                     <li>
-                      <StyledLink to="/services/home-window-repair-calgary">
-                        Gallery
+                      <StyledLink to="/portfolios/gallery">gallery</StyledLink>
+                    </li>
+                    <li>
+                      <StyledLink to="/portfolios/books">books</StyledLink>
+                    </li>
+                    <li>
+                      <StyledLink to="/portfolios/wall-art">
+                        wall art
                       </StyledLink>
                     </li>
                     <li>
-                      <StyledLink to="/services/commercial-window-repair-calgary">
-                        Wall Art
-                      </StyledLink>
-                    </li>
-                    <li>
-                      <StyledLink to="/services/storm-doors-calgary">
-                        storm doors
-                      </StyledLink>
-                    </li>
-                    <li>
-                      <StyledLink to="/services/other-glass-services">
-                        other
+                      <StyledLink to="/portfolios/projects">
+                        projects
                       </StyledLink>
                     </li>
                   </ul>
                 </Dropdown>
                 <li>
-                  <StyledLink to="/gallery">gallery</StyledLink>
+                  <StyledLink to="/faq">faq</StyledLink>
                 </li>
                 <li>
-                  <StyledLink to="/contact">contact</StyledLink>
+                  <StyledLink to="/book-now">contact</StyledLink>
+                </li>
+                <li>
+                  <GetQuote to="/book-now">
+                    <span>book now &#x2192;</span>
+                  </GetQuote>
                 </li>
               </NavList>
             </Nav>

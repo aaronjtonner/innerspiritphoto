@@ -2,29 +2,63 @@ import React from "react"
 import styled from "styled-components"
 
 import { Section, Container, Flex, FlexMobileOpp } from "../layoutComponents"
-import { Label, Input, TextArea, Submit } from "./formItems"
+import { Label, Input, TextArea, Submit, Select } from "./formItems"
 import Map from "../map"
-import { AnchorInline } from "../buttons"
+import { AnchorInline, AnchorUnderline } from "../buttons"
 
-const FormWrapper = styled.div`
-  // background: var(--clr-dark);
-  // color: var(--txt-light);
-  // padding: 2em;
+import Facebook from "../../images/socials/facebook.svg"
+import Instagram from "../../images/socials/instagram.svg"
+import Twitter from "../../images/socials/twitter.svg"
+import Linkedin from "../../images/socials/linkedin.svg"
+import Youtube from "../../images/socials/youtube.svg"
+import Pinterest from "../../images/socials/pinterest.svg"
+
+const FormWrapper = styled.div``
+
+const Text = styled.div`
+  max-width: 130ch;
+  widht: 100%;
+`
+
+const Info = styled.div`
+  align-self: flex-start;
+`
+
+const Socials = styled.div`
+  display: flex;
+
+  & > * + * {
+    margin-left: 15px;
+  }
+
+  div {
+    display: flex;
+
+    & > * + * {
+      margin-left: 5px;
+    }
+  }
+
+  img {
+    width: 25px;
+  }
 `
 
 export default function FormContact(props) {
   return (
     <Section>
-      <Container>
-        <div>
-          <h3 className="title--bold center">
-            <span className="italics">{props.title}</span>
+      <Container className="spacing">
+        <Text>
+          <h3 className="headline accent">
+            your complimentary planning session is the first step on your{" "}
+            <span className="italics">transformative journey!</span>
           </h3>
-          <p className="caps center">
-            Call <AnchorInline href="403-891-3172">403-891-3172</AnchorInline>{" "}
-            or send us a message below!
+          <p className="caps bold accent">
+            Call or text{" "}
+            <AnchorInline href="403-252-2662">403-252-2662</AnchorInline> or
+            send us a message below!
           </p>
-        </div>
+        </Text>
         <Flex className="spacing-lg">
           {/* flex item 1 */}
           <FormWrapper>
@@ -43,50 +77,34 @@ export default function FormContact(props) {
               </p>
               <Flex>
                 <div className="spacing-sm">
-                  <Label htmlFor="name">* Name:</Label>
-                  <Input
-                    type="name"
-                    name="name"
-                    id="name"
-                    placeholder="Enter your name"
-                    required
-                  />
+                  <Label htmlFor="fname">First Name *</Label>
+                  <Input type="name" name="fname" id="fname" required />
                 </div>
                 <div className="spacing-sm">
-                  <Label htmlFor="email">* Email:</Label>
-                  <Input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Enter your email"
-                    required
-                  />
+                  <Label htmlFor="lname">Last Name *</Label>
+                  <Input type="name" name="lname" id="lname" required />
+                </div>
+              </Flex>
+              <Flex>
+                <div className="spacing-sm">
+                  <Label htmlFor="email">Email *</Label>
+                  <Input type="email" name="email" id="email" required />
+                </div>
+                <div className="spacing-sm">
+                  <Label htmlFor="phone">Phone *</Label>
+                  <Input type="tel" name="phone" id="phone" required />
                 </div>
               </Flex>
               <div className="spacing-sm">
-                <Label htmlFor="phone">* Phone:</Label>
-                <Input
-                  type="tel"
-                  name="phone"
-                  id="phone"
-                  placeholder="Enter your phone number"
-                  required
-                />
+                <Label htmlFor="subject">Subject *</Label>
+                <Select name="subject" id="subject" required>
+                  <option value="Booking Inquiry">Booking Inquiry</option>
+                  <option value="Question">Question</option>
+                </Select>
               </div>
 
               <div className="spacing-sm">
-                <Label htmlFor="subject">Subject:</Label>
-                <Input
-                  type="text"
-                  name="subject"
-                  id="subject"
-                  placeholder="Subject"
-                  required
-                />
-              </div>
-
-              <div className="spacing-sm">
-                <Label htmlFor="msg">* Message:</Label>
+                <Label htmlFor="msg">Message *</Label>
                 <TextArea
                   name="msg"
                   id="msg"
@@ -100,7 +118,87 @@ export default function FormContact(props) {
             </form>
           </FormWrapper>
           {/* flex item 2 */}
-          <Map className="stretch" />
+          <Info className="spacing">
+            <div>
+              <h3 className="caps subhead accent">contact us:</h3>
+              <AnchorUnderline href="tel: 403-252-2662">
+                403-252-2662
+              </AnchorUnderline>{" "}
+              <br />
+              <AnchorUnderline href="mailto: info@innerspirit.com">
+                info@innerspirit.com
+              </AnchorUnderline>
+            </div>
+            <div>
+              <h3 className="caps subhead accent">our location:</h3>
+              <AnchorUnderline href="https://www.google.com/maps/place/Inner+Spirit+Photography/@50.977725,-114.0806245,15z/data=!4m2!3m1!1s0x0:0xbbb2559053a55ca5?sa=X&ved=2ahUKEwiG9tu9j975AhXlATQIHfAzDv8Q_BJ6BAhAEB8">
+                711 84 Ave SW Calgary, AB, Canada T2V 0V8
+              </AnchorUnderline>
+            </div>
+            <div>
+              <h3 className="caps subhead accent">hours:</h3>
+              <p className="bold italics">
+                10 AM to 7 PM Monday to Friday <br />
+                Hours By Appointment
+              </p>
+            </div>
+
+            <Socials>
+              <div>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/boudoirphotographycalgary/"
+                >
+                  <img
+                    src={Instagram}
+                    alt="Inner Spirit Photography Instagram - Boudoir Photographer in Calgary"
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/innerspiritphoto"
+                >
+                  <img
+                    src={Facebook}
+                    alt="Inner Spirit Photography Facebook - Boudoir Photography Calgary"
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/marklauriephotographer/"
+                >
+                  <img
+                    src={Linkedin}
+                    alt="Inner Spirit Photography Linkedin - Boudoir Photographer Calgary"
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/c/InnerSpiritPhotographyCalgary/videos"
+                >
+                  <img
+                    src={Youtube}
+                    alt="Inner Spirit Photography Linkedin - Boudoir Photographer Calgary"
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.pinterest.ca/innerspiritphot/_saved/"
+                >
+                  <img
+                    src={Pinterest}
+                    alt="Inner Spirit Photography Linkedin - Boudoir Photographer Calgary"
+                  />
+                </a>
+                <a target="_blank" href="https://twitter.com/marklaurie">
+                  <img
+                    src={Twitter}
+                    alt="Inner Spirit Photography Linkedin - Boudoir Photographer Calgary"
+                  />
+                </a>
+              </div>
+            </Socials>
+          </Info>
         </Flex>
       </Container>
     </Section>

@@ -1,8 +1,13 @@
 import React from "react"
 import styled from "styled-components"
 import { Container, Actions } from "../layoutComponents"
-import { ButtonLight, AnchorInline, ButtonPrimary } from "../buttons"
-import Breadcrumb3Links from "../breadcrumbs/breadcrumb3links"
+import {
+  ButtonLight,
+  AnchorInline,
+  ButtonPrimary,
+  AnchorUnderline,
+} from "../buttons"
+import Breadcrumb2Links from "../breadcrumbs/breadcrumb2links"
 
 const Wrapper = styled.div`
   background: var(--clr-accent);
@@ -68,28 +73,36 @@ const Text = styled.div`
       display: none;
     }
   }
+
+  .call {
+    color: var(--txt-light);
+    display: inline-block;
+  }
 `
 
 // banner with only 2 links in the breadcrumb
-export default function BannerSecondary(props) {
+export default function BannerBooking(props) {
   return (
     <Wrapper>
       <Container className="container">
         <img className="stretch" src={props.img} alt={props.alt} />
         <Text className="spacing">
           <div>
-            <Breadcrumb3Links
+            <Breadcrumb2Links
               to1={props.to1}
               link1={props.link1}
               to2={props.to2}
               link2={props.link2}
-              to3={props.to3}
-              link3={props.link3}
             />
             <hr />
             <h1 className="headline">{props.headline}</h1>
           </div>
-          <p>{props.description}</p>
+          <p className="subhead caps">
+            can't wait? call or text us:{" "}
+            <a className="call" href="tel: 403-252-2662">
+              403-252-2662
+            </a>
+          </p>
           <Actions>
             <ButtonLight className="btn-light" to="/book-now">
               book now &#x2192;

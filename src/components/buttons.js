@@ -146,7 +146,7 @@ export const AnchorPrimary = styled.a`
   text-decoration: none;
   padding: 1em 1.33em;
   transition: all 0.2s linear;
-
+  border-radius: var(--br);
   background: var(--clr-accent);
   color: var(--txt-light);
   border: 1px solid var(--clr-accent);

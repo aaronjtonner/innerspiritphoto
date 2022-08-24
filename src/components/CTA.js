@@ -15,6 +15,10 @@ const Wrapper = styled.div`
 
 const Text = styled.div`
   color: var(--txt-light);
+
+  h3 {
+    color: var(--txt-light-secondary);
+  }
 `
 
 export default function CTA(props) {
@@ -31,7 +35,7 @@ export default function CTA(props) {
             <Text className="spacing">
               <div>
                 <h2 className="headline">{props.headline}</h2>
-                <h3 className="subhead">{props.subhead}</h3>
+                <h3 className="subhead caps">{props.subhead}</h3>
               </div>
               <p>{props.description}</p>
               <ButtonPrimary to="/book-now">
