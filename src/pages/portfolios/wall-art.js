@@ -4,7 +4,7 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import CTAsecondary from "../../components/CTAsecondary"
 import CTA from "../../components/CTA"
-import BannerImg from "../../images/banners/banner-1.png"
+import BannerImg from "../../images/boudoir-wall-art.jpg"
 import { Container, Section } from "../../components/layoutComponents"
 
 export default function WallArt() {

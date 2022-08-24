@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
 import Banner from "../components/banners/bannerPrimary"
-import BannerImg from "../images/banners/nude-in-water-experience-banner.jpg"
+import BannerImg from "../images/banners/faq-banner.jpg"
 import FullFaq from "../components/faqs/fullFaq"
 import FullImageTestimonial from "../components/testimonials/fullImageTestimonial"
 import CTA from "../components/CTA"
 
-import { Mercedes } from "../images/calgary-boudoir-photographer-mercedes.jpg"
+import { Christine } from "../images/testimonials/calgary-boudoir-testimonial-christine.jpg"
 
 export default function Faq() {
   return (
@@ -22,7 +22,7 @@ export default function Faq() {
       />
       <FullFaq />
       <FullImageTestimonial
-        img={Mercedes}
+        img={Christine}
         alt="review of calgary boudoir photographer"
         review="Inner Spirit helped me rewrite past traumatic experiences with men where power was taken from me. It was very healing."
         name="christine"

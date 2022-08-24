@@ -7,6 +7,7 @@ import {
   ButtonSecondaryDark,
   ButtonOutlineLight,
 } from "../buttons"
+import { HeroBannerPadding } from "../layoutComponents"
 import { StaticImage } from "gatsby-plugin-image"
 
 const device = {
@@ -16,7 +17,15 @@ const device = {
 const HeroWrapper = styled.div`
   background: var(--clr-accent);
   color: var(--txt-light);
-  padding: 4em 0;
+  padding-bottom: 4em;
+
+  // @media screen and (max-width: 32em) {
+  //   padding: 8em 0 4em 0;
+  // }
+
+  // @media screen and (max-width: 22em) {
+  //   padding: 6em 0 4em 0;
+  // }
 `
 
 const Text = styled.div``
@@ -94,6 +103,7 @@ const ActionsMobile = styled.div`
 export default function HeroBasic() {
   return (
     <HeroWrapper>
+      <HeroBannerPadding />
       <Container>
         <Flex>
           <Video>

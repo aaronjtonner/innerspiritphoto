@@ -142,3 +142,15 @@ export const GridAuto = styled.div`
     align-self: center;
   }
 `
+
+export const HeroBannerPadding = styled.div`
+  padding: 10em 0 4em 0;
+
+  @media screen and (max-width: 32em) {
+    padding: 8em 0 4em 0;
+  }
+
+  @media screen and (max-width: 22em) {
+    padding: 6em 0 4em 0;
+  }
+`

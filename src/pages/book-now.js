@@ -2,14 +2,14 @@ import React from "react"
 import Layout from "../components/layout"
 import BannerBooking from "../components/banners/bannerBooking"
 
-import BannerImg from "../images/banners/banner-1.png"
+import BannerImg from "../images/banners/contact-banner.jpg"
 import FormContact from "../components/forms/formContact"
 import Nervous from "../components/nervous"
 import Guarantee from "../components/guarantee"
 import FullImageTestimonial from "../components/testimonials/fullImageTestimonial"
 import CTA from "../components/CTA"
 
-import { Mercedes } from "../images/calgary-boudoir-photographer-mercedes.jpg"
+import { Barb } from "../images/testimonials/calgary-boudoir-testimonial-barb.jpg"
 
 export default function BookNow() {
   return (
@@ -26,7 +26,7 @@ export default function BookNow() {
       <Nervous />
       <Guarantee />
       <FullImageTestimonial
-        img={Mercedes}
+        img={Barb}
         alt="review of calgary boudoir photographer"
         review="I had just turned 50 when I found myself unexpectedly single. I felt sad and angry, and my inner spirit needed some serious healing. 
 

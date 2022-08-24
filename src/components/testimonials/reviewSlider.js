@@ -17,14 +17,14 @@ const Wrapper = styled.div`
 `
 
 const ItemGrid = styled.div`
-  // display: grid;
-  // grid-template-rows: auto 2em auto;
+  display: grid !important;
+  grid-template-rows: auto 2em auto;
   position: relative;
 
   .slider-img {
-    // grid-row: 1 / span 2;
-    // grid-column: 1 / -1;
-    // z-index: 1;
+    grid-row: 1 / span 2;
+    grid-column: 1 / -1;
+    z-index: 1;
   }
 `
 
@@ -38,9 +38,9 @@ const ReviewWrapper = styled.div`
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  // grid-row: 2 / -1;
-  // grid-column: 1 / -1;
-  // z-index: 2;
+  grid-row: 2 / -1;
+  grid-column: 1 / -1;
+  z-index: 2;
 `
 
 const FlexStars = styled.div`
@@ -106,6 +106,7 @@ export default function ReviewSlider() {
               <StaticImage
                 className="slider-img"
                 src="../../images/calgary-boudoir-joy.jpg"
+                alt="calgary boudoir photography google review"
               />
               <ReviewBox
                 review="At first I resisted, saying it was extravagant and unnecessary, but the more I talked to Mark and saw his work I realized it was a fantastic opportunity. We shot a mix of boudoir, sexy and sporty poses and once I saw the completed album,  my confidence soared! I was a huge fan from that point on. Do this now for yourself or a loved one. You will never stop enjoying the results!"
@@ -115,7 +116,8 @@ export default function ReviewSlider() {
             <ItemGrid>
               <StaticImage
                 className="slider-img"
-                src="../../images/calgary-boudoir-joy.jpg"
+                src="../../images/calgary-boudoir-photography-kolbi.jpg"
+                alt="calgary boudoir photography google review"
               />
               <ReviewBox
                 className="review-box"
@@ -126,7 +128,8 @@ export default function ReviewSlider() {
             <ItemGrid>
               <StaticImage
                 className="slider-img"
-                src="../../images/calgary-boudoir-joy.jpg"
+                src="../../images/calgary-boudoir-photography-robin.jpg"
+                alt="calgary boudoir photography google review"
               />
               <ReviewBox
                 className="review-box"

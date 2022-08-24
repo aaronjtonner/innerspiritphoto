@@ -90,7 +90,7 @@ img {
 
 h1,
 h2,
-h3,
+h3, h4, h5, h5, h6,
 p {
   margin: 0;
 }
@@ -250,22 +250,6 @@ hr {
 }
 
 /* clip paths */
-.clip-arrow-right {
-  clip-path: polygon(
-    0% 20%,
-    60% 20%,
-    60% 0%,
-    100% 50%,
-    60% 100%,
-    60% 80%,
-    0% 80%
-  );
-}
-
-.clip-right-chev {
-  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-}
-
-.clip-right-point {
-  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+.clip-img {
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }

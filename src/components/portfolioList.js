@@ -79,7 +79,7 @@ export default function PortfolioList() {
           <GridItem to="/portfolios/projects">
             <StaticImage
               className="img"
-              src="../images/boudoir-projects.jpg"
+              src="../images/boudoir-projects-calgary.jpg"
               alt="calgary boudoir projects"
             />
             <ButtonWrapper>

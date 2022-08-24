@@ -5,7 +5,9 @@ import Stats from "../components/stats"
 import FullImageTestimonial from "../components/testimonials/fullImageTestimonial"
 
 import BannerImg from "../images/banners/nude-in-water-experience-banner.jpg"
-import { Mercedes } from "../images/calgary-boudoir-photographer-mercedes.jpg"
+import { Kerry } from "../images/calgary-boudoir-photographer-mercedes.jpg"
+import { Rinilda } from "../images/testimonials/calgary-boudoir-testimonial-rinilda.jpg"
+import { Deanna } from "../images/calgary-boudoir-photographer-mercedes.jpg"
 import HowItWorks from "../components/overlap/howItWorks"
 import Investment from "../components/overlap/investment"
 import BeyondEmpowerment from "../components/videos/beyondEmpowerment"
@@ -28,7 +30,7 @@ export default function Experience() {
       />
       <Stats />
       <FullImageTestimonial
-        img={Mercedes}
+        img={Kerry}
         alt="review of calgary boudoir photographer"
         review="Mark really captures the essence of you that you just never see. We females are so critical of our bodies and critical of ourselves that when you see the photos he takes, you're thinking, ‘oh my God, that’s me?"
         name="kerry"
@@ -41,7 +43,7 @@ export default function Experience() {
       <CTAsecondary />
       <WhatToDo />
       <FullImageTestimonial
-        img={Mercedes}
+        img={Rinilda}
         alt="review of calgary boudoir photographer"
         review="For me, the experience was about being bold and being true to myself and knowing that I can accomplish anything. I can be who I want to be, without hesitation."
         name="renilda"
@@ -50,7 +52,7 @@ export default function Experience() {
       />
       <ReassuranceVideoTestimonial />
       <FullImageTestimonial
-        img={Mercedes}
+        img={Deanna}
         alt="review of calgary boudoir photographer"
         review="Mark sees your unspoken boundaries, and I think through respecting those boundaries, he creates the safety needed to help people heal."
         name="deanna"

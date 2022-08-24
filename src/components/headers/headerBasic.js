@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import { Container } from "../layoutComponents"
@@ -8,15 +8,18 @@ import Logo from "../../images/logo-white.svg"
 
 const device = {
   sm: "18em",
-  md: "56em",
+  md: "80em",
 }
 
 const Header = styled.header`
   background: var(--clr-accent);
+  position: fixed;
   border-bottom: 1px solid var(--clr-accent);
   top: 0;
   left: 0;
   right: 0;
+  z-index: 999;
+  transition: top 0.5s ease-out;
   z-index: 999;
   transition: top 0.5s ease-out;
 `
@@ -80,7 +83,7 @@ const LogoContainer = styled.div`
   img {
     height: 100px;
     transition: 0.4s;
-
+    // *** adjust hero & banner padding as below screen widths are changed
     @media screen and (max-width: 32em) {
       height: 70px;
     }
@@ -89,9 +92,9 @@ const LogoContainer = styled.div`
       height: 40px;
     }
 
-    &[data-active="true"] {
-      height: 90px;
-    }
+    // &[data-active="true"] {
+    //   height: 100px;
+    // }
   }
 `
 
@@ -120,7 +123,11 @@ const NavList = styled.ul`
     top: 133px;
 
     @media screen and (max-width: 32em) {
-      top: 173.8px;
+      top: 103px;
+    }
+
+    @media screen and (max-width: 22em) {
+      top: 73px;
     }
 
     left: 0;
@@ -156,6 +163,40 @@ const GetQuote = styled(props => <Link {...props} />)`
   border: 1px solid var(--clr-light);
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+`
+
+const NavCtaDesktop = styled.div`
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 38em) {
+    flex-direction: column;
+  }
+
+  & > * + * {
+    margin-left: 1.5em;
+
+    @media screen and (max-width: 38em) {
+      margin-top: 5px;
+      margin-left: 0;
+    }
+  }
+
+  @media screen and (max-width: ${device.md}) {
+    display: none;
+  }
+`
+const NavCtaMobile = styled.div`
+  display: none;
+
+  @media screen and (max-width: ${device.md}) {
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+    & > * + * {
+        margin-top: 5px;
+        margin-left: 0;
+      }
 `
 
 const Dropdown = styled.li`
@@ -249,6 +290,22 @@ export default function HeaderBasic() {
     navOpen(!nav)
   }
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 10
+      if (isScrolled == scrolled) {
+        setScrolled(!scrolled)
+      }
+    }
+
+    document.addEventListener("scroll", handleScroll, { passive: true })
+
+    return () => {
+      // clean up the event handler when the component unmounts
+      document.removeEventListener("scroll", handleScroll)
+    }
+  }, [scrolled])
+
   return (
     <div>
       <Header>
@@ -275,7 +332,11 @@ export default function HeaderBasic() {
           <Headerbottom>
             <LogoContainer>
               <Link to="/">
-                <img src={Logo} alt="inner spirit photography logo" />
+                <img
+                  data-active={scrolled}
+                  src={Logo}
+                  alt="inner spirit photography logo"
+                />
               </Link>
             </LogoContainer>
             <Nav>
@@ -322,13 +383,22 @@ export default function HeaderBasic() {
                 <li>
                   <StyledLink to="/book-now">contact</StyledLink>
                 </li>
-                <li>
+                <NavCtaMobile>
+                  <NavPhone href="tel: (403) 252-2662">
+                    +1 (403) 252-2662
+                  </NavPhone>
                   <GetQuote to="/book-now">
                     <span>book now &#x2192;</span>
                   </GetQuote>
-                </li>
+                </NavCtaMobile>
               </NavList>
             </Nav>
+            <NavCtaDesktop>
+              <NavPhone href="tel: (403) 252-2662">+1 (403) 252-2662</NavPhone>
+              <GetQuote to="/book-now">
+                <span>book now &#x2192;</span>
+              </GetQuote>
+            </NavCtaDesktop>
           </Headerbottom>
         </Container>
       </Header>

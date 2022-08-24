@@ -21,8 +21,8 @@ export default function Diversity() {
             className="stretch"
           />
           <Text className="spacing">
-            <h2 className="headline">LGBTQ+ and diversity welcome</h2>
-            <p>
+            <h2 className="headline accent">LGBTQ+ and diversity welcome</h2>
+            <p className="accent">
               For all women we have happily provided an inclusive, safe, and
               non-judgemental creative space since 1980. We have always created
               images that speak from soul to soul. We delight in bringing out

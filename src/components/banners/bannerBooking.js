@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Container, Actions } from "../layoutComponents"
+import { Container, Actions, HeroBannerPadding } from "../layoutComponents"
 import {
   ButtonLight,
   AnchorInline,
@@ -11,7 +11,7 @@ import Breadcrumb2Links from "../breadcrumbs/breadcrumb2links"
 
 const Wrapper = styled.div`
   background: var(--clr-accent);
-  padding: 4em 0;
+  padding-bottom: 4em;
 
   .container {
     display: grid;
@@ -84,8 +84,9 @@ const Text = styled.div`
 export default function BannerBooking(props) {
   return (
     <Wrapper>
+      <HeroBannerPadding />
       <Container className="container">
-        <img className="stretch" src={props.img} alt={props.alt} />
+        <img className="stretch clip-img" src={props.img} alt={props.alt} />
         <Text className="spacing">
           <div>
             <Breadcrumb2Links

@@ -7,7 +7,6 @@ const Video = styled.div`
     height: 550px;
     width: 100%;
     border-radius: var(--br);
-    oject-fit: cover;
   }
 `
 
@@ -16,6 +15,7 @@ export default function HomeMain() {
     <Section>
       <Container className="spacing">
         <h2 className="headline center">inner spirit photo slogan</h2>
+
         <Video>
           <iframe
             src="https://player.vimeo.com/video/741234082?h=2dcdadd194&badge=0&autopause=0&player_id=0&app_id=58479"

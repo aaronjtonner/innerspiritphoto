@@ -54,6 +54,7 @@ const SEO = ({ title, description, image, article }) => {
       )}
 
       {seo.image && <meta name="twitter:image" content={seo.image} />}
+      <script src="https://player.vimeo.com/api/player.js"></script>
     </Helmet>
   )
 }

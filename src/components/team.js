@@ -3,11 +3,11 @@ import React from "react"
 import styled from "styled-components"
 import { Container, Flex, Section } from "./layoutComponents"
 
-import { Jan } from "../images/team/jan.jpg"
-import { Fran } from "../images/team/fran.jpg"
-import { Adrienne } from "../images/team/adrienne.jpg"
-import { Melody } from "../images/team/melody.jpg"
-import { Bonnie } from "../images/team/bonnie.jpg"
+import Jan from "../images/team/jan-headshot.jpg"
+import Fran from "../images/team/fran-headshot.jpg"
+import Adrienne from "../images/team/adrienne-headshot.jpg"
+import Melody from "../images/team/melody-headshot.jpg"
+import Bonnie from "../images/team/bonnie-headshot.jpg"
 import { AnchorInline, ButtonInline } from "./buttons"
 
 const TeamWrapper = styled.div`
@@ -19,26 +19,45 @@ const TeamWrapper = styled.div`
 `
 
 const Wrapper = styled.div`
-  .headshot-img-mobile {
-    display: none;
-    @media screen and (max-width: 48em) {
-      display: block;
-    }
-  }
-  .headshot-img-desktop {
-    @media screen and (max-width: 48em) {
-      display: none;
+  display: grid;
+  place-items: center;
 
-      .headshot-img-mobile {
-        display: block;
-      }
-    }
+  .headshot-img-mobile,
+  .headshot-img-desktop {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
   }
+  // .headshot-img-mobile {
+  //   display: none;
+  //   @media screen and (max-width: 48em) {
+  //     display: block;
+  //   }
+  // }
+  // .headshot-img-desktop {
+  //   @media screen and (max-width: 48em) {
+  //     display: none;
+
+  //     .headshot-img-mobile {
+  //       display: block;
+  //     }
+  //   }
+  // }
 `
 
 const Text = styled.div`
   h4 {
     color: var(--txt-dark-secondary);
+  }
+
+  p {
+    max-width: 70ch;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 48em) {
+    text-align: center;
   }
 `
 
@@ -49,13 +68,13 @@ const TeamMember = props => {
         <img className="headshot-img-desktop" src={props.img} alt={props.alt} />
         <Text>
           <div>
-            <h3 className="headline">{props.name}</h3>
-            <img
+            <h3 className="headline accent">{props.name}</h3>
+            {/* <img
               className="headshot-img-mobile"
               src={props.img}
               alt={props.alt}
-            />
-            <h4 className="subhead caps">{props.role}</h4>
+            /> */}
+            <h4 className="subhead caps bold">{props.role}</h4>
           </div>
           <p>{props.description}</p>
         </Text>
@@ -83,7 +102,7 @@ export default function Team() {
             <TeamMember
               img={Fran}
               alt="Fran, expert photo retouched of inner spirit photography"
-              name="Fran William"
+              name="Fran Williams"
               role="Expert retoucher, printer, and operations manager"
               description="Fran gives your images breathtaking polish. She retouches, enhances, and custom prints every image. She has been Mark's right hand for 22 years now, with 36 years in the industry. Few can come close to her skills and care."
             />
@@ -102,32 +121,14 @@ export default function Team() {
               description="Melody is one of the best body painters in Alberta. She has been commissioned all over the world. Besides her awesome creative paint skills, she is warm and engaging. She will keep you amused and relaxed as she transforms your body into art.
 "
             />
-            <Flex>
-              <img
-                src={Bonnie}
-                alt="Registered Psychologist with inner spirit photo"
-              />
-              <Text>
-                <div>
-                  <h3 className="headline">Bonnie Sullivan, Ph.D.</h3>
-                  <h4 className="subhead">Registered Psychologist</h4>
-                </div>
-                <p>
-                  Bonnie gives you tools and experience depth in the{" "}
-                  <ButtonInline to="/experience">
-                    Beyond Empowerment sessions,
-                  </ButtonInline>{" "}
-                  Bonnie is a Registered Psychologist, her Ph.D. is from Palo
-                  Alto U. California. She is the core supporting and enhancing
-                  Inner Spirit client's emotional & mental health growth.{" "}
-                  <span className="bold italics">
-                    {" "}
-                    Inner Spirit Photography is the only studio with a
-                    Psychologist on board.
-                  </span>
-                </p>
-              </Text>
-            </Flex>
+            <TeamMember
+              img={Bonnie}
+              alt="Registered Psychologist with inner spirit photo"
+              name="Bonnie Sullivan, Ph.D"
+              role="Registered Psychologist"
+              description="Bonnie gives you tools and experience depth in the Beyond Empowerment sessions, Bonnie is a Registered Psychologist, her Ph.D. is from Palo Alto U. California. She is the core supporting and enhancing Inner Spirit client's emotional & mental health growth. Inner Spirit Photography is the only studio with a Psychologist on board.
+"
+            />
           </div>
         </Container>
       </Section>
