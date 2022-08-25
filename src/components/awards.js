@@ -69,7 +69,6 @@ export default function Awards() {
       <AwardsList className="spacing">
         <div className="spacing">
           <h2 className="teriatary caps center">awards & certifications</h2>{" "}
-          <p className="subhead">Mark holds...</p>
         </div>
         <div>
           <h3 className="subhead italics accent">
@@ -77,18 +76,17 @@ export default function Awards() {
           </h3>
           <ul>
             <li>
-              Master of Photographic Arts (only 2 photographers in Canada have
-              earned more than 13 bars)
+              Master of Photographic Arts (MPA) <br /> (only 2 photographers in
+              Canada have earned more than 13 bars)
             </li>
-            <li>Service of Photographic Arts</li>
-            <li>Fellow of PPOC</li>
+            <li>Service of Photographic Arts (SPA)</li>
+            <li>Fellow of PPOC (F/PPCO)</li>
             <li>Yousuf Karsh Lifetime Achievement Award</li>
             <li>Photographer of the Year</li>
             <li>37 Accreditations</li>
             <li>Featured in Loan Collection Books</li>
             <li>National Accredited Judge</li>
             <li>National Convention Speaker</li>
-            <li>Fellow of PPOC (F/PPCO)</li>
           </ul>
         </div>
         <div>
@@ -108,13 +106,13 @@ export default function Awards() {
           </h3>
           <ul>
             <li>4 International Photographer of the Year Awards</li>
-            <li>Fellowship Award</li>
+            <li>Fellowship Award (F/FWPP)</li>
             <li>National Accredited Judge</li>
             <li>National Convention Speaker</li>
           </ul>
         </div>
         <div>
-          <h3 className="subhead italics accent">
+          <h3 className="subhead italics accent caps">
             In the world photographic cup (WPC):
           </h3>
           <ul>

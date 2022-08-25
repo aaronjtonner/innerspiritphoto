@@ -48,7 +48,7 @@ export default function Facts() {
               />
               <p>
                 We were Canada’s first photography studio to exclusively offer
-                boudoir photography, founded in 1980
+                boudoir photography, founded in 1980.
               </p>
             </Item>
             <Item>
@@ -61,7 +61,7 @@ export default function Facts() {
                 During the late 1980s and early 1990s, Mark trained 90% of the
                 boudoir photographers in Canada (boudoir photography is much
                 different from wedding or family photography and requires
-                specific expertise!)
+                specific expertise!).
               </p>
             </Item>
             <Item>
@@ -73,7 +73,7 @@ export default function Facts() {
               <p>
                 Psychiatrist Dr. Brown at the Calgary General Hospital did a
                 medical white paper studying the mental health benefits of
-                Mark's nude and boudoir work
+                Mark's nude and boudoir work.
               </p>
             </Item>
             <Item>
@@ -95,7 +95,7 @@ export default function Facts() {
               />
               <p>
                 Disney World's Epcot Center opened with Mark's Silver body
-                painted nude as part of their celebration
+                painted nude as part of their celebration.
               </p>
             </Item>
             <Item>
@@ -116,7 +116,10 @@ export default function Facts() {
                 src="../images/small-sprite.png"
                 alt="what you might not know about inner spirit photography"
               />
-              <p>Mark has published 5 books</p>
+              <p>
+                Mark has published 4 photography books, and 1 poetry book in
+                title Pages Of Man.
+              </p>
             </Item>
           </GridAuto>
         </Container>

@@ -30,6 +30,9 @@ const Text = styled.div`
 
 const Stats = styled.div`
   color: var(--clr-accent);
+  p {
+    margin-bottom: 0;
+  }
 `
 
 const FlexDesktop = styled.div`

@@ -14,11 +14,14 @@ const Wrapper = styled.div`
 
   @media screen and (max-width: 43em) {
     padding: 0;
+    background-position: bottom right;
   }
 `
 
 const Text = styled.div`
+  padding-bottom: 4em;
   max-width: 70ch;
+  margin-left: auto;
   width: 100%;
   color: var(--txt-light);
 `

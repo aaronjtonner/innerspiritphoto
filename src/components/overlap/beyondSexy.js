@@ -20,6 +20,7 @@ const Wrapper = styled.div`
     min-height: 450px;
     height: 100%;
     object-fit: cover;
+    object-position: bottom;
   }
 `
 

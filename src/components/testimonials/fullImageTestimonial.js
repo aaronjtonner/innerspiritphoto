@@ -76,7 +76,6 @@ const ReviewBox = props => {
       </div>
       <p className="italics">"{props.review}"</p>
       <p className="upper">{props.name}</p>
-      <ButtonUnderline to={props.to}>{props.link}</ButtonUnderline>
     </ReviewWrapper>
   )
 }

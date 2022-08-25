@@ -3,11 +3,11 @@ import styled from "styled-components"
 import { Container, Actions, HeroBannerPadding } from "../layoutComponents"
 import { ButtonLight, AnchorInline, ButtonPrimary } from "../buttons"
 import Breadcrumb2Links from "../breadcrumbs/breadcrumb2links"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Wrapper = styled.div`
   background: var(--clr-dark);
   padding-bottom: 4em;
-  border-bottom: 8px solid var(--clr-light);
 
   .container {
     grid-row: 2 / -1;
@@ -25,7 +25,6 @@ const Wrapper = styled.div`
         grid-row: 1 / span 2;
         grid-column: 1 / -1;
         z-index: 1;
-        border: 1px solid var(--clr-light);
       }
     }
 
@@ -89,14 +88,18 @@ const Text = styled.div`
 `
 
 // banner with only 2 links in the breadcrumb
-export default function Banner(props) {
+export default function BlogBanner(props) {
   return (
     <Wrapper>
       <HeroBannerPadding />
       <GridWrapper>
         {/* <Bg /> */}
         <Container className="container">
-          <img className="stretch clip-img" src={props.img} alt={props.alt} />
+          <StaticImage
+            className="stretch clip-img"
+            src="../../images/banners/blog-banner.jpg"
+            alt="The inner spirit photography blog"
+          />
           <Text className="spacing">
             <div>
               <Breadcrumb2Links
@@ -108,16 +111,15 @@ export default function Banner(props) {
               <hr />
               <h1 className="headline">{props.headline}</h1>
             </div>
-
+            <p>{props.description}</p>
             <Actions>
               <ButtonPrimary className="btn-light" to="/book-now">
-                book now &#x2192;
+                contact us &#x2192;
               </ButtonPrimary>
               <ButtonPrimary className="btn-accent" to="/book-now">
-                book now &#x2192;
+                contact us &#x2192;
               </ButtonPrimary>
             </Actions>
-            <p>{props.description}</p>
           </Text>
         </Container>
       </GridWrapper>

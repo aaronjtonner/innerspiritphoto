@@ -371,6 +371,9 @@ export default function HeaderBasic() {
                   </ul>
                 </Dropdown>
                 <li>
+                  <StyledLink to="/blog">blog</StyledLink>
+                </li>
+                <li>
                   <StyledLink to="/faq">faq</StyledLink>
                 </li>
                 <li>

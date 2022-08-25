@@ -21,6 +21,7 @@ const Wrapper = styled.div`
         grid-row: 1 / span 2;
         grid-column: 1 / -1;
         z-index: 1;
+        border: 1px solid var(--clr-light);
       }
     }
 
@@ -91,7 +92,7 @@ export default function BannerSecondary(props) {
             <hr />
             <h1 className="headline">{props.headline}</h1>
           </div>
-          <p>{props.description}</p>
+
           <Actions>
             <ButtonPrimary className="btn-light" to="/book-now">
               book now &#x2192;
@@ -100,6 +101,7 @@ export default function BannerSecondary(props) {
               book now &#x2192;
             </ButtonPrimary>
           </Actions>
+          <p>{props.description}</p>
         </Text>
       </Container>
     </Wrapper>
