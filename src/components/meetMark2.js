@@ -3,6 +3,7 @@ import { Container, Section, GridAuto, Flex } from "./layoutComponents"
 import Mark from "../images/mark-nude-boudoir-photographer-calgary.gif"
 import styled from "styled-components"
 import { ButtonUnderline } from "./buttons"
+import Awards from "./awards"
 
 const Text = styled.div`
   h3 {
@@ -44,7 +45,7 @@ const FlexMobile = styled.div`
 
 export default function MeetMark2() {
   return (
-    <Section>
+    <Section id="mark" className="spacing">
       <Container>
         <FlexDesktop>
           <Text className="spacing">
@@ -82,24 +83,21 @@ export default function MeetMark2() {
               <Flex>
                 <div className="italics">
                   <p>Photographed</p>
-                  <p className="headline">5,127+</p>
+                  <p className="number">5,127+</p>
                   <p className="teriatary">Women</p>
                 </div>
                 <div className="italics">
                   <p>Donations</p>
-                  <p className="headline">$514,210+</p>
+                  <p className="number">$514,210+</p>
                   <p className="teriatary">to Charity</p>
                 </div>
                 <div className="italics">
                   <p>in Business</p>
-                  <p className="headline">42+</p>
+                  <p className="number">42+</p>
                   <p className="teriatary">Years</p>
                 </div>
               </Flex>
             </Stats>
-            <ButtonUnderline to="/about">
-              more about mark &#x2192;
-            </ButtonUnderline>
           </Text>
           <div>
             <img
@@ -174,6 +172,7 @@ export default function MeetMark2() {
           </Text>
         </FlexMobile>
       </Container>
+      <Awards />
     </Section>
   )
 }

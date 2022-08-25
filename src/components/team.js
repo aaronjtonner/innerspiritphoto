@@ -25,9 +25,10 @@ const Wrapper = styled.div`
   .headshot-img-mobile,
   .headshot-img-desktop {
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-    height: 400px;
+    height: 300px;
     width: 400px;
     object-fit: cover;
+    object-position: top;
   }
   // .headshot-img-mobile {
   //   display: none;

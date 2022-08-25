@@ -50,7 +50,7 @@
   --shadow-bottom-accent: 0 4px 2px -2px rgba(145, 89, 138, 0.25);
   --shadow-light: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   --shadow-light-accent: rgba(145, 89, 138, 0.2) 0px 8px 24px;
-  --br: 3px;
+  --br: 5px;
 }
 
 @media (min-width: 45em) {
@@ -138,6 +138,9 @@ hr {
   line-height: 1.1;
   font-family: var(--ff-optima-r);
   text-transform: uppercase;
+}
+.number {
+  font-size: 2.25rem;
 }
 .title--bold {
   font-size: var(--fs-1);

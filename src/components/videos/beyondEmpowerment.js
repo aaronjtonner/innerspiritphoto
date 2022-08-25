@@ -41,10 +41,10 @@ export default function BeyondEmpowerment() {
         <Video>
           <Container className="spacing">
             <Text className="center">
-              <h3 className="subhead upper">the beyond empowerment session</h3>{" "}
-              <h2 className="headline">
+              <h3 className="subhead upper">
                 bonnie sullivan, psychologist, explains
-              </h2>
+              </h3>{" "}
+              <h2 className="headline">the beyond empowerment session</h2>
             </Text>
             <iframe
               src="https://player.vimeo.com/video/741234082?h=2dcdadd194&badge=0&autopause=0&player_id=0&app_id=58479"

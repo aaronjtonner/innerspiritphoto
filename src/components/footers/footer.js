@@ -74,7 +74,7 @@ const Socials = styled.div`
     display: flex;
 
     & > * + * {
-      margin-left: 5px;
+      margin-left: 20px;
     }
   }
 

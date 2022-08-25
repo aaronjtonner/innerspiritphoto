@@ -35,15 +35,16 @@ export default function HowItWorks() {
   return (
     <Section>
       <Container className="spacing">
-        <div className="center">
-          <h2 className="headline">
-            your <span className="italics accent">inner spirit experience</span>{" "}
-            awaits...
-          </h2>
-          <h3 className="subhead italics caps">how it works</h3>
-        </div>
         <WrapperTextLeft>
           <Text className="spacing text-left">
+            <div className="">
+              <h2 className="headline">
+                your{" "}
+                <span className="italics accent">inner spirit experience</span>{" "}
+                awaits...
+              </h2>
+              <h3 className="subhead italics caps">how it works</h3>
+            </div>
             <div className="spacing">
               <h4 className="teriatary italics caps">
                 1. getting comfortable and planning

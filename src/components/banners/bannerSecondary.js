@@ -7,7 +7,7 @@ import Breadcrumb3Links from "../breadcrumbs/breadcrumb3links"
 const Wrapper = styled.div`
   background: var(--clr-dark);
   padding-bottom: 4em;
-  border-bottom: 1px solid var(--clr-light);
+  border-bottom: 8px solid var(--clr-light);
 
   .container {
     display: grid;

@@ -18,7 +18,7 @@ const HeroWrapper = styled.div`
   background: var(--clr-dark);
   color: var(--txt-light);
   padding-bottom: 4em;
-  border-bottom: 1px solid var(--clr-light);
+  border-bottom: 8px solid var(--clr-light);
 
   // @media screen and (max-width: 32em) {
   //   padding: 8em 0 4em 0;
@@ -89,6 +89,7 @@ const ActionsDesktop = styled.div`
 `
 const Logo = styled.div`
   display: flex;
+  justify-content: center;
 `
 
 export default function HeroBasic() {
@@ -97,14 +98,14 @@ export default function HeroBasic() {
       <HeroBannerPadding />
       <Container>
         <Flex className="spacing-lg">
-          <Video>
+          <Video className="spacing-lg">
             <iframe
               src="https://player.vimeo.com/video/741244788?h=49cdbe3471&badge=0&autopause=0&player_id=0&app_id=58479"
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
               title="Square Sample.mov"
             />
-            <p className="italics center subhead">
+            <p className="italics subhead">
               “When I saw my photos, I broke into tears because I thought, I
               can't believe how beautiful that person is.” - Deanna
             </p>
@@ -131,7 +132,7 @@ export default function HeroBasic() {
               <StaticImage
                 src="../../images/logo-white.svg"
                 alt="nude & boudoir photography in calgary"
-                width={150}
+                width={400}
               />
             </Logo>
           </Text>

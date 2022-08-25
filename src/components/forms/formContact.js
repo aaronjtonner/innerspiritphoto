@@ -54,9 +54,8 @@ export default function FormContact(props) {
             <span className="italics">transformative journey!</span>
           </h3>
           <p className="caps bold accent">
-            Call or text{" "}
-            <AnchorInline href="403-252-2662">403-252-2662</AnchorInline> or
-            send us a message below!
+            Call <AnchorInline href="403-252-2662">403-252-2662</AnchorInline>{" "}
+            or send us a message below!
           </p>
         </Text>
         <Flex className="spacing-lg">

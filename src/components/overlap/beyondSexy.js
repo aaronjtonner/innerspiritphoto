@@ -26,10 +26,10 @@ const Wrapper = styled.div`
 const TextBox = styled.div`
   background: var(--clr-light);
   color: var(--clr-accent);
-  padding: 2em;
+  padding: 1em;
   border: 1px solid var(--clr-accent);
   border-radius: var(--br);
-  max-width: 800px;
+  max-width: 600px;
   width: 100%;
   text-align: center;
 `

@@ -59,8 +59,9 @@ export default function Why() {
               Amid a time when you feel lost, stuck, or just a little blah, you
               can shake up your perspective and{" "}
               <span className="bold italics">
-                alter your life or mindset for the better…
+                alter your life or mindset for the better{" "}
               </span>
+              <span className="headline">...</span>
             </p>
           </TextBoxRight>
         </WrapperTextRight>
@@ -75,7 +76,7 @@ export default function Why() {
           <TextBox>
             <p className="headline italics">
               …by doing something bold and vulnerable, something you’ve never
-              done before, challenging limiting beliefs about yourself.
+              done before, challenging limiting beliefs about yourself...
             </p>
           </TextBox>
         </Container>
@@ -83,7 +84,10 @@ export default function Why() {
       <Container>
         <WrapperTextLeft>
           <TextBoxLeft className="spacing text-left">
-            <p>Something like: nude, boudoir, & beauty photography.</p>
+            <p>
+              <span className="headline">...</span>Something like: nude,
+              boudoir, & beauty photography.
+            </p>
             <p>
               After working with more than 5,100 women, Mark has witnessed
               thousands of such pivotal moments occur, seeing women go from

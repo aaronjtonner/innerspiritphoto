@@ -2,9 +2,31 @@ import React from "react"
 import { Container, Section, GridAuto, Flex } from "./layoutComponents"
 import Mark from "../images/mark-nude-boudoir-photographer-calgary.gif"
 import styled from "styled-components"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { ButtonUnderline } from "./buttons"
 
-const Text = styled.div``
+const Text = styled.div`
+  .button-underline {
+    ursor: pointer;
+    display: inline-block;
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-button);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: blue;
+
+    // this is for when an icon is used inside too
+    div {
+      display: flex;
+      align-items: center;
+
+      & > * + * {
+        margin-left: 0;
+        padding-left: 0;
+      }
+    }
+  }
+`
 
 const Stats = styled.div`
   color: var(--clr-accent);
@@ -96,9 +118,9 @@ export default function MeetMark() {
                 </div>
               </Flex>
             </Stats>
-            <ButtonUnderline to="/about">
+            <AnchorLink className="button-underline" to="/about#mark">
               more about mark &#x2192;
-            </ButtonUnderline>
+            </AnchorLink>
           </Text>
           <div>
             <img

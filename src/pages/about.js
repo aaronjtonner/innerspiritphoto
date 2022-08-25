@@ -27,7 +27,6 @@ export default function About() {
       <Stats />
       <Why />
       <MeetMark2 />
-      <Awards />
       <BeyondSexy />
       <Team />
       <Facts />
