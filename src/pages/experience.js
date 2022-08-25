@@ -5,7 +5,7 @@ import Stats from "../components/stats"
 import FullImageTestimonial from "../components/testimonials/fullImageTestimonial"
 
 import BannerImg from "../images/banners/nude-in-water-experience-banner.jpg"
-import { Kerry } from "../images/calgary-boudoir-photographer-mercedes.jpg"
+import { Kerry } from "../images/testimonials/calgary-boudoir-testimonial-kerry.jpg"
 import { Rinilda } from "../images/testimonials/calgary-boudoir-testimonial-rinilda.jpg"
 import { Deanna } from "../images/calgary-boudoir-photographer-mercedes.jpg"
 import HowItWorks from "../components/overlap/howItWorks"

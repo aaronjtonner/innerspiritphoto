@@ -29,12 +29,15 @@ const ReviewWrapper = styled.div`
   border: 1px solid var(--clr-accent);
   text-align: center;
   padding: 2em;
-  width: 90%;
   margin-left: auto;
   margin-right: auto;
   grid-row: 2 / -1;
   grid-column: 1 / -1;
   z-index: 2;
+
+  p {
+    max-width: 70ch;
+  }
 `
 
 const FlexStars = styled.div`

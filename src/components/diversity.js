@@ -2,7 +2,14 @@ import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import styled from "styled-components"
 import { ButtonPrimary } from "./buttons"
-import { Container, Section, Flex } from "./layoutComponents"
+import { Container, Section } from "./layoutComponents"
+
+const Flex = styled.div`
+  display: flex;
+  @media screen and (max-width: 80em) {
+    flex-direction: column;
+  }
+`
 
 const Text = styled.div`
   border-radius: var(--br);

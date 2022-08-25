@@ -8,6 +8,7 @@ import HeroBasic from "../components/heros/hero"
 import Layout from "../components/layout"
 import { Container, Flex, Section } from "../components/layoutComponents"
 import MeetMark from "../components/meetMark"
+import RevealSlider from "../components/revealSlider"
 import Stats from "../components/stats"
 import FullImageTestimonial from "../components/testimonials/fullImageTestimonial"
 import ReviewSlider from "../components/testimonials/reviewSlider"
@@ -52,12 +53,13 @@ export default function Index() {
                 explore the experience &#x2192;
               </ButtonPrimary>
             </div>
-            <StaticImage
+            <RevealSlider />
+            {/* <StaticImage
               className="stretch"
               src="../images/before-after-boudoir-photography-calgary.jpg"
               alt="before and after using boudoir photographer in Calgary"
               objectFit="cover"
-            />
+            /> */}
           </Flex>
         </Container>
       </Section>

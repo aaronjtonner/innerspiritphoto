@@ -34,13 +34,16 @@ const ReviewWrapper = styled.div`
   border-radius: var(--br);
   border: 1px solid var(--clr-accent);
   text-align: center;
-  padding: 2em;
-  width: 80%;
+  padding: 1em;
   margin-left: auto;
   margin-right: auto;
   grid-row: 2 / -1;
   grid-column: 1 / -1;
   z-index: 2;
+
+  p {
+    max-width: 70ch;
+  }
 `
 
 const FlexStars = styled.div`
@@ -82,9 +85,9 @@ const ReviewBox = props => {
         <FcGoogle />
         <p className="upper">{props.name}</p>
       </FlexName>
-      <AnchorUnderline href="https://www.google.com/maps/place/Inner+Spirit+Photography/@50.977725,-114.0806245,15z/data=!4m7!3m6!1s0x0:0xbbb2559053a55ca5!8m2!3d50.977725!4d-114.0806245!9m1!1b1">
+      {/* <AnchorUnderline href="https://www.google.com/maps/place/Inner+Spirit+Photography/@50.977725,-114.0806245,15z/data=!4m7!3m6!1s0x0:0xbbb2559053a55ca5!8m2!3d50.977725!4d-114.0806245!9m1!1b1">
         read more google reviews &#x2192;
-      </AnchorUnderline>
+      </AnchorUnderline> */}
     </ReviewWrapper>
   )
 }

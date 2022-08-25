@@ -48,10 +48,12 @@ export default function MeetMark2() {
       <Container>
         <FlexDesktop>
           <Text className="spacing">
-            <h2 className="headline">
-              meet mark laurie, <br />
-              <span className="italics accent">your boudoir photographer</span>
-            </h2>
+            <div>
+              <h2 className="headline accent">meet mark laurie</h2>
+              {/* <h3 className="subhead upper accent italics">
+                your boudoir photographer
+              </h3> */}
+            </div>
             <h3 className="subhead">
               MPA, SPA, M.Photog, Cr.Photog, F/PPOC, F/SWPP <br />
               International Photoartist | Speaker | Writer

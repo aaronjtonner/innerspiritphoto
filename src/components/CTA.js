@@ -6,7 +6,7 @@ import { Actions, Container, Flex, Section } from "./layoutComponents"
 
 const Wrapper = styled.div`
   background: var(--clr-dark);
-
+  border-bottom: 1px solid var(--clr-light);
   .cta-img {
     border-radius: vavr(--br);
     border: 1px solid var(--clr-light);

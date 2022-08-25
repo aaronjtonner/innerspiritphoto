@@ -10,8 +10,9 @@ import {
 import Breadcrumb2Links from "../breadcrumbs/breadcrumb2links"
 
 const Wrapper = styled.div`
-  background: var(--clr-accent);
+  background: var(--clr-dark);
   padding-bottom: 4em;
+  border-bottom: 1px solid var(--clr-light);
 
   .container {
     display: grid;

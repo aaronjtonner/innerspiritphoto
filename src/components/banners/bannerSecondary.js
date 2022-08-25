@@ -5,8 +5,9 @@ import { ButtonLight, AnchorInline, ButtonPrimary } from "../buttons"
 import Breadcrumb3Links from "../breadcrumbs/breadcrumb3links"
 
 const Wrapper = styled.div`
-  background: var(--clr-accent);
+  background: var(--clr-dark);
   padding-bottom: 4em;
+  border-bottom: 1px solid var(--clr-light);
 
   .container {
     display: grid;
@@ -92,9 +93,9 @@ export default function BannerSecondary(props) {
           </div>
           <p>{props.description}</p>
           <Actions>
-            <ButtonLight className="btn-light" to="/book-now">
+            <ButtonPrimary className="btn-light" to="/book-now">
               book now &#x2192;
-            </ButtonLight>
+            </ButtonPrimary>
             <ButtonPrimary className="btn-accent" to="/book-now">
               book now &#x2192;
             </ButtonPrimary>

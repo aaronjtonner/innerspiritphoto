@@ -4,7 +4,7 @@ import { Container, GridAuto, Section } from "../layoutComponents"
 
 const Wrapper = styled.div`
   display: grid;
-  grid-template-rows: 4em auto 12em;
+  grid-template-rows: 4em auto 20em;
 `
 
 const Bg = styled.div`
@@ -34,6 +34,7 @@ const ReviewText = styled.div`
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: var(--spacer-lg);
 `
 
 const Video2 = styled.div`
@@ -45,9 +46,13 @@ const Video2 = styled.div`
   }
 `
 
+const Spacer = styled.div`
+  margin-bottom: var(--spacer-lg);
+`
+
 export default function MainPageTestimonials() {
   return (
-    <Section className="spacing-lg">
+    <Section>
       <Wrapper>
         <Bg>
           <div></div>

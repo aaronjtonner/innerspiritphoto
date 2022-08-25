@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { Container } from "../layoutComponents"
 import { IoMdArrowDropdown } from "react-icons/io"
 
-import Logo from "../../images/logo-white.svg"
+import Logo from "../../images/inner-spirit-logo-text-white.svg"
 
 const device = {
   sm: "18em",
@@ -81,15 +81,12 @@ const Headerbottom = styled.div`
 
 const LogoContainer = styled.div`
   img {
-    height: 100px;
+    height: 40px;
     transition: 0.4s;
     // *** adjust hero & banner padding as below screen widths are changed
-    @media screen and (max-width: 32em) {
-      height: 70px;
-    }
 
     @media screen and (max-width: 22em) {
-      height: 40px;
+      height: 30px;
     }
 
     // &[data-active="true"] {
@@ -120,14 +117,10 @@ const NavList = styled.ul`
     display: ${({ nav }) => (nav ? "flex" : "none")};
     align-items: center;
     position: absolute;
-    top: 133px;
-
-    @media screen and (max-width: 32em) {
-      top: 103px;
-    }
+    top: 73px;
 
     @media screen and (max-width: 22em) {
-      top: 73px;
+      top: 63px;
     }
 
     left: 0;
@@ -155,7 +148,7 @@ const GetQuote = styled(props => <Link {...props} />)`
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1em 1.33em;
+  padding: 0.4em 1.6em;
   transition: all 0.25s linear;
 
   background: var(--clr-light);

@@ -14,8 +14,14 @@ export default function HomeMain() {
   return (
     <Section>
       <Container className="spacing">
-        <h2 className="headline center">inner spirit photo slogan</h2>
-
+        <div className="center">
+          <p className="subhead upper bold">
+            our mission is to transform you to:
+          </p>
+          <h2 className="headline center accent italics">
+            embrace, empower, & be glorious
+          </h2>
+        </div>
         <Video>
           <iframe
             src="https://player.vimeo.com/video/741234082?h=2dcdadd194&badge=0&autopause=0&player_id=0&app_id=58479"

@@ -6,6 +6,11 @@ import { Container, Section } from "./layoutComponents"
 
 const ImageStyle = {
   width: "100px",
+  objectFit: "contain",
+}
+
+const ImageStyleEpcot = {
+  width: "60px",
 }
 
 const GridAuto = styled.div`
@@ -87,8 +92,8 @@ export default function FeaturedIn() {
           </a>
           <a href="" target="_blank">
             <StaticImage
-              style={ImageStyle}
-              src="../images/featured-in/calgary-boudoir-photographer-featured-epcot.jpg"
+              style={ImageStyleEpcot}
+              src="../images/featured-in/calgary-boudoir-photographer-featured-epcot-center.jpg"
               alt="calgary boudoir photographer featured in best in epcot center"
             />
           </a>

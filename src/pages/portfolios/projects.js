@@ -6,6 +6,12 @@ import CTAsecondary from "../../components/CTAsecondary"
 import CTA from "../../components/CTA"
 import BannerImg from "../../images/boudoir-projects-calgary.jpg"
 import { Container, Section } from "../../components/layoutComponents"
+import styled from "styled-components"
+
+const Text = styled.div`
+  max-width: 100ch;
+  width: 100%;
+`
 
 export default function Projects() {
   return (
@@ -25,12 +31,62 @@ export default function Projects() {
       <CTAsecondary />
       <Section>
         <Container>
-          <h2 className="headline"></h2>
-          <div>
-            <p></p>
-            <p></p>
-            <p></p>
-          </div>
+          <Text className="spacing">
+            <h2 className="headline">nude, boudoir, & beauty projects</h2>
+            <div className="spacing">
+              <p>
+                To push boundaries, gain new skills, experiment, or create a new
+                purpose, Mark Laurie does personal projects.
+              </p>
+              <p>
+                Often, he pulls together a team: makeup artist, body painters,
+                models, hair stylists, assistants, specialists and occasionally
+                other photographers. All working towards a vision he has
+                created.
+              </p>
+              <p>
+                The photography projects are usually in Calgary, but he has
+                traveled to international locations. They may be his signature
+                nudes, boudoir, glamour but can easily go beyond that.
+              </p>
+              <p>
+                His Mermaid project is an example. They did a test session in a
+                smaller pool with only a couple of mermaids. Got the kinks out,
+                sourced a larger pool, 6 models, an assistant and another
+                photographer. Staged the pool then spent 13 hours in the water,
+                under the water. It was amazing and the images were fantastic!
+              </p>
+              <p>
+                The big project right now is Her Body Speaks
+                (http://herbodyspeaks.ca). The vision for this is to amass a
+                body of work with words that are an empowerment statement and a
+                role model inspiration event. The end goal is a book and Art
+                gallery display. Each woman gets makeup done then their
+                positive, powerful word choices are painted on their bodies.
+                Following that they step onto the white seamless background for
+                an empowering photo shoot. The session wraps with the current
+                writer, Terry Groves, interviewing them for their story.
+              </p>
+              <p>
+                Mark usually draws from his clients for his projects. He brings
+                in models if the project needs it. That is one of the perks of
+                being photographed by Mark, more adventures can wait!
+              </p>
+              <p>
+                Everyone at Inner Spirit loves body painting, so we host Paint
+                Jams at least every couple of months. (Covid causing a blip to
+                that!) You will find up to 6 painters, with a model each; free
+                to express any artistic vision that they wish. An amazing body
+                of painted body art is created!
+              </p>
+              <p>
+                You will find the empowerment thread emerge somewhere in his
+                personal work. Body embracing, confidence, expressions of female
+                power are underlying themes he does not stray far from.
+              </p>
+              <p>He is open to collaborative ideas too, just Contact Us !</p>
+            </div>
+          </Text>
         </Container>
       </Section>
       <CTA
