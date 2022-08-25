@@ -50,8 +50,8 @@ export default function Nervous() {
             <AnchorPrimary href="tel: 403-252-2662">
               <div>
                 <BsFillTelephoneFill />
+                <span>make the leap</span>
               </div>
-              make the leap
             </AnchorPrimary>
           </ButtonWrapper>
         </Wrapper>

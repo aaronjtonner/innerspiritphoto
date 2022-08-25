@@ -165,7 +165,7 @@ async function getPosts({ graphql, reporter }) {
   return graphqlResult.data.allWpPost.edges
 }
 
-// creates a page for created pages in WP
+// creates a contest page for created pages in WP
 // exports.createPages = async ({ actions, graphql }) => {
 //   const result = await graphql(`
 //     query MyQuery {

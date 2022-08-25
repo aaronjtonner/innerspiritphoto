@@ -12,8 +12,9 @@ export default function GalleryPortfolio() {
   return (
     <Section>
       <Container>
-        {data.wpPage.ACF_GalleryPage.gallery.map(({ localFile }) => {
-          console.log(localFile)
+        {data.wpPage.ACF_GalleryPage.gallery.map(gallery => {
+          console.log(gallery.sourceUrl);
+          <GatsbyImage image={gallery.sourceUrl} />
         })}
       </Container>
     </Section>
