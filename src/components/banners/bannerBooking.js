@@ -50,6 +50,7 @@ const Wrapper = styled.div`
   img {
     border-radius: var(--br);
     object-fit: cover;
+    border: 1px solid var(--clr-light);
   }
 `
 
@@ -107,9 +108,9 @@ export default function BannerBooking(props) {
             </a>
           </p>
           <Actions>
-            <ButtonLight className="btn-light" to="/book-now">
+            <ButtonPrimary className="btn-light" to="/book-now">
               book now &#x2192;
-            </ButtonLight>
+            </ButtonPrimary>
             <ButtonPrimary className="btn-accent" to="/book-now">
               book now &#x2192;
             </ButtonPrimary>

@@ -151,9 +151,9 @@ export const AnchorPrimary = styled.a`
   color: var(--txt-light);
   border: 1px solid var(--clr-accent);
 
-  // this is for when an icon is used inside too
-  div {
+  this is for when an icon is used inside too div {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 

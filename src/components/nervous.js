@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { AnchorPrimary, ButtonPrimary } from "./buttons"
 import { Container, Section } from "./layoutComponents"
-
+import { BsFillTelephoneFill } from "react-icons/bs"
 const Wrapper = styled.div`
   display: grid;
   grid-template-rows: auto 2em auto;
@@ -48,7 +48,10 @@ export default function Nervous() {
           </Text>
           <ButtonWrapper>
             <AnchorPrimary href="tel: 403-252-2662">
-              make the leap & call us &#x2192;
+              <div>
+                <BsFillTelephoneFill />
+              </div>
+              make the leap
             </AnchorPrimary>
           </ButtonWrapper>
         </Wrapper>

@@ -48,6 +48,7 @@ const Wrapper = styled.div`
   img {
     border-radius: var(--br);
     object-fit: cover;
+    border: 1px solid var(--clr-light);
   }
 `
 
@@ -97,7 +98,7 @@ export default function BlogBanner(props) {
         <Container className="container">
           <StaticImage
             className="stretch clip-img"
-            src="../../images/banners/blog-banner.jpg"
+            src="../../images/banners/banner-1.png"
             alt="The inner spirit photography blog"
           />
           <Text className="spacing">
@@ -111,7 +112,7 @@ export default function BlogBanner(props) {
               <hr />
               <h1 className="headline">{props.headline}</h1>
             </div>
-            <p>{props.description}</p>
+            <p>Welcome to the Inner Spirit Photography blog!</p>
             <Actions>
               <ButtonPrimary className="btn-light" to="/book-now">
                 contact us &#x2192;

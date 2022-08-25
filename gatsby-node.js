@@ -166,25 +166,25 @@ async function getPosts({ graphql, reporter }) {
 }
 
 // creates a page for created pages in WP
-exports.createPages = async ({ actions, graphql }) => {
-  const result = await graphql(`
-    query MyQuery {
-      allWpPage {
-        nodes {
-          id
-          uri
-        }
-      }
-    }
-  `)
-  const pages = result.data.allWpPage.nodes
-  pages.forEach(page => {
-    actions.createPage({
-      path: page.uri,
-      component: path.resolve("./src/templates/contest-template.js"),
-      context: {
-        id: page.id,
-      },
-    })
-  })
-}
+// exports.createPages = async ({ actions, graphql }) => {
+//   const result = await graphql(`
+//     query MyQuery {
+//       allWpPage {
+//         nodes {
+//           id
+//           uri
+//         }
+//       }
+//     }
+//   `)
+//   const pages = result.data.allWpPage.nodes
+//   pages.forEach(page => {
+//     actions.createPage({
+//       path: page.uri,
+//       component: path.resolve("./src/templates/contest-template.js"),
+//       context: {
+//         id: page.id,
+//       },
+//     })
+//   })
+// }
