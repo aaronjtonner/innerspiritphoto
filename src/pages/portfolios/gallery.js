@@ -6,8 +6,8 @@ import CTAsecondary from "../../components/CTAsecondary"
 import CTA from "../../components/CTA"
 import BannerImg from "../../images/boudoir-gallery.jpg"
 import { Container, Section } from "../../components/layoutComponents"
-import GalleryPortfolio from "../../components/Portfolios/GalleryPortfolio"
 import styled from "styled-components"
+import GalleryPortfolio from "../../components/Portfolios/GalleryPortfolio"
 
 const Text = styled.div`
   max-width: 100ch;

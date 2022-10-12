@@ -1,10 +1,10 @@
 import { useStaticQuery, graphql } from "gatsby"
 
-export const useGalleryQuery = () => {
+export const useBooksQuery = () => {
   const data = useStaticQuery(graphql`
-    query GalleryQuery {
-      wpPage(databaseId: { eq: 41 }) {
-        ACF_GalleryPage {
+    query BooksQuery {
+      wpPage(databaseId: { eq: 2475 }) {
+        ACF_BooksPage {
           gallery {
             id
             altText

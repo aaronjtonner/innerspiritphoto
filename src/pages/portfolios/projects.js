@@ -7,6 +7,7 @@ import CTA from "../../components/CTA"
 import BannerImg from "../../images/boudoir-projects-calgary.jpg"
 import { Container, Section } from "../../components/layoutComponents"
 import styled from "styled-components"
+import ProjectsPortfolio from "../../components/Portfolios/ProjectsPortfolio"
 
 const Text = styled.div`
   max-width: 100ch;
@@ -28,6 +29,7 @@ export default function Projects() {
         headline="projects"
         description="When I saw my photos, I broke into tears because I thought, I can't believe how beautiful that person is. - Deanna"
       />
+      <ProjectsPortfolio />
       <CTAsecondary />
       <Section>
         <Container>

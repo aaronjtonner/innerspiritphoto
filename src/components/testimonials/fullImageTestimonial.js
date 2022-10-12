@@ -85,9 +85,9 @@ export default function FullImageTestimonial(props) {
     <Section>
       <Container>
         <Wrapper>
-          <StaticImage
+          <img
             className="review-img"
-            src="../../images/calgary-boudoir-joy.jpg"
+            src={props.img}
             alt={props.alt}
           />
           <ReviewBox review={props.review} name={props.name} />

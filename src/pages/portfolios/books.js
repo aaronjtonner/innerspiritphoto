@@ -3,6 +3,7 @@ import BannerSecondary from "../../components/banners/bannerSecondary"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import CTAsecondary from "../../components/CTAsecondary"
+import BooksPortfolio from "../../components/Portfolios/BooksPortfolio"
 import CTA from "../../components/CTA"
 import BannerImg from "../../images/boudoir-books.jpg"
 import { Container, Section } from "../../components/layoutComponents"
@@ -28,6 +29,7 @@ export default function Books() {
         headline="Books"
         description="When I saw my photos, I broke into tears because I thought, I can't believe how beautiful that person is. - Deanna"
       />
+      <BooksPortfolio />
       <CTAsecondary />
       <Section>
         <Container>
