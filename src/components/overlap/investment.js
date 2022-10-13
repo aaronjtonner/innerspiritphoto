@@ -21,7 +21,7 @@ export default function Investment() {
             alt="calgary boudoir photography cost"
           />
           <TextBoxRight className="spacing text-right">
-            <h3 className="subhead accent caps">investment:</h3>
+            <h3 className="subhead accent caps">session & enlargements:</h3>
             <p>
               Our Signature Experience 4-hour Session is $495 (includes a $100
               credit toward image purchase).
@@ -31,8 +31,8 @@ export default function Investment() {
               credit toward image purchase).
             </p>
             <p>
-              Image collections, framed prints, and bound books range from $795
-              - $5000.
+              Image collections, framed prints, bound books and digital images
+              range from $795 - $5000.
             </p>
             <p>
               We offer <span className="bold">flexible layaway options</span>{" "}
@@ -80,7 +80,7 @@ export default function Investment() {
             </TextBoxLeft>
             <StaticImage
               className="img-right"
-              src="../../images/included-with-boudoir-session-calgary.jpg"
+              src="../../images/included-with-boudoir-sessions-calgary.jpg"
               alt="what's included with our calgary boudoir session"
             />
           </WrapperTextLeft>
@@ -105,14 +105,14 @@ export default function Investment() {
               <p>
                 <span className="bold">The Beyond Empowerment:</span>{" "}
                 Psychologist Dr. Bonnie Sullivan gives your experience more
-                depth, revelation, and empowerment. She gives you tools and
-                insights to get more personally from your session, and get a
-                lasting confidence boost.
+                depth, revelation, and empowerment. She gives you insights with
+                tools to maximize the personal value of your session. This
+                embeds the empowerment and confidence much deeper and longer.
               </p>
               <p>
-                <span className="bold">The Mesmerizing Shibari:</span>{" "}
-                Gracefully artful bondage integrating Japanese rope designs as
-                bondage or decorations, done by our skilled Rope Master.
+                <span className="bold">The Mesmerizing Shibari:</span> Artful
+                Japanese rope designs as graceful bondage or fashion designs,
+                done by our skilled Rope Master.
               </p>
             </TextBoxRight>
           </WrapperTextRight>

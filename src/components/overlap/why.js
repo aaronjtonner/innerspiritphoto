@@ -40,7 +40,7 @@ export default function Why() {
         <WrapperTextRight>
           <StaticImage
             className="img-left"
-            src="../../images/why-inner-spirit-does-boudoir.jpg"
+            src="../../images/why-we-do-nude-photography.jpg"
             alt="why we do boudoir, nudes, & beauty"
           />
           <TextBoxRight className="spacing text-right">
@@ -69,7 +69,7 @@ export default function Why() {
       <BottomWrapper>
         <StaticImage
           class="img-top"
-          src="../../images/do-something-bold.jpg"
+          src="../../images/doing-something-bold.jpg"
           alt="do something bold with photography"
         />
         <Container className="text-bottom">
@@ -103,7 +103,7 @@ export default function Why() {
           </TextBoxLeft>
           <StaticImage
             className="img-right"
-            src="../../images/nude-boudoir-beauty.jpg"
+            src="../../images/something-like-nude.jpg"
             alt="why we do boudoir, nudes, & beauty"
           />
         </WrapperTextLeft>

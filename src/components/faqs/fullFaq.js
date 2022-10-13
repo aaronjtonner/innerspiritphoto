@@ -41,6 +41,10 @@ const Text = styled.div`
 
 const AccordionContent = styled.div`
   display: ${({ item }) => (item ? "block" : "none")};
+
+  p {
+    font-size: var(--fs-b);
+  }
 `
 
 const ArrowImg = styled.img`
@@ -140,6 +144,28 @@ Our 40+ years of experience photographing over 5,000 women means we’re skilled
               
               If you are insecure about your beauty or appeal to men, working with a male photographer can be extremely encouraging, as he assures you that you are beautiful, just the way you are (and means it!). While compliments from a woman can be amazing, it can be uniquely validating to receive compliments from a man if you have insecurities in this area. 
               "
+            />
+            <AccordionItem
+              question="Do I have to do my own makeup and hair?"
+              answer="We provide professional makeup and hair styling with your session! There’s no need to worry
+about that."
+            />
+            <AccordionItem
+              question="Can I bring my own outfits? Do you have some?"
+              answer="We encourage you to bring outfits and props.
+We have a nice selection of robes, wraps and shirts as well as cool things like capes, latex
+dresses, wild shoes and cowboy wear. We recommend that you bring your own bras and
+panties and anything else you like."
+            />
+            <AccordionItem
+              question="I'm nervous! I don't know if I can do this!"
+              answer="Nearly everyone is nervous at first. Don’t worry, there is no pressure. It all happens very
+naturally, at your own pace. You’ll surprise yourself."
+            />
+            <AccordionItem
+              question="Can I do my own makeup and/or hair?"
+              answer="Yes, but we might give you a few suggestions. Jan will advise, help you or do it for you.
+Whatever you feel comfortable with is fine."
             />
           </div>
         </Wrapper>

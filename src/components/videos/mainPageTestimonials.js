@@ -76,11 +76,12 @@ export default function MainPageTestimonials() {
             <ReviewText className="center spacing accent">
               <h2 className="subhead caps">from baggy sweats to confidence</h2>
               <p className="italics">
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
-                id ipsam ab quisquam aspernatur cupiditate dignissimos voluptate
-                porro impedit commodi?"
+                "It turns out my presented bravado is really inside too, Mark
+                showed me that. I literally went from terrified in baggy sweats
+                to confidence in not much else. Being photographed unnerves me,
+                I don’t even look in mirrors. This experience changed all that."
               </p>
-              <p className="caps">customer name</p>
+              <p className="caps">Kenisha</p>
             </ReviewText>
           </Container>
         </Video>
@@ -95,13 +96,13 @@ export default function MainPageTestimonials() {
               title="Vertical Sample"
             />
             <ReviewText className="center spacing">
-              <h2 className="subhead caps">from baggy sweats to confidence</h2>
+              <h2 className="subhead caps">Nude but Elegant</h2>
               <p className="italics">
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
-                id ipsam ab quisquam aspernatur cupiditate dignissimos voluptate
-                porro impedit commodi?"
+                "Are you sure this is me? It is so elegant, It is nude but so
+                elegant. I love it. It is so worth it. It’s even better than my
+                first time, this is my favorite."
               </p>
-              <p className="caps">customer name</p>
+              <p className="caps">Renilda</p>
             </ReviewText>
           </Video2>
           <Video2 className="spacing">
@@ -112,13 +113,12 @@ export default function MainPageTestimonials() {
               title="Vertical Sample"
             />
             <ReviewText className="center spacing">
-              <h2 className="subhead caps">from baggy sweats to confidence</h2>
+              <h2 className="subhead caps">The Day was Empowering</h2>
               <p className="italics">
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
-                id ipsam ab quisquam aspernatur cupiditate dignissimos voluptate
-                porro impedit commodi?"
+                "I am in awe, just blown away. The day was empowering, I saw a
+                side of myself I never imagined! You have to do this!"
               </p>
-              <p className="caps">customer name</p>
+              <p className="caps">Allison Orange</p>
             </ReviewText>
           </Video2>
           <Video2 className="spacing">
@@ -129,13 +129,15 @@ export default function MainPageTestimonials() {
               title="Vertical Sample"
             />
             <ReviewText className="center spacing">
-              <h2 className="subhead caps">from baggy sweats to confidence</h2>
+              <h2 className="subhead caps">I did this for me</h2>
               <p className="italics">
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
-                id ipsam ab quisquam aspernatur cupiditate dignissimos voluptate
-                porro impedit commodi?"
+                "I will have wall prints all over my house. All my fav parts are
+                highlighted. I have some girlfriends excited to see these and
+                have their time. I did this for myself, It is intended for have
+                me feel better about myself. Once we started, I didn’t even
+                notice I was naked. I was so proud of myself."
               </p>
-              <p className="caps">customer name</p>
+              <p className="caps">Allison Moore</p>
             </ReviewText>
           </Video2>
         </GridAuto>

@@ -4,10 +4,10 @@ import Banner from "../components/banners/bannerPrimary"
 import Stats from "../components/stats"
 import FullImageTestimonial from "../components/testimonials/fullImageTestimonial"
 
-import BannerImg from "../images/banners/nude-in-water-experience-banner.jpg"
-import { Kerry } from "../images/testimonials/calgary-boudoir-testimonial-kerry.jpg"
-import { Rinilda } from "../images/testimonials/calgary-boudoir-testimonial-rinilda.jpg"
-import { Deanna } from "../images/calgary-boudoir-photographer-mercedes.jpg"
+import BannerImg from "../images/banners/experience-banner.jpg"
+import { Kerry } from "../images/testimonials/calgary-boudoir-kerry-review.jpg"
+import { Renilda } from "../images/testimonials/calgary-boudoir-renilda-review.jpg"
+import { Deanna } from "../images/testimonials/calgary-boudoir-deanna-review.jpg"
 import HowItWorks from "../components/overlap/howItWorks"
 import Investment from "../components/overlap/investment"
 import BeyondEmpowerment from "../components/videos/beyondEmpowerment"
@@ -43,7 +43,7 @@ export default function Experience() {
       <CTAsecondary />
       <WhatToDo />
       <FullImageTestimonial
-        img={Rinilda}
+        img={Renilda}
         alt="review of calgary boudoir photographer"
         review="For me, the experience was about being bold and being true to myself and knowing that I can accomplish anything. I can be who I want to be, without hesitation."
         name="renilda"

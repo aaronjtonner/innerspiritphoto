@@ -12,6 +12,7 @@ const BottomWrapper = styled.div`
     grid-column: 1 / -1;
     z-index: 1;
     min-height: 600px;
+    height: 800px;
     object-fit: cover;
 
     @media screen and (max-width: 48em) {
@@ -51,7 +52,7 @@ export default function WhatToDo() {
           <BottomWrapper>
             <StaticImage
               class="img-top"
-              src="../../images/bound-boudoir-photography-book-calgary.jpg"
+              src="../../images/bound-boudoir-photography-book-in-calgary.jpg"
               alt="bound book of boudoir photography session"
             />
             <TextBox>
@@ -66,7 +67,7 @@ export default function WhatToDo() {
           <BottomWrapper>
             <StaticImage
               class="img-top"
-              src="../../images/boudoir-wall-art-calgary.jpg"
+              src="../../images/boudoir-wall-art-in-calgary.jpg"
               alt="wall art of boudoir photography session"
             />
             <TextBox>

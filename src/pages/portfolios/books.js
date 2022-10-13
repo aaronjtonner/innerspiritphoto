@@ -5,7 +5,7 @@ import SEO from "../../components/seo"
 import CTAsecondary from "../../components/CTAsecondary"
 import BooksPortfolio from "../../components/Portfolios/BooksPortfolio"
 import CTA from "../../components/CTA"
-import BannerImg from "../../images/boudoir-books.jpg"
+import BannerImg from "../../images/banners/books-banner.jpg"
 import { Container, Section } from "../../components/layoutComponents"
 import styled from "styled-components"
 

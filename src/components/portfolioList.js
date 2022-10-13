@@ -43,7 +43,7 @@ export default function PortfolioList() {
           <GridItem to="/portfolios/gallery">
             <StaticImage
               className="img"
-              src="../images/boudoir-gallery.jpg"
+              src="../images/boudoir-gallery-link.jpg"
               alt="calgary boudoir gallery"
             />
             <ButtonWrapper>
@@ -55,7 +55,7 @@ export default function PortfolioList() {
           <GridItem to="/portfolios/books">
             <StaticImage
               className="img"
-              src="../images/boudoir-books.jpg"
+              src="../images/boudoir-books-link.jpg"
               alt="calgary boudoir books portfolio"
             />
             <ButtonWrapper>
@@ -67,7 +67,7 @@ export default function PortfolioList() {
           <GridItem to="/portfolios/wall-art">
             <StaticImage
               className="img"
-              src="../images/boudoir-wall-art.jpg"
+              src="../images/boudoir-wall-art-link.jpg"
               alt="calgary boudoir wall art"
             />
             <ButtonWrapper>
@@ -79,7 +79,7 @@ export default function PortfolioList() {
           <GridItem to="/portfolios/projects">
             <StaticImage
               className="img"
-              src="../images/boudoir-projects-calgary.jpg"
+              src="../images/boudoir-projects-link.jpg"
               alt="calgary boudoir projects"
             />
             <ButtonWrapper>

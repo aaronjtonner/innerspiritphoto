@@ -48,7 +48,6 @@ const Wrapper = styled.div`
   img {
     border-radius: var(--br);
     object-fit: cover;
-    border: 1px solid var(--clr-light);
   }
 `
 

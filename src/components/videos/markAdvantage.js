@@ -47,6 +47,11 @@ export default function MarkAdvantage() {
                 <span className="italics">male photographer</span> with a female
                 team
               </h2>
+              <p>
+                Psychologist, Dr. Bonnie Sullivan discovered that women feel
+                substantially more empowered and confident after a session with
+                a safe male photographer.
+              </p>
             </Text>
             <iframe
               src="https://player.vimeo.com/video/741234082?h=2dcdadd194&badge=0&autopause=0&player_id=0&app_id=58479"
@@ -67,28 +72,28 @@ export default function MarkAdvantage() {
           <div className="center">
             <h3 className="subhead accent caps">advantage 1</h3>
             <p className="accent">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
-              quas. Asperiores tempora corporis recusandae reiciendis, quidem
-              unde saepe cumque molestias dolor sapiente, explicabo aspernatur,
-              repellat nesciunt accusamus aliquam eos fugit.
+              With a Safe Male Photographer, the male/female dynamic kicks in,
+              opening up her creativity. This dynamic pulls out a woman’s rich
+              feminity. Her look into the camera becomes more authentically
+              sensual, playful, and flirty, all while brimming with confidence.
             </p>
           </div>
           <div className="center">
             <h3 className="subhead accent caps">advantage 2</h3>
             <p className="accent">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
-              quas. Asperiores tempora corporis recusandae reiciendis, quidem
-              unde saepe cumque molestias dolor sapiente, explicabo aspernatur,
-              repellat nesciunt accusamus aliquam eos fugit.
+              There is incredible power in being safe and totally in control of
+              a situation. Like when you are intentionally and openly being
+              personally expressive with a male photographer. It is an
+              experience that alters and grows your sense of personal power and
+              confidence.
             </p>
           </div>
           <div className="center">
             <h3 className="subhead accent caps">advantage 3</h3>
             <p className="accent">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
-              quas. Asperiores tempora corporis recusandae reiciendis, quidem
-              unde saepe cumque molestias dolor sapiente, explicabo aspernatur,
-              repellat nesciunt accusamus aliquam eos fugit.
+              “The authentic warmth in Mark’s voice encourages a woman to
+              respond with confidence. Allowing her to express herself freely,
+              even boldly.”
             </p>
           </div>
         </Flex>

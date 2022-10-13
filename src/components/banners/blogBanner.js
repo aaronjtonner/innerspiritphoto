@@ -48,7 +48,6 @@ const Wrapper = styled.div`
   img {
     border-radius: var(--br);
     object-fit: cover;
-    border: 1px solid var(--clr-light);
   }
 `
 
@@ -98,7 +97,7 @@ export default function BlogBanner(props) {
         <Container className="container">
           <StaticImage
             className="stretch clip-img"
-            src="../../images/banners/banner-1.png"
+            src="../../images/banners/blog-banner.jpg"
             alt="The inner spirit photography blog"
           />
           <Text className="spacing">

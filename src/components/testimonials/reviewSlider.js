@@ -108,7 +108,7 @@ export default function ReviewSlider() {
             <ItemGrid>
               <StaticImage
                 className="slider-img"
-                src="../../images/calgary-boudoir-joy.jpg"
+                src="../../images/calgary-boudoir-joy-review.jpg"
                 alt="calgary boudoir photography google review"
               />
               <ReviewBox
@@ -119,13 +119,13 @@ export default function ReviewSlider() {
             <ItemGrid>
               <StaticImage
                 className="slider-img"
-                src="../../images/calgary-boudoir-photography-kolbi.jpg"
+                src="../../images/calgary-boudoir-kb-review.jpg"
                 alt="calgary boudoir photography google review"
               />
               <ReviewBox
                 className="review-box"
                 review="I love the unexpected creativity of Mark's studio. I arrive and I get to be myself. I just finished my 6th session, it was as different and inspiring as the rest. Each one is a new adventure. No other studio touches what Mark does, he is on a whole different level. Mark gives you the confidence to be beautiful and he will find that beauty in every shot. You will never be disappointed in his professionalism, creativity and the beauty of you"
-                name="Kolbi Brost"
+                name="K.B"
               />
             </ItemGrid>
             <ItemGrid>
