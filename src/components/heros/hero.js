@@ -58,6 +58,10 @@ const Video = styled.div`
     width: 100%;
     border-radius: var(--br);
     object-fit: cover;
+
+    @media screen and (max-width: 400px) {
+      height: auto;
+    }
   }
 `
 

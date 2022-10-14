@@ -7,6 +7,10 @@ const Video = styled.div`
     height: 550px;
     width: 100%;
     border-radius: var(--br);
+
+    @media screen and (max-width: 1510px) {
+      height: auto;
+    }
   }
 `
 
@@ -25,6 +29,7 @@ export default function HomeMain() {
         <Video>
           <iframe
             src="https://player.vimeo.com/video/743213878?h=6fa328954f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameBorder={0}
             allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen
             title="Widescreen Sample.mov"

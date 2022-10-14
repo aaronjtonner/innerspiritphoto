@@ -8,7 +8,7 @@ import Logo from "../../images/inner-spirit-logo-text-white.svg"
 
 const device = {
   sm: "18em",
-  md: "80em",
+  md: "91em",
 }
 
 const Header = styled.header`

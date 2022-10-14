@@ -23,6 +23,10 @@ const Video = styled.div`
     height: 550px;
     width: 100%;
     border-radius: var(--br);
+
+    @media screen and (max-width: 1200px) {
+      height: auto;
+    }
   }
 `
 
@@ -55,6 +59,7 @@ export default function MarkAdvantage() {
             </Text>
             <iframe
               src="https://player.vimeo.com/video/743214161?h=807d640dfd&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              frameBorder={0}
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
               title="Widescreen Sample.mov"

@@ -22,6 +22,10 @@ const Video = styled.div`
     height: 550px;
     width: 100%;
     border-radius: var(--br);
+
+    @media screen and (max-width: 1000px) {
+      height: auto;
+    }
   }
 `
 
@@ -45,10 +49,14 @@ const GridAuto = styled.div`
 
 const Video2 = styled.div`
   iframe {
-    height: 550px;
+    height: 450px;
     width: 100%;
     border-radius: var(--br);
     object-fit: cover;
+
+    @media screen and (max-width: 1500px) {
+      height: auto;
+    }
   }
 `
 
@@ -75,6 +83,7 @@ export default function MainPageTestimonials() {
             </Text>
             <iframe
               src="https://player.vimeo.com/video/743214435?h=892cd0c99b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              frameBorder={0}
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
               title="Widescreen Sample.mov"
@@ -97,6 +106,7 @@ export default function MainPageTestimonials() {
           <Video2 className="spacing">
             <iframe
               src="https://player.vimeo.com/video/743214578?h=76cb221d47&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              frameBorder={0}
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
               title="Vertical Sample"
@@ -114,6 +124,7 @@ export default function MainPageTestimonials() {
           <Video2 className="spacing">
             <iframe
               src="https://player.vimeo.com/video/743213628?h=412ec769f5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              frameBorder={0}
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
               title="Vertical Sample"
@@ -130,6 +141,7 @@ export default function MainPageTestimonials() {
           <Video2 className="spacing">
             <iframe
               src="https://player.vimeo.com/video/743213750?h=7891e55ab4&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              frameBorder={0}
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
               title="Vertical Sample"
