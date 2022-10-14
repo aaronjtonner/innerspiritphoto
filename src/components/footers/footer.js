@@ -313,6 +313,12 @@ export default function Footer() {
                   <StyledLink to="/portfolios/projects">projects</StyledLink>
                 </li>
                 <li>
+                  <StyledLink to="/resources">resources</StyledLink>
+                </li>
+                <li>
+                  <StyledLink to="/resources/faq">FAQ</StyledLink>
+                </li>
+                <li>
                   <StyledLink to="/book-now">Contact & Booking</StyledLink>
                 </li>
               </ul>

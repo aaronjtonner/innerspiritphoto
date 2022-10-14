@@ -16,7 +16,7 @@ import HomeMain from "../components/videos/homeMain"
 import MainPageTestimonials from "../components/videos/mainPageTestimonials"
 import MarkAdvantage from "../components/videos/markAdvantage"
 
-import { Mercedes } from "../images/calgary-boudoir-mercedes-review.jpg"
+import Mercedes from "../images/calgary-boudoir-mercedes-review.jpg"
 
 export default function Index() {
   return (

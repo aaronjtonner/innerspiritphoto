@@ -100,7 +100,7 @@ export default function HeroBasic() {
         <Flex className="spacing-lg">
           <Video className="spacing-lg">
             <iframe
-              src="https://player.vimeo.com/video/741244788?h=49cdbe3471&badge=0&autopause=0&player_id=0&app_id=58479"
+              src="https://player.vimeo.com/video/743211749?h=a77b06545f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
               title="Square Sample.mov"

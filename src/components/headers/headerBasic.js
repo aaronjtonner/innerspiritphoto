@@ -370,12 +370,21 @@ export default function HeaderBasic() {
                     </li>
                   </ul>
                 </Dropdown>
+                <Dropdown>
+                  <StyledLink to="/resources">
+                    Resources
+                    <IoMdArrowDropdown size={20} />
+                  </StyledLink>
+                  <ul>
+                    <li>
+                      <StyledLink to="/resources/faq">faq</StyledLink>
+                    </li>
+                  </ul>
+                </Dropdown>
                 <li>
                   <StyledLink to="/blog">blog</StyledLink>
                 </li>
-                <li>
-                  <StyledLink to="/faq">faq</StyledLink>
-                </li>
+
                 <li>
                   <StyledLink to="/book-now">contact</StyledLink>
                 </li>

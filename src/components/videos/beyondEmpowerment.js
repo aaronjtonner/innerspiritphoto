@@ -47,7 +47,7 @@ export default function BeyondEmpowerment() {
               <h2 className="headline">the beyond empowerment session</h2>
             </Text>
             <iframe
-              src="https://player.vimeo.com/video/741234082?h=2dcdadd194&badge=0&autopause=0&player_id=0&app_id=58479"
+              src="https://player.vimeo.com/video/743214161?h=807d640dfd&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
               title="Widescreen Sample.mov"

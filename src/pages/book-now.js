@@ -9,7 +9,7 @@ import Guarantee from "../components/guarantee"
 import FullImageTestimonial from "../components/testimonials/fullImageTestimonial"
 import CTA from "../components/CTA"
 
-import { Barb } from "../images/testimonials/calgary-boudoir-testimonial-barb.jpg"
+import Barb from "../images/testimonials/calgary-boudoir-testimonial-barb.jpg"
 
 export default function BookNow() {
   return (

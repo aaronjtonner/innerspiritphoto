@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Container, GridAuto, Section } from "../layoutComponents"
+import { Container, Section } from "../layoutComponents"
 
 const Wrapper = styled.div`
   display: grid;
@@ -36,6 +36,12 @@ const ReviewText = styled.div`
   margin-right: auto;
 `
 
+const GridAuto = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+  grid-gap: 2em;
+`
+
 const Video2 = styled.div`
   iframe {
     height: 550px;
@@ -65,7 +71,7 @@ export default function ReassuranceVideoTestimonial() {
               </h2>
             </Text>
             <iframe
-              src="https://player.vimeo.com/video/741234082?h=2dcdadd194&badge=0&autopause=0&player_id=0&app_id=58479"
+              src="https://player.vimeo.com/video/743214435?h=892cd0c99b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
               title="Widescreen Sample.mov"
@@ -87,7 +93,7 @@ export default function ReassuranceVideoTestimonial() {
         <GridAuto>
           <Video2 className="spacing">
             <iframe
-              src="https://player.vimeo.com/video/741245031?h=b531f2f7a5&badge=0&autopause=0&player_id=0&app_id=58479"
+              src="https://player.vimeo.com/video/743214578?h=76cb221d47&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
               title="Vertical Sample"
@@ -104,7 +110,7 @@ export default function ReassuranceVideoTestimonial() {
           </Video2>
           <Video2 className="spacing">
             <iframe
-              src="https://player.vimeo.com/video/741245031?h=b531f2f7a5&badge=0&autopause=0&player_id=0&app_id=58479"
+              src="https://player.vimeo.com/video/743213628?h=412ec769f5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
               title="Vertical Sample"
@@ -120,7 +126,7 @@ export default function ReassuranceVideoTestimonial() {
           </Video2>
           <Video2 className="spacing">
             <iframe
-              src="https://player.vimeo.com/video/741245031?h=b531f2f7a5&badge=0&autopause=0&player_id=0&app_id=58479"
+              src="https://player.vimeo.com/video/743213750?h=7891e55ab4&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
               title="Vertical Sample"

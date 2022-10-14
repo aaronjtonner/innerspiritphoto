@@ -3,7 +3,7 @@ import Banner from "../components/banners/bannerPrimary"
 import Layout from "../components/layout"
 import PortfolioList from "../components/portfolioList"
 import CTA from "../components/CTA"
-import BannerImg from "../images/banners/portfolios-banner.jpg"
+import BannerImg from "../images/banners/portfolio-banner.jpg"
 
 export default function Portfolios() {
   return (
