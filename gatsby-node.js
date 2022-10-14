@@ -27,7 +27,7 @@ exports.createPages = async gatsbyUtilities => {
   await createBlogPostArchive({ posts, gatsbyUtilities })
 
   // create contest page
-  await createContestPage({ posts, gatsbyUtilities })
+  // await createContestPage({ posts, gatsbyUtilities })
 }
 
 /**
