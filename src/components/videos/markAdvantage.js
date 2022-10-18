@@ -19,15 +19,15 @@ const Video = styled.div`
   grid-row: 2 / -1;
   grid-column: 1 / -1;
   z-index: 2;
-  iframe {
-    height: 550px;
-    width: 100%;
-    border-radius: var(--br);
+  // iframe {
+  //   height: 550px;
+  //   width: 100%;
+  //   border-radius: var(--br);
 
-    @media screen and (max-width: 1200px) {
-      height: auto;
-    }
-  }
+  //   @media screen and (max-width: 1200px) {
+  //     height: auto;
+  //   }
+  // }
 `
 
 const Text = styled.div`
@@ -57,13 +57,22 @@ export default function MarkAdvantage() {
                 a safe male photographer.
               </p>
             </Text>
-            <iframe
-              src="https://player.vimeo.com/video/743214161?h=807d640dfd&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-              frameBorder={0}
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-              title="Widescreen Sample.mov"
-            />
+            <div style={{ padding: "42.6% 0 0 0", position: "relative" }}>
+              <iframe
+                src="https://player.vimeo.com/video/743214161?h=807d640dfd&badge=0&autopause=0&player_id=0&app_id=58479"
+                frameBorder={0}
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+                title="Widescreen 2 Placeholder"
+              />
+            </div>
             <center>
               <AnchorUnderline href="">
                 watch the full video &#x2192;

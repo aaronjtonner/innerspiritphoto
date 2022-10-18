@@ -18,15 +18,15 @@ const Video = styled.div`
   grid-row: 2 / -1;
   grid-column: 1 / -1;
   z-index: 2;
-  iframe {
-    height: 550px;
-    width: 100%;
-    border-radius: var(--br);
+  // iframe {
+  //   height: 550px;
+  //   width: 100%;
+  //   border-radius: var(--br);
 
-    @media screen and (max-width: 1000px) {
-      height: auto;
-    }
-  }
+  //   @media screen and (max-width: 1000px) {
+  //     height: auto;
+  //   }
+  // }
 `
 
 const Text = styled.div`
@@ -48,16 +48,16 @@ const GridAuto = styled.div`
 `
 
 const Video2 = styled.div`
-  iframe {
-    height: 450px;
-    width: 100%;
-    border-radius: var(--br);
-    object-fit: cover;
+  // iframe {
+  //   height: 450px;
+  //   width: 100%;
+  //   border-radius: var(--br);
+  //   object-fit: cover;
 
-    @media screen and (max-width: 1500px) {
-      height: auto;
-    }
-  }
+  //   @media screen and (max-width: 1500px) {
+  //     height: auto;
+  //   }
+  // }
 `
 
 const Spacer = styled.div`
@@ -81,13 +81,22 @@ export default function MainPageTestimonials() {
                 that...{" "}
               </h2>
             </Text>
-            <iframe
-              src="https://player.vimeo.com/video/743214435?h=892cd0c99b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-              frameBorder={0}
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-              title="Widescreen Sample.mov"
-            />
+            <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+              <iframe
+                src="https://player.vimeo.com/video/743214435?h=892cd0c99b&badge=0&autopause=0&player_id=0&app_id=58479"
+                frameBorder={0}
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+                title="HD 2 Placeholder"
+              />
+            </div>
             <ReviewText className="center spacing accent">
               <h2 className="subhead caps">from baggy sweats to confidence</h2>
               <p className="italics">
@@ -104,13 +113,22 @@ export default function MainPageTestimonials() {
       <Container>
         <GridAuto>
           <Video2 className="spacing">
-            <iframe
-              src="https://player.vimeo.com/video/743214578?h=76cb221d47&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-              frameBorder={0}
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-              title="Vertical Sample"
-            />
+            <div style={{ padding: "100% 0 0 0", position: "relative" }}>
+              <iframe
+                src="https://player.vimeo.com/video/743213750?h=7891e55ab4&badge=0&autopause=0&player_id=0&app_id=58479"
+                frameBorder={0}
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+                title="Testimonial 3 Placeholder"
+              />
+            </div>
             <ReviewText className="center spacing">
               <h2 className="subhead caps">Nude but Elegant</h2>
               <p className="italics">
@@ -122,13 +140,22 @@ export default function MainPageTestimonials() {
             </ReviewText>
           </Video2>
           <Video2 className="spacing">
-            <iframe
-              src="https://player.vimeo.com/video/743213628?h=412ec769f5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-              frameBorder={0}
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-              title="Vertical Sample"
-            />
+            <div style={{ padding: "100% 0 0 0", position: "relative" }}>
+              <iframe
+                src="https://player.vimeo.com/video/743213628?h=412ec769f5&badge=0&autopause=0&player_id=0&app_id=58479"
+                frameBorder={0}
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+                title="Testimonial 2 Placeholder.mov"
+              />
+            </div>
             <ReviewText className="center spacing">
               <h2 className="subhead caps">The Day was Empowering</h2>
               <p className="italics">
@@ -139,13 +166,22 @@ export default function MainPageTestimonials() {
             </ReviewText>
           </Video2>
           <Video2 className="spacing">
-            <iframe
-              src="https://player.vimeo.com/video/743213750?h=7891e55ab4&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-              frameBorder={0}
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-              title="Vertical Sample"
-            />
+            <div style={{ padding: "100% 0 0 0", position: "relative" }}>
+              <iframe
+                src="https://player.vimeo.com/video/743214578?h=76cb221d47&badge=0&autopause=0&player_id=0&app_id=58479"
+                frameBorder={0}
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+                title="Testimonial 1 Placeholder"
+              />
+            </div>
             <ReviewText className="center spacing">
               <h2 className="subhead caps">I did this for me</h2>
               <p className="italics">

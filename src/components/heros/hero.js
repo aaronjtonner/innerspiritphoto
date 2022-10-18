@@ -53,16 +53,16 @@ const Text = styled.div`
 `
 
 const Video = styled.div`
-  iframe {
-    height: 550px;
-    width: 100%;
-    border-radius: var(--br);
-    object-fit: cover;
+  // iframe {
+  //   height: 550px;
+  //   width: 100%;
+  //   border-radius: var(--br);
+  //   object-fit: cover;
 
-    @media screen and (max-width: 400px) {
-      height: auto;
-    }
-  }
+  //   @media screen and (max-width: 400px) {
+  //     height: auto;
+  //   }
+  // }
 `
 
 const ActionsDesktop = styled.div`
@@ -103,17 +103,35 @@ export default function HeroBasic() {
       <Container>
         <Flex className="spacing-lg">
           <Video className="spacing-lg">
-            <iframe
+            {/* <iframe
               src="https://player.vimeo.com/video/743211749?h=a77b06545f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
               title="Square Sample.mov"
-            />
+              frameBorder={0}
+            /> */}
+            <div style={{ padding: "100% 0 0 0", position: "relative" }}>
+              <iframe
+                src="https://player.vimeo.com/video/743211749?h=a77b06545f&badge=0&autopause=0&player_id=0&app_id=58479"
+                frameBorder={0}
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+                title="Home Page Nudes-1080p.mp4"
+              />
+            </div>
             <p className="italics subhead">
               “When I saw my photos, I broke into tears because I thought, I
               can't believe how beautiful that person is.” - Deanna
             </p>
           </Video>
+
           <Text className="spacing-md">
             <h1 className="headline">
               <span className="span-1">the Creative</span>{" "}
