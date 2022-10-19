@@ -45,12 +45,14 @@ const FlexMobile = styled.div`
 
 export default function MeetMark2() {
   return (
-    <Section id="mark" className="spacing">
+    <Section>
       <Container>
         <FlexDesktop>
           <Text className="spacing">
             <div>
-              <h2 className="headline accent">meet mark laurie</h2>
+              <h2 id="mark" className="headline accent">
+                meet mark laurie
+              </h2>
               {/* <h3 className="subhead upper accent italics">
                 your boudoir photographer
               </h3> */}
@@ -79,7 +81,7 @@ export default function MeetMark2() {
               Alberta with his wife, Jan, and his cat, Lucy. (Well, admittedly,
               getting Lucy to hike is still a work in progress…)
             </p>
-            <Stats>
+            {/* <Stats>
               <Flex>
                 <div className="italics">
                   <p>Photographed</p>
@@ -97,7 +99,7 @@ export default function MeetMark2() {
                   <p className="teriatary">Years</p>
                 </div>
               </Flex>
-            </Stats>
+            </Stats> */}
           </Text>
           <div>
             <img
@@ -147,7 +149,7 @@ export default function MeetMark2() {
               He’s not alone, an incredible team of women, along with Jan, his
               partner and wife, makes your time with Mark exceptional.
             </p>
-            <Stats>
+            {/* <Stats>
               <Flex>
                 <div className="italics">
                   <p>Photographed</p>
@@ -165,14 +167,13 @@ export default function MeetMark2() {
                   <p className="teriatary">Years</p>
                 </div>
               </Flex>
-            </Stats>
+            </Stats> */}
             <ButtonUnderline to="/about">
               more about mark &#x2192;
             </ButtonUnderline>
           </Text>
         </FlexMobile>
       </Container>
-      <Awards />
     </Section>
   )
 }

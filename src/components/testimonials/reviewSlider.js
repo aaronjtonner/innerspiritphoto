@@ -113,7 +113,7 @@ export default function ReviewSlider() {
               />
               <ReviewBox
                 review="At first I resisted, saying it was extravagant and unnecessary, but the more I talked to Mark and saw his work I realized it was a fantastic opportunity. We shot a mix of boudoir, sexy and sporty poses and once I saw the completed album,  my confidence soared! I was a huge fan from that point on. Do this now for yourself or a loved one. You will never stop enjoying the results!"
-                name="Joy Buckley"
+                name="Joy B."
               />
             </ItemGrid>
             <ItemGrid>
@@ -125,7 +125,7 @@ export default function ReviewSlider() {
               <ReviewBox
                 className="review-box"
                 review="I love the unexpected creativity of Mark's studio. I arrive and I get to be myself. I just finished my 6th session, it was as different and inspiring as the rest. Each one is a new adventure. No other studio touches what Mark does, he is on a whole different level. Mark gives you the confidence to be beautiful and he will find that beauty in every shot. You will never be disappointed in his professionalism, creativity and the beauty of you"
-                name="K.B"
+                name="Kathy B."
               />
             </ItemGrid>
             <ItemGrid>
@@ -137,7 +137,7 @@ export default function ReviewSlider() {
               <ReviewBox
                 className="review-box"
                 review="Mark was instrumental in changing the view my wife had of herself after three kids.  His thoughtful input, witty charm and great photography skills made for a memorable makeover session.  She has gone from hiding behind baggy sweats to wearing the clothes of a confident and sexy woman!"
-                name="Robin Hogg"
+                name="Robin H."
               />
             </ItemGrid>
           </Slider>

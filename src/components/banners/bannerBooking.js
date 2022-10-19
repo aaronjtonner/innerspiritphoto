@@ -80,6 +80,12 @@ const Text = styled.div`
     color: var(--txt-light);
     display: inline-block;
   }
+
+  a {
+    @media screen and (max-width: 74em) {
+      color: var(--txt-dark);
+    }
+  }
 `
 
 // banner with only 2 links in the breadcrumb
@@ -106,14 +112,6 @@ export default function BannerBooking(props) {
               403-252-2662
             </a>
           </p>
-          <Actions>
-            <ButtonPrimary className="btn-light" to="/book-now">
-              book now &#x2192;
-            </ButtonPrimary>
-            <ButtonPrimary className="btn-accent" to="/book-now">
-              book now &#x2192;
-            </ButtonPrimary>
-          </Actions>
         </Text>
       </Container>
     </Wrapper>

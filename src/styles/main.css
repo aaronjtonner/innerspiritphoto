@@ -95,9 +95,10 @@ p {
   margin: 0;
 }
 
-p{
+p {
   font-family: var(--ff-optima-r);
   line-height: 1.6;
+  font-size: var(--fs-b);
 }
 
 h2,

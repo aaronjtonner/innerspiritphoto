@@ -2,7 +2,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import styled from "styled-components"
 import { AnchorInline, ButtonPrimary } from "./buttons"
-import { Actions, Container, Flex, Section } from "./layoutComponents"
+import { Actions, Container, Section } from "./layoutComponents"
 
 const Wrapper = styled.div`
   background: var(--clr-dark);
@@ -10,6 +10,31 @@ const Wrapper = styled.div`
   .cta-img {
     border-radius: vavr(--br);
     border: 1px solid var(--clr-light);
+    width: 80%;
+  }
+`
+
+const Flex = styled.div`
+  display: flex;
+  align-items: center;
+  img {
+    /* width: 100%; */
+  }
+  @media screen and (max-width: 57em) {
+    flex-direction: column;
+  }
+
+  & > * {
+    width: 100%;
+  }
+
+  & > * + * {
+    margin-left: 2em;
+
+    @media screen and (max-width: 57em) {
+      margin-left: 0;
+      margin-top: var(--spacer);
+    }
   }
 `
 

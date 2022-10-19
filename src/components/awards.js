@@ -5,7 +5,7 @@ import { AnchorInline } from "./buttons"
 import { Container, Section, Flex } from "./layoutComponents"
 
 const ImageStyle = {
-  width: "160px",
+  width: "200px",
 }
 const ImageStylePpoc = {
   width: "80px",

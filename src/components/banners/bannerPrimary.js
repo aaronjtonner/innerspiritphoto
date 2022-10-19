@@ -110,10 +110,10 @@ export default function Banner(props) {
 
             <Actions>
               <ButtonPrimary className="btn-light" to="/book-now">
-                book now &#x2192;
+                book planning session now &#x2192;
               </ButtonPrimary>
               <ButtonPrimary className="btn-accent" to="/book-now">
-                book now &#x2192;
+                book planning session now &#x2192;
               </ButtonPrimary>
             </Actions>
             <p>{props.description}</p>

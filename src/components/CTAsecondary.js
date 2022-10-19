@@ -41,7 +41,9 @@ export default function CTAsecondary() {
               photography session can empower you to start feeling better in
               your own skin!{" "}
             </p>
-            <ButtonPrimary to="/book-now">book now &#x2192;</ButtonPrimary>
+            <ButtonPrimary to="/book-now">
+              book planning session now &#x2192;
+            </ButtonPrimary>
           </Text>
         </Container>
       </Section>
