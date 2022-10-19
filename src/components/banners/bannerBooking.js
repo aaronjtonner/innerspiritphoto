@@ -56,6 +56,17 @@ const Wrapper = styled.div`
 const Text = styled.div`
   color: var(--txt-light);
 
+  h1 {
+    font-size: var(--fs-1);
+    line-height: 1.1;
+    font-family: var(--ff-trajan);
+    @media screen and (max-width: 26em) {
+      font-size: var(--fs-2);
+      line-height: 1.1;
+      font-family: var(--ff-trajan);
+    }
+  }
+
   .btn-accent {
     display: none;
   }
@@ -102,7 +113,7 @@ export default function BannerBooking(props) {
               link2={props.link2}
             />
             <hr />
-            <h1 className="headline">{props.headline}</h1>
+            <h1 className="">{props.headline}</h1>
           </div>
           <p className="subhead caps">
             can't wait? call us:{" "}
