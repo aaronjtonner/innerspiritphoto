@@ -4,7 +4,11 @@ import { Container, Section } from "../layoutComponents"
 
 const Wrapper = styled.div`
   display: grid;
-  grid-template-rows: 4em auto 12em;
+  grid-template-rows: 4em auto 20em;
+
+  @media screen and (max-width: 25em) {
+    grid-template-rows: 4em auto 25em;
+  }
 `
 
 const Bg = styled.div`
@@ -38,6 +42,7 @@ const ReviewText = styled.div`
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: var(--spacer-lg);
 `
 
 const GridAuto = styled.div`
@@ -48,7 +53,7 @@ const GridAuto = styled.div`
 
 const Video2 = styled.div`
   // iframe {
-  //   height: 550px;
+  //   height: 450px;
   //   width: 100%;
   //   border-radius: var(--br);
   //   object-fit: cover;
@@ -59,9 +64,13 @@ const Video2 = styled.div`
   // }
 `
 
+const Spacer = styled.div`
+  margin-bottom: var(--spacer-lg);
+`
+
 export default function ReassuranceVideoTestimonial() {
   return (
-    <Section className="spacing-lg">
+    <Section>
       <Wrapper>
         <Bg>
           <div></div>
@@ -126,7 +135,6 @@ export default function ReassuranceVideoTestimonial() {
                 title="Testimonial 3 Placeholder"
               />
             </div>
-
             <ReviewText className="center spacing">
               <h2 className="subhead caps">Nude but Elegant</h2>
               <p className="italics">

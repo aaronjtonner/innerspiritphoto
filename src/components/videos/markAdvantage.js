@@ -6,6 +6,10 @@ import { Container, GridAuto, Section, Flex } from "../layoutComponents"
 const Wrapper = styled.div`
   display: grid;
   grid-template-rows: 4em auto 12em;
+
+  @media screen and (max-width: 32em) {
+    grid-template-rows: 4em auto 6em;
+  }
 `
 
 const Bg = styled.div`

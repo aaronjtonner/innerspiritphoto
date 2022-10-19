@@ -11,14 +11,8 @@ const BottomWrapper = styled.div`
     grid-row: 1 / span 2;
     grid-column: 1 / -1;
     z-index: 1;
-    min-height: 600px;
     height: 800px;
     object-fit: cover;
-
-    @media screen and (max-width: 48em) {
-      height: 400px;
-      width: 400px;
-    }
   }
 `
 

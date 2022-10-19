@@ -5,6 +5,10 @@ import { Container, Section } from "../layoutComponents"
 const Wrapper = styled.div`
   display: grid;
   grid-template-rows: 4em auto 20em;
+
+  @media screen and (max-width: 25em) {
+    grid-template-rows: 4em auto 25em;
+  }
 `
 
 const Bg = styled.div`
