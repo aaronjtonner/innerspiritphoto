@@ -11,18 +11,6 @@ export const useWallArtQuery = () => {
             localFile {
               childImageSharp {
                 gatsbyImageData
-                fluid {
-                  base64
-                  tracedSVG
-                  srcWebp
-                  srcSetWebp
-                  originalImg
-                  originalName
-                  src
-                }
-                fixed {
-                  src
-                }
               }
             }
           }

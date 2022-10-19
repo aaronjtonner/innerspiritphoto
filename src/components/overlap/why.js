@@ -74,7 +74,7 @@ export default function Why() {
         />
         <Container className="text-bottom">
           <TextBox>
-            <p className="headline italics">
+            <p className="subhead bold italics">
               …by doing something bold and vulnerable, something you’ve never
               done before, challenging limiting beliefs about yourself...
             </p>

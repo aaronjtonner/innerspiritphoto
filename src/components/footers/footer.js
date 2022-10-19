@@ -59,7 +59,7 @@ const LogoContainer = styled.div`
   align-items: center;
   justify-content: center;
   img {
-    width: 350px;
+    width: 150px;
   }
 `
 

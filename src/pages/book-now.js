@@ -40,11 +40,11 @@ export default function BookNow() {
         to="/experience"
         link="explore the experience &#x2192;"
       />
-      <CTA
+      {/* <CTA
         headline="take the leap!"
         subhead="We'll catch you!"
         description="Feeling insecure about your body can keep you from feeling confident and sexy. A boudoir photography session is a great way to start feeling more comfortable in your own skin. When you see yourself through a photographer's lens, beautiful and sexy, it will change the way you see yourself forever. You'll be able to look back at these photos years from now and still feel confident and empowered"
-      />
+      /> */}
     </Layout>
   )
 }

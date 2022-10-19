@@ -46,13 +46,11 @@ const FlexMobile = styled.div`
 export default function MeetMark2() {
   return (
     <Section>
-      <Container>
+      <Container id="mark">
         <FlexDesktop>
           <Text className="spacing">
             <div>
-              <h2 id="mark" className="headline accent">
-                meet mark laurie
-              </h2>
+              <h2 className="headline accent">meet mark laurie</h2>
               {/* <h3 className="subhead upper accent italics">
                 your boudoir photographer
               </h3> */}
@@ -168,9 +166,9 @@ export default function MeetMark2() {
                 </div>
               </Flex>
             </Stats> */}
-            <ButtonUnderline to="/about">
+            {/* <ButtonUnderline to="/about">
               more about mark &#x2192;
-            </ButtonUnderline>
+            </ButtonUnderline> */}
           </Text>
         </FlexMobile>
       </Container>

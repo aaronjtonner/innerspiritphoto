@@ -7,7 +7,7 @@ import { ButtonUnderline } from "./buttons"
 
 const Text = styled.div`
   .button-underline {
-    ursor: pointer;
+    cursor: pointer;
     display: inline-block;
     font-size: var(--fs-sm);
     font-weight: var(--fw-button);
@@ -121,11 +121,14 @@ export default function MeetMark() {
                 </div>
               </Flex>
             </Stats>
-            <AnchorLink className="button-underline" to="/about#mark">
+            {/* <AnchorLink className="button-underline" to="/about#mark">
               more about mark &#x2192;
-            </AnchorLink>
-            <a href="https://staging.innerspiritphoto.com/about#mark">
-              a test link to mark
+            </AnchorLink> */}
+            <a
+              className="button-underline"
+              href="https://staging.innerspiritphoto.com/about#mark"
+            >
+              more about mark &#x2192;
             </a>
           </Text>
           <div>
@@ -195,9 +198,15 @@ export default function MeetMark() {
                 </div>
               </Flex>
             </Stats>
-            <ButtonUnderline to="/about">
+            {/* <ButtonUnderline to="/about">
               more about mark &#x2192;
-            </ButtonUnderline>
+            </ButtonUnderline> */}
+            <a
+              className="button-underline"
+              href="https://staging.innerspiritphoto.com/about#mark"
+            >
+              more about mark &#x2192;
+            </a>
           </Text>
         </FlexMobile>
       </Container>

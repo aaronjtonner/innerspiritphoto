@@ -79,9 +79,7 @@ const Text = styled.div`
   .call {
     color: var(--txt-light);
     display: inline-block;
-  }
 
-  a {
     @media screen and (max-width: 74em) {
       color: var(--txt-dark);
     }

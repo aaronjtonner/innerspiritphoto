@@ -49,13 +49,15 @@ export default function FormContact(props) {
     <Section>
       <Container className="spacing">
         <Text>
-          <h3 className="headline accent">
+          <h3 className="subhead caps accent">
             your complimentary planning session is the first step on your{" "}
             <span className="italics">transformative journey!</span>
           </h3>
           <p className="caps bold accent">
             Call{" "}
-            <AnchorInline href="403-252-2662">+1 (403)-252-2662</AnchorInline>{" "}
+            <AnchorInline href="tel: 403-252-2662">
+              +1 (403)-252-2662
+            </AnchorInline>{" "}
             or send us a message below!
           </p>
         </Text>
