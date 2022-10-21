@@ -27,7 +27,7 @@ export default function WallArt() {
         to3="/portfolios/wall-art"
         link3="Wall Art"
         headline="Wall Art"
-        description="When I saw my photos, I broke into tears because I thought, I can't believe how beautiful that person is. - Deanna"
+        description="When I saw my photos, I broke into tears because I thought, I can't believe how beautiful that person is. - Deanna B."
       />
       <WallArtPortfolio />
       <CTAsecondary />

@@ -144,13 +144,13 @@ export const GridAuto = styled.div`
 `
 
 export const HeroBannerPadding = styled.div`
-  padding: 4em 0 4em 0;
+  padding: 3em 0 3em 0;
 
   @media screen and (max-width: 32em) {
-    padding: 4em 0 4em 0;
+    padding: 3em 0 4em 0;
   }
 
   @media screen and (max-width: 22em) {
-    padding: 4em 0 4em 0;
+    padding: 3em 0 4em 0;
   }
 `

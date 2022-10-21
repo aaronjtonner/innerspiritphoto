@@ -29,6 +29,16 @@ const Text = styled.div`
   border: 1px solid var(--clr-accent);
   border-radius: var(--br);
   align-self: center;
+
+  h2 {
+    font-size: var(--fs-1);
+    line-height: 1.1;
+    font-family: var(--ff-trajan);
+
+    @media screen and (max-width: 31.5em) {
+      font-size: var(--fs-3);
+    }
+  }
 `
 
 export default function HowItWorks() {
@@ -38,7 +48,7 @@ export default function HowItWorks() {
         <WrapperTextLeft>
           <Text className="spacing text-left">
             <div className="">
-              <h2 className="headline">
+              <h2 className="">
                 your{" "}
                 <span className="italics accent">inner spirit experience</span>{" "}
                 awaits...

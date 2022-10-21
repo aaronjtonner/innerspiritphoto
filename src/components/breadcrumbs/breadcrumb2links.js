@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 const BreadcrumbLink = styled(props => <Link {...props} />)`
   display: inline-block;
-  color: var(--txt-light-secondary);
+  color: var(--txt-dark-secondary);
   text-decoration: none;
   margin: 0 0.5em 0 0.5em;
   // text-transform: capitalize;

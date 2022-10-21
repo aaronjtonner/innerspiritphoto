@@ -1,12 +1,21 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import parse from "html-react-parser"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BlogBanner from "../components/banners/blogBanner"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 import { Container, Section } from "../components/layoutComponents"
+
+const Article = styled.article``
+
+export const StyledImg = styled(GatsbyImage)`
+  max-width: 600px;
+  height: 100%;
+`
 
 const BlogIndex = ({
   data,
@@ -17,7 +26,7 @@ const BlogIndex = ({
   if (!posts.length) {
     return (
       <Layout>
-        <SEO title="All posts" />
+        <SEO title="Blog - Inner Spirit Photography" />
 
         <p>
           No blog posts found. Add posts to your WordPress site and they'll
@@ -26,7 +35,6 @@ const BlogIndex = ({
       </Layout>
     )
   }
-
   return (
     <Layout>
       <SEO title="All posts" />
@@ -46,14 +54,21 @@ const BlogIndex = ({
 
               return (
                 <li key={post.uri}>
-                  <article
+                  <Article
                     className="post-list-item"
                     itemScope
                     itemType="http://schema.org/Article"
                   >
+                    <StyledImg
+                      image={
+                        post.featuredImage.node.localFile.childImageSharp
+                          .gatsbyImageData
+                      }
+                      alt=""
+                    />
                     <header>
                       <h2 className="headline">
-                        <Link to={post.uri} itemProp="url">
+                        <Link className="spacing" to={post.uri} itemProp="url">
                           <span itemProp="headline">{parse(title)}</span>
                         </Link>
                       </h2>
@@ -62,7 +77,7 @@ const BlogIndex = ({
                     <section itemProp="description">
                       {parse(post.excerpt)}
                     </section>
-                  </article>
+                  </Article>
                 </li>
               )
             })}
@@ -96,6 +111,15 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         excerpt
+        featuredImage {
+          node {
+            localFile {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
+          }
+        }
       }
     }
   }

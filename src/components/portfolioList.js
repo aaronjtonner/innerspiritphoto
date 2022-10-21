@@ -22,9 +22,13 @@ const GridItem = styled(props => <Link {...props} />)`
     grid-column: 1 / -1;
     z-index: 1;
 
-    min-height: 600px;
+    max-width: 600px;
     max-height: 600px;
     height: 100%;
+
+    @media screen and (max-width: 48em) {
+      object-fit: contain;
+    }
   }
 `
 

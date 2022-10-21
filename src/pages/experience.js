@@ -33,7 +33,7 @@ export default function Experience() {
         img={Kerry}
         alt="review of calgary boudoir photographer"
         review="Mark really captures the essence of you that you just never see. We females are so critical of our bodies and critical of ourselves that when you see the photos he takes, you're thinking, ‘oh my God, that’s me?"
-        name="kerry"
+        name="kerry p."
         to="/book-now"
         link="book planning session &#x2192;"
       />
@@ -46,7 +46,7 @@ export default function Experience() {
         img={Renilda}
         alt="review of calgary boudoir photographer"
         review="For me, the experience was about being bold and being true to myself and knowing that I can accomplish anything. I can be who I want to be, without hesitation."
-        name="renilda"
+        name="renilda f."
         to="/book-now"
         link="book planning session &#x2192;"
       />
@@ -55,7 +55,7 @@ export default function Experience() {
         img={Deanna}
         alt="review of calgary boudoir photographer"
         review="Mark sees your unspoken boundaries, and I think through respecting those boundaries, he creates the safety needed to help people heal."
-        name="deanna"
+        name="deanna b."
         to="/book-now"
         link="book planning session &#x2192;"
       />

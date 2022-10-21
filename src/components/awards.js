@@ -33,7 +33,7 @@ export default function Awards() {
     <Container className="spacing-lg">
       <div className="spacing">
         <h2 className="headline center">
-          mark is an active & awarded member in:
+          mark is an active & awarded member of:
         </h2>
         <GridAuto>
           <a href="https://www.ppoc.ca/" target="_blank">

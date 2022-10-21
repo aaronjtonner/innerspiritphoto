@@ -34,9 +34,8 @@ export default function BookNow() {
         
         Since then, I have achieved a whole new way of seeing myself. The empowering experience with Inner Spirit gave me the confidence to ignite a new acting and modelling career alongside my matchmaking career. I also received an amazing opportunity to share my gifts as an empath with the world, doing a docuseries about my expertise on dating, healing your past relationships, and connecting with your intuition.
         
-        Mark captured my true essence — boudoir photography at Inner Spirit ignited my divine strength, and I now own my feminine strength.
-        "
-        name="barb"
+        Mark captured my true essence — boudoir photography at Inner Spirit ignited my divine strength, and I now own my feminine strength."
+        name="barb s."
         to="/experience"
         link="explore the experience &#x2192;"
       />

@@ -29,7 +29,7 @@ export default function FeaturedIn() {
     <Section>
       <Container className="spacing">
         <h2 className="headline center">
-          Mark’s boudoir & nude photography work & intuitive process have been{" "}
+          Mark’s boudoir & nude photography & intuitive process{" "}
           <span className="italics accent">featured in:</span>
         </h2>
         <GridAuto>

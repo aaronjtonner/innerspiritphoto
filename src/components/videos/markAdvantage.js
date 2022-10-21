@@ -49,11 +49,11 @@ export default function MarkAdvantage() {
         <Video>
           <Container className="spacing">
             <Text className="center">
-              <h3 className="subhead upper">the mark advantage</h3>{" "}
+              {/* <h3 className="subhead upper">the mark advantage</h3> */}
               <h2 className="headline">
                 The Advantages of a{" "}
-                <span className="italics">male photographer</span> with a female
-                team
+                <span className="italics">safe male photographer</span> with a
+                female team
               </h2>
               <p>
                 Psychologist, Dr. Bonnie Sullivan discovered that women feel

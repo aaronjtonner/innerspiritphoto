@@ -27,7 +27,7 @@ export default function Gallery() {
         to3="/portfolios/gallery"
         link3="Gallery"
         headline="gallery"
-        description="When I saw my photos, I broke into tears because I thought, I can't believe how beautiful that person is. - Deanna"
+        description="When I saw my photos, I broke into tears because I thought, I can't believe how beautiful that person is. - Deanna B."
       />
       <GalleryPortfolio />
       <CTAsecondary />

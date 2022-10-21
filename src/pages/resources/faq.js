@@ -28,7 +28,7 @@ export default function Faq() {
         img={Christine}
         alt="review of calgary boudoir photographer"
         review="Inner Spirit helped me rewrite past traumatic experiences with men where power was taken from me. It was very healing."
-        name="christine"
+        name="christine r."
         to="/experience"
         link="explore the experience &#x2192;"
       />

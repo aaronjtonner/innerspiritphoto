@@ -53,13 +53,6 @@ export default function FormContact(props) {
             your complimentary planning session is the first step on your{" "}
             <span className="italics">transformative journey!</span>
           </h3>
-          <p className="caps bold accent">
-            Call{" "}
-            <AnchorInline href="tel: 403-252-2662">
-              +1 (403)-252-2662
-            </AnchorInline>{" "}
-            or send us a message below!
-          </p>
         </Text>
         <Flex className="spacing-lg">
           {/* flex item 1 */}
@@ -140,8 +133,8 @@ export default function FormContact(props) {
             <div>
               <h3 className="caps subhead accent">hours:</h3>
               <p className="bold italics">
-                10 AM to 7 PM Monday to Friday <br />
-                Hours By Appointment
+                10 AM to 7 PM Weekdays By Appointment <br />
+                Weekends By Appointment
               </p>
             </div>
 

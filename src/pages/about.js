@@ -22,7 +22,7 @@ export default function About() {
         link2="About"
         headline="Expressing your beauty & helping you embody your confident side
 "
-        description="When I saw my photos, I broke into tears because I thought, I can't believe how beautiful that person is. - Deanna"
+        description="When I saw my photos, I broke into tears because I thought, I can't believe how beautiful that person is. - Deanna B."
       />
       <Stats />
       <Why />

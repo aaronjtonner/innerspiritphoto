@@ -23,7 +23,7 @@ const Wrapper = styled.div`
       grid-template-rows: auto 2em auto;
 
       img {
-        grid-row: 1 / span 2;
+        grid-row: 1 / 2;
         grid-column: 1 / -1;
         z-index: 1;
         border: 1px solid var(--clr-light);

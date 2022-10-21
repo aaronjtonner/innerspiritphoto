@@ -102,7 +102,7 @@ export default function MeetMark() {
               He’s not alone, an incredible team of women, along with Jan, his
               partner and wife, makes your time with Mark exceptional.
             </p>
-            <Stats>
+            {/* <Stats>
               <Flex>
                 <div className="italics">
                   <p>Photographed</p>
@@ -120,7 +120,7 @@ export default function MeetMark() {
                   <p className="teriatary">Years</p>
                 </div>
               </Flex>
-            </Stats>
+            </Stats> */}
             {/* <AnchorLink className="button-underline" to="/about#mark">
               more about mark &#x2192;
             </AnchorLink> */}
@@ -179,7 +179,7 @@ export default function MeetMark() {
               He’s not alone, an incredible team of women, along with Jan, his
               partner and wife, makes your time with Mark exceptional.
             </p>
-            <Stats>
+            {/* <Stats>
               <Flex>
                 <div className="italics">
                   <p>Photographed</p>
@@ -197,7 +197,7 @@ export default function MeetMark() {
                   <p className="teriatary">Years</p>
                 </div>
               </Flex>
-            </Stats>
+            </Stats> */}
             {/* <ButtonUnderline to="/about">
               more about mark &#x2192;
             </ButtonUnderline> */}

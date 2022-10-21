@@ -7,23 +7,27 @@ const Wrapper = styled.div`
   background: url("../../images/cta-secondary-alley-nude.jpg"),
     rgba(0, 0, 0, 0.2);
   background-blend-mode: overlay;
-  background-position: center;
+  background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 10em 0;
 
-  @media screen and (max-width: 43em) {
-    padding: 0;
+  @media screen and (max-width: 670px) {
     background-position: bottom right;
+    padding: 0;
   }
 `
 
 const Text = styled.div`
-  padding-bottom: 4em;
+  padding-bottom: 14em;
   max-width: 70ch;
   margin-left: auto;
   width: 100%;
   color: var(--txt-light);
+
+  @media screen and (max-width: 670px) {
+    padding-bottom: 8em;
+  }
 `
 
 export default function CTAsecondary() {

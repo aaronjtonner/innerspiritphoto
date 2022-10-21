@@ -33,11 +33,21 @@ const Text = styled.div`
   h1 {
     display: flex;
     flex-direction: column;
+    line-height: 1.1;
+    font-family: var(--ff-trajan);
+
+    @media screen and (max-width: 34em) {
+      font-size: var(--fs-2);
+    }
+
+    @media screen and (max-width: 23em) {
+      font-size: 1rem;
+    }
 
     @media (min-width: 89em) {
       .span-1 {
-        font-size: 5rem;
-        line-height: 0.7;
+        font-size: 3rem;
+        line-height: 1;
       }
       .span-2 {
         font-size: 4rem;
@@ -53,6 +63,11 @@ const Text = styled.div`
 `
 
 const Video = styled.div`
+  @media screen and (max-width: 48em) {
+    p {
+      display: none;
+    }
+  }
   // iframe {
   //   height: 550px;
   //   width: 100%;
@@ -103,13 +118,6 @@ export default function HeroBasic() {
       <Container>
         <Flex className="spacing-lg">
           <Video className="spacing-lg">
-            {/* <iframe
-              src="https://player.vimeo.com/video/743211749?h=a77b06545f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-              title="Square Sample.mov"
-              frameBorder={0}
-            /> */}
             <div style={{ padding: "100% 0 0 0", position: "relative" }}>
               <iframe
                 src="https://player.vimeo.com/video/743211749?h=a77b06545f&badge=0&autopause=0&player_id=0&app_id=58479"
@@ -133,8 +141,8 @@ export default function HeroBasic() {
           </Video>
 
           <Text className="spacing-md">
-            <h1 className="headline">
-              <span className="span-1">the Creative</span>{" "}
+            <h1 className="">
+              <span className="span-1">the best Creative</span>{" "}
               <span className="span-2">nude & boudoir</span>{" "}
               <span className="span-3">
                 photography in Calgary <br /> for those seeking adventure

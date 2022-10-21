@@ -79,13 +79,13 @@ export default function ReassuranceVideoTestimonial() {
         <Video>
           <Container className="spacing">
             <Text className="center">
-              <h3 className="subhead upper">
-                hear from our clients who have been there
-              </h3>{" "}
               <h2 className="headline">
                 need some reassurance that this{" "}
                 <span className="italics">is</span> for you?
               </h2>
+              <h3 className="subhead upper">
+                hear from our clients who have been there
+              </h3>{" "}
             </Text>
             <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
               <iframe
@@ -111,7 +111,7 @@ export default function ReassuranceVideoTestimonial() {
                 to confidence in not much else. Being photographed unnerves me,
                 I don’t even look in mirrors. This experience changed all that."
               </p>
-              <p className="caps">Kenisha</p>
+              <p className="caps">Kenisha M.</p>
             </ReviewText>
           </Container>
         </Video>
@@ -142,7 +142,7 @@ export default function ReassuranceVideoTestimonial() {
                 elegant. I love it. It is so worth it. It’s even better than my
                 first time, this is my favorite."
               </p>
-              <p className="caps">Renilda</p>
+              <p className="caps">Renilda F.</p>
             </ReviewText>
           </Video2>
           <Video2 className="spacing">
@@ -168,7 +168,7 @@ export default function ReassuranceVideoTestimonial() {
                 "I am in awe, just blown away. The day was empowering, I saw a
                 side of myself I never imagined! You have to do this!"
               </p>
-              <p className="caps">Allison Orange</p>
+              <p className="caps">Allison O.</p>
             </ReviewText>
           </Video2>
           <Video2 className="spacing">
@@ -197,7 +197,7 @@ export default function ReassuranceVideoTestimonial() {
                 me feel better about myself. Once we started, I didn’t even
                 notice I was naked. I was so proud of myself."
               </p>
-              <p className="caps">Allison Moore</p>
+              <p className="caps">Alison M.</p>
             </ReviewText>
           </Video2>
         </GridAuto>
