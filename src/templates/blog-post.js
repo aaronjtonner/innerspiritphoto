@@ -79,7 +79,7 @@ const BlogPostTemplate = ({ data: { previous, next, post } }) => {
             </article>
           </Container>
         </Section>
-        <nav className="blog-post-nav">
+        <nav className="blog-post-nav test">
           <ul
             style={{
               display: `flex`,
