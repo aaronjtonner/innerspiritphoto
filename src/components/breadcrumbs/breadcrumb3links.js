@@ -4,10 +4,14 @@ import { Link } from "gatsby"
 
 const BreadcrumbLink = styled(props => <Link {...props} />)`
   display: inline-block;
-  color: var(--txt-dark-secondary);
+  color: var(--txt-light-secondary);
   text-decoration: none;
   margin: 0 0.5em 0 0.5em;
   text-transform: capitalize;
+
+  @media screen and (max-width: 74em) {
+    color: var(--txt-dark-secondary);
+  }
 
   &:nth-child(1) {
     margin-left: 0;

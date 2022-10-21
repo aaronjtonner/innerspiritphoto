@@ -40,10 +40,8 @@ export default function CTAsecondary() {
               book your complimentary planning session
             </h2>
             <p>
-              We know, our clients have been there - feeling insecure in your
-              body can keep you from feeling confident and sexy. A boudoir
-              photography session can empower you to start feeling better in
-              your own skin!{" "}
+              A boudoir photography session can empower you to start feeling
+              better in your own skin!{" "}
             </p>
             <ButtonPrimary to="/book-now">
               book planning session now &#x2192;

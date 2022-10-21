@@ -8,8 +8,8 @@ import parse from "html-react-parser"
 // version used by the Gatsby and @wordpress packages that causes build
 // failures.
 // @todo update this once @wordpress upgrades their postcss version
-// import "../css/@wordpress/block-library/build-style/style.css"
-// import "../css/@wordpress/block-library/build-style/theme.css"
+import "../styles/@wordpress/block-library/build-style/style.css"
+import "../styles/@wordpress/block-library/build-style/theme.css"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -77,35 +77,35 @@ const BlogPostTemplate = ({ data: { previous, next, post } }) => {
 
               <hr />
             </article>
-            <nav className="blog-post-nav">
-              <ul
-                style={{
-                  display: `flex`,
-                  flexWrap: `wrap`,
-                  justifyContent: `space-between`,
-                  listStyle: `none`,
-                  padding: 0,
-                }}
-              >
-                <li>
-                  {previous && (
-                    <Link to={previous.uri} rel="prev">
-                      ← {parse(previous.title)}
-                    </Link>
-                  )}
-                </li>
-
-                <li>
-                  {next && (
-                    <Link to={next.uri} rel="next">
-                      {parse(next.title)} →
-                    </Link>
-                  )}
-                </li>
-              </ul>
-            </nav>
           </Container>
         </Section>
+        <nav className="blog-post-nav">
+          <ul
+            style={{
+              display: `flex`,
+              flexWrap: `wrap`,
+              justifyContent: `space-between`,
+              listStyle: `none`,
+              padding: 0,
+            }}
+          >
+            <li>
+              {previous && (
+                <Link to={previous.uri} rel="prev">
+                  ← {parse(previous.title)}
+                </Link>
+              )}
+            </li>
+
+            <li>
+              {next && (
+                <Link to={next.uri} rel="next">
+                  {parse(next.title)} →
+                </Link>
+              )}
+            </li>
+          </ul>
+        </nav>
         <CTAsecondary />
       </Wrapper>
     </Layout>

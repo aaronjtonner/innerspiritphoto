@@ -61,7 +61,7 @@ export default function WhatToDo() {
           <BottomWrapper>
             <StaticImage
               class="img-top"
-              src="../../images/boudoir-wall-art-in-calgary.jpg"
+              src="../../images/boudoir-wall-art-in-calgary-2.jpg"
               alt="wall art of boudoir photography session"
             />
             <TextBox>

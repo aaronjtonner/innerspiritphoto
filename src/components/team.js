@@ -5,7 +5,7 @@ import { Container, Flex, Section } from "./layoutComponents"
 
 import Jan from "../images/team/jan-headshot.jpg"
 import Fran from "../images/team/fran-headshot.jpg"
-import Adrienne from "../images/team/adrienne-headshot.jpg"
+import Adrienne from "../images/team/adrienne-headshot-2.jpg"
 import Melody from "../images/team/melody-headshot.jpg"
 import Bonnie from "../images/team/bonnie-headshot.jpg"
 import { AnchorInline, ButtonInline } from "./buttons"
