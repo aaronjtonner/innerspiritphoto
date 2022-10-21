@@ -23,9 +23,9 @@ const BlogIndex = ({
 }) => {
   const posts = data.allWpPost.nodes
   const featuredImage = {
-    data: allWpPost.featuredImage?.node?.localFile?.childImageSharp
+    data: posts.featuredImage?.node?.localFile?.childImageSharp
       ?.gatsbyImageData,
-    alt: allWpPost.featuredImage?.node?.alt || ``,
+    alt: posts.featuredImage?.node?.alt || ``,
   }
 
   if (!posts.length) {
