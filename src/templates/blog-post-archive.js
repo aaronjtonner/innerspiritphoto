@@ -22,6 +22,10 @@ const BlogIndex = ({
   pageContext: { nextPagePath, previousPagePath },
 }) => {
   const posts = data.allWpPost.nodes
+  const featuredImage = {
+    data: post.featuredImage?.node?.localFile?.childImageSharp?.gatsbyImageData,
+    alt: post.featuredImage?.node?.alt || ``,
+  }
 
   if (!posts.length) {
     return (
@@ -59,13 +63,12 @@ const BlogIndex = ({
                     itemScope
                     itemType="http://schema.org/Article"
                   >
-                    <StyledImg
-                      image={
-                        post.featuredImage.node.localFile.childImageSharp
-                          .gatsbyImageData
-                      }
-                      alt=""
-                    />
+                    {featuredImage?.data && (
+                      <StyledImg
+                        image={featuredImage.data}
+                        alt={featuredImage.alt}
+                      />
+                    )}
                     <header>
                       <h2 className="headline">
                         <Link className="spacing" to={post.uri} itemProp="url">
