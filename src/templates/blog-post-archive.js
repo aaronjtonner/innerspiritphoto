@@ -42,7 +42,7 @@ const BlogIndex = ({
   }
   return (
     <Layout>
-      <SEO title="All posts" />
+      <SEO title="InnerSpirit Photography - All Blog Posts" />
       <BlogBanner
         to1="/"
         link1="Home"
