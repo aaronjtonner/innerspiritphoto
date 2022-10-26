@@ -6,6 +6,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 export const StyledImg = styled(GatsbyImage)`
   border-radius: var(--br);
+  //
 `
 
 export default function GalleryPortfolio() {
