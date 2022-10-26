@@ -70,11 +70,11 @@ export default function BeyondEmpowerment() {
                 title="Widescreen 2 Placeholder"
               />
             </div>
-            <center>
+            {/* <center>
               <AnchorUnderline href="">
                 watch the full video &#x2192;
               </AnchorUnderline>
-            </center>
+            </center> */}
           </Container>
         </Video>
       </Wrapper>

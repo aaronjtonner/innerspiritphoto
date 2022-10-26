@@ -226,7 +226,7 @@ const StyledLink = styled(props => <Link {...props} />)`
   text-transform: uppercase;
   font-size: var(--fs-sm);
   font-weight: var(--fw-button);
-  color: var(--txt-light);
+  color: var(--txt-light-secondary);
   letter-spacing: 0.1em;
   transition: all 0.25s linear;
 
@@ -341,52 +341,78 @@ export default function HeaderBasic() {
 
               <NavList nav={nav}>
                 <li>
-                  <StyledLink to="/about">about</StyledLink>
+                  <StyledLink to="/about" activeClassName="active">
+                    about
+                  </StyledLink>
                 </li>
                 <li>
-                  <StyledLink to="/experience">experience</StyledLink>
+                  <StyledLink to="/experience" activeClassName="active">
+                    experience
+                  </StyledLink>
                 </li>
                 <Dropdown>
-                  <StyledLink to="/portfolios">
+                  <StyledLink to="/portfolios" activeClassName="active">
                     Portfolios
                     <IoMdArrowDropdown size={20} />
                   </StyledLink>
                   <ul>
                     <li>
-                      <StyledLink to="/portfolios/gallery">gallery</StyledLink>
+                      <StyledLink
+                        to="/portfolios/gallery"
+                        activeClassName="active"
+                      >
+                        gallery
+                      </StyledLink>
                     </li>
                     <li>
-                      <StyledLink to="/portfolios/books">books</StyledLink>
+                      <StyledLink
+                        to="/portfolios/books"
+                        activeClassName="active"
+                      >
+                        books
+                      </StyledLink>
                     </li>
                     <li>
-                      <StyledLink to="/portfolios/wall-art">
+                      <StyledLink
+                        to="/portfolios/wall-art"
+                        activeClassName="active"
+                      >
                         wall art
                       </StyledLink>
                     </li>
                     <li>
-                      <StyledLink to="/portfolios/projects">
+                      <StyledLink
+                        to="/portfolios/projects"
+                        activeClassName="active"
+                      >
                         projects
                       </StyledLink>
                     </li>
                   </ul>
                 </Dropdown>
                 <Dropdown>
-                  <StyledLink to="/resources">
+                  <StyledLink to="/resources" activeClassName="active">
                     Resources
                     <IoMdArrowDropdown size={20} />
                   </StyledLink>
                   <ul>
                     <li>
-                      <StyledLink to="/resources/faq">faq</StyledLink>
+                      <StyledLink to="/resources/faq" activeClassName="active">
+                        faq
+                      </StyledLink>
                     </li>
                   </ul>
                 </Dropdown>
                 <li>
-                  <StyledLink to="/blog">blog</StyledLink>
+                  <StyledLink to="/blog" activeClassName="active">
+                    blog
+                  </StyledLink>
                 </li>
 
                 <li>
-                  <StyledLink to="/book-now">contact</StyledLink>
+                  <StyledLink to="/book-now" activeClassName="active">
+                    contact
+                  </StyledLink>
                 </li>
                 <NavCtaMobile>
                   <NavPhone href="tel: (403) 252-2662">

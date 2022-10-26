@@ -12,6 +12,7 @@ const BottomWrapper = styled.div`
     grid-column: 1 / -1;
     z-index: 1;
     height: 800px;
+    width: 100%;
     object-fit: cover;
   }
 `
