@@ -11,7 +11,7 @@ const BottomWrapper = styled.div`
     grid-row: 1 / span 2;
     grid-column: 1 / -1;
     z-index: 1;
-    height: 800px;
+    min-height: 800px;
     width: 100%;
     object-fit: cover;
   }
