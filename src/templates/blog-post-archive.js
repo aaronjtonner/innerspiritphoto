@@ -8,12 +8,25 @@ import SEO from "../components/seo"
 import BlogBanner from "../components/banners/blogBanner"
 import { GatsbyImage } from "gatsby-plugin-image"
 
-import { Container, Section } from "../components/layoutComponents"
+import { Container, GridTwo, Section } from "../components/layoutComponents"
 
-const Article = styled.article``
+const Article = styled.article`
+  box-shadow: var(--shadow-light);
+  border-raidus: var(--br);
+`
+
+const Text = styled.div`
+  padding: 2em;
+
+  @media screen and (max-width: 400px) {
+    h2 {
+      font-size: var(--fs-3);
+    }
+  }
+`
 
 export const StyledImg = styled(GatsbyImage)`
-  max-width: 600px;
+  // max-width: 600px;
   height: 100%;
 `
 
@@ -58,32 +71,40 @@ const BlogIndex = ({
               const title = post.title
 
               return (
-                <li key={post.uri}>
-                  <Article
-                    className="post-list-item"
-                    itemScope
-                    itemType="http://schema.org/Article"
-                  >
-                    <StyledImg
-                      image={
-                        post.featuredImage.node.localFile.childImageSharp
-                          .gatsbyImageData
-                      }
-                      alt=""
-                    />
-                    <header>
-                      <h2 className="headline">
-                        <Link className="spacing" to={post.uri} itemProp="url">
-                          <span itemProp="headline">{parse(title)}</span>
-                        </Link>
-                      </h2>
-                      <small>{post.date}</small>
-                    </header>
-                    <section itemProp="description">
-                      {parse(post.excerpt)}
-                    </section>
-                  </Article>
-                </li>
+                <GridTwo>
+                  <li key={post.uri}>
+                    <Article
+                      className="post-list-item"
+                      itemScope
+                      itemType="http://schema.org/Article"
+                    >
+                      <StyledImg
+                        image={
+                          post.featuredImage.node.localFile.childImageSharp
+                            .gatsbyImageData
+                        }
+                        alt=""
+                      />
+                      <Text>
+                        <header>
+                          <h2 className="headline">
+                            <Link
+                              className="spacing"
+                              to={post.uri}
+                              itemProp="url"
+                            >
+                              <span itemProp="headline">{parse(title)}</span>
+                            </Link>
+                          </h2>
+                          <small>{post.date}</small>
+                        </header>
+                        <section itemProp="description">
+                          {parse(post.excerpt)}
+                        </section>
+                      </Text>
+                    </Article>
+                  </li>
+                </GridTwo>
               )
             })}
           </ol>

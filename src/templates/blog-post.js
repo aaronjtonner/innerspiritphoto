@@ -32,6 +32,12 @@ const Wrapper = styled.div`
   }
 `
 
+const BlogContainer = styled.div`
+  width: 85%;
+  margin: 0 auto;
+  max-width: 45rem;
+`
+
 const BlogPostTemplate = ({ data: { previous, next, post } }) => {
   const featuredImage = {
     data: post.featuredImage?.node?.localFile?.childImageSharp?.gatsbyImageData,
@@ -43,7 +49,7 @@ const BlogPostTemplate = ({ data: { previous, next, post } }) => {
       <SEO title={post.title} description={post.excerpt} />
       <Wrapper>
         <Section>
-          <Container>
+          <BlogContainer>
             <article
               className="blog-post"
               itemScope
@@ -103,7 +109,7 @@ const BlogPostTemplate = ({ data: { previous, next, post } }) => {
                 </li>
               </ul>
             </nav>
-          </Container>
+          </BlogContainer>
         </Section>
 
         <CTAsecondary />
