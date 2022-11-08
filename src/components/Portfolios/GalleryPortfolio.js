@@ -1,12 +1,28 @@
 import React from "react"
 import styled from "styled-components"
 import { useGalleryQuery } from "../../hooks/useGalleryQuery"
-import { Section, Container, GridAuto } from "../layoutComponents"
+import { Section } from "../layoutComponents"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-export const StyledImg = styled(GatsbyImage)`
-  border-radius: var(--br);
-  //
+const StyledImg = styled(GatsbyImage)`
+  // height: 100%;
+`
+
+const Container = styled.div`
+  width: 95%;
+  margin: 0 auto;
+  max-width: 95rem;
+  background: black;
+`
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40em, 1fr));
+
+  & > * {
+    // justify-self: center;
+    // align-self: center;
+  }
 `
 
 export default function GalleryPortfolio() {
@@ -14,16 +30,17 @@ export default function GalleryPortfolio() {
   return (
     <Section>
       <Container>
-        <GridAuto>
+        <Grid>
           {data.wpPage.ACF_GalleryPage.gallery.map(localFile => {
             return (
-              <GatsbyImage
+              <StyledImg
                 image={localFile.localFile.childImageSharp.gatsbyImageData}
                 alt=""
+                objectFit="contain"
               />
             )
           })}
-        </GridAuto>
+        </Grid>
       </Container>
     </Section>
   )
