@@ -22,7 +22,7 @@ const Wrapper = styled.div`
       display: grid;
       grid-template-rows: auto 2em auto;
 
-      img {
+      .img {
         grid-row: 1 / 2;
         grid-column: 1 / -1;
         z-index: 1;
@@ -46,7 +46,7 @@ const Wrapper = styled.div`
     }
   }
 
-  img {
+  .img {
     border-radius: var(--br);
     object-fit: cover;
   }
@@ -103,7 +103,7 @@ export default function ContestBanner(props) {
             alt="The inner spirit photography contest"
           /> */}
           <GatsbyImage
-            class="stretch clip-img"
+            class="img stretch clip-img"
             image={
               data.wpPage.ACF_ContestPage.hero.localFile.childImageSharp
                 .gatsbyImageData

@@ -18,6 +18,9 @@ const Article = styled.article`
 const Text = styled.div`
   padding: 2em;
 
+  h2 {
+    color: var(--clr-accent);
+  }
   @media screen and (max-width: 400px) {
     h2 {
       font-size: var(--fs-3);
@@ -87,9 +90,9 @@ const BlogIndex = ({
                       />
                       <Text>
                         <header>
-                          <h2 className="headline">
+                          <h2 className="terietary upper">
                             <Link
-                              className="spacing"
+                              className="spacing accent"
                               to={post.uri}
                               itemProp="url"
                             >

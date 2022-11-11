@@ -21,7 +21,7 @@ const Wrapper = styled.div`
       display: grid;
       grid-template-rows: auto 2em auto;
 
-      img {
+      .img {
         grid-row: 1 / 2;
         grid-column: 1 / -1;
         z-index: 1;
@@ -45,7 +45,7 @@ const Wrapper = styled.div`
     }
   }
 
-  img {
+  .img {
     border-radius: var(--br);
     object-fit: cover;
   }
@@ -96,7 +96,7 @@ export default function BlogBanner(props) {
         {/* <Bg /> */}
         <Container className="container">
           <StaticImage
-            className="stretch clip-img"
+            className="img stretch clip-img"
             src="../../images/banners/blog-banner.jpg"
             alt="The inner spirit photography blog"
           />

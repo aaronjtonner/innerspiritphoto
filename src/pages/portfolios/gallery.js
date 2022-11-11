@@ -8,6 +8,7 @@ import BannerImg from "../../images/banners/gallery-banner.jpg"
 import { Container, Section } from "../../components/layoutComponents"
 import styled from "styled-components"
 import GalleryPortfolio from "../../components/Portfolios/GalleryPortfolio"
+import MasonryGallery from "../../components/Portfolios/Masonry"
 
 const Text = styled.div`
   max-width: 100ch;

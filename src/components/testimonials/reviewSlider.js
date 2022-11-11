@@ -13,6 +13,7 @@ const Wrapper = styled.div`
   .slick-prev:before,
   .slick-next:before {
     color: var(--clr-accent);
+    font-size: 24px;
   }
 `
 
@@ -80,7 +81,7 @@ const ReviewBox = props => {
           <FaStar />
         </FlexStars>
       </div>
-      <p className="italics">"{props.review}"</p>
+      <p className="italics ">"{props.review}"</p>
       <FlexName>
         <FcGoogle />
         <p className="upper">{props.name}</p>
