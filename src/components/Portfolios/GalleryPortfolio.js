@@ -8,6 +8,10 @@ const StyledImg = styled(GatsbyImage)`
   // height: 100%;
 `
 
+const Wrapper = styled.div`
+  background: black;
+`
+
 const Container = styled.div`
   width: 95%;
   margin: 0 auto;
@@ -28,20 +32,22 @@ const Grid = styled.div`
 export default function GalleryPortfolio() {
   const data = useGalleryQuery()
   return (
-    <Section>
-      <Container>
-        <Grid>
-          {data.wpPage.ACF_GalleryPage.gallery.map(localFile => {
-            return (
-              <StyledImg
-                image={localFile.localFile.childImageSharp.gatsbyImageData}
-                alt=""
-                objectFit="contain"
-              />
-            )
-          })}
-        </Grid>
-      </Container>
-    </Section>
+    <Wrapper>
+      <Section>
+        <Container>
+          <Grid>
+            {data.wpPage.ACF_GalleryPage.gallery.map(localFile => {
+              return (
+                <StyledImg
+                  image={localFile.localFile.childImageSharp.gatsbyImageData}
+                  alt=""
+                  objectFit="contain"
+                />
+              )
+            })}
+          </Grid>
+        </Container>
+      </Section>
+    </Wrapper>
   )
 }

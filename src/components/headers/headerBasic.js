@@ -401,6 +401,11 @@ export default function HeaderBasic() {
                         faq
                       </StyledLink>
                     </li>
+                    <li>
+                      <StyledLink to="/contest" activeClassName="active">
+                        contest
+                      </StyledLink>
+                    </li>
                   </ul>
                 </Dropdown>
                 <li>

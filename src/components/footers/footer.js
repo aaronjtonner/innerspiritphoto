@@ -26,7 +26,7 @@ const device = {
 }
 
 const FooterWrapper = styled.footer`
-  padding: 4em 0 1em 0;
+  padding: 1.2em 0 1em 0;
   background: var(--clr-dark);
   color: var(--txt-light);
 `
@@ -55,11 +55,14 @@ export const Flex = styled.div`
 `
 
 const LogoContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
   img {
     width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.2em;
   }
 `
 
@@ -195,8 +198,8 @@ export default function Footer() {
         <Container className="spacing-lg">
           <LogoContainer>
             <img src={Logo} alt="" />
+            <hr />
           </LogoContainer>
-          <hr />
           <Flex>
             <FlexItem>
               <p className="heading">contact us</p>
