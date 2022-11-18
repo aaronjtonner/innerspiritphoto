@@ -108,7 +108,7 @@ export default function ResourceList() {
               </AnchorPrimary>
             </ButtonWrapper>
           </Article> */}
-          <Article to="/portfolios/books">
+          {/* <Article to="/portfolios/books">
             <StaticImage
               className="img"
               src="../images/resources/newsletter.jpg"
@@ -126,7 +126,7 @@ export default function ResourceList() {
             <ButtonWrapper>
               <ButtonPrimary to="/book-now">sign up &#x2192;</ButtonPrimary>
             </ButtonWrapper>
-          </Article>
+          </Article> */}
           <Article to="/portfolios/books">
             <StaticImage
               className="img"
@@ -165,7 +165,7 @@ export default function ResourceList() {
               </p>
             </div>
             <ButtonWrapper>
-              <ButtonPrimary to="/portfolios/books">
+              <ButtonPrimary to="/book-now">
                 download guide &#x2192;
               </ButtonPrimary>
             </ButtonWrapper>
