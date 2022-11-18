@@ -87,13 +87,6 @@ export default function FormContest(props) {
                   <Input type="tel" name="phone" id="phone" required />
                 </div>
               </Flex>
-              <div className="spacing-sm">
-                <Label htmlFor="subject">Subject *</Label>
-                <Select name="subject" id="subject" required>
-                  <option value="Booking Inquiry">Booking Inquiry</option>
-                  <option value="Question">Question</option>
-                </Select>
-              </div>
               <div>
                 <Label htmlFor="opt">
                   Would you like to sign up for updates on contests, photo tips,
