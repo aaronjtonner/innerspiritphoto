@@ -1,6 +1,8 @@
 import React from "react"
 import Banner from "../components/banners/bannerPrimary"
 import Layout from "../components/layout"
+import { Container, GridAuto, Section } from "../components/layoutComponents"
+import ResourceList from "../components/resourceList"
 import BannerImg from "../images/banners/resources-banner.jpg"
 
 export default function Resources() {
@@ -15,6 +17,7 @@ export default function Resources() {
         headline="Resources"
         description=""
       />
+      <ResourceList />
     </Layout>
   )
 }
