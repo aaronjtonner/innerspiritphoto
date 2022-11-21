@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 `
 
 const Container = styled.div`
-  width: 95%;
+  width: 85%;
   margin: 0 auto;
   max-width: 95rem;
   background: black;
@@ -21,7 +21,7 @@ const Container = styled.div`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40em, 1fr));
+  grid-template-columns: 1fr 1fr;
 
   & > * {
     // justify-self: center;
@@ -41,6 +41,7 @@ export default function WallArtPortfolio() {
                 <GatsbyImage
                   image={localFile.localFile.childImageSharp.gatsbyImageData}
                   alt=""
+                  objectFit="contain"
                 />
               )
             })}

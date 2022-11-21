@@ -15,6 +15,10 @@ const Article = styled.article`
     padding: 2em 2em 0 2em;
   }
 
+  .revelations-book-img {
+    width: 50%;
+  }
+
   h2 {
     color: var(--clr-accent);
   }
@@ -63,7 +67,7 @@ export default function ResourceList() {
           </Article>
           <Article>
             <StaticImage
-              className="img"
+              className="img revelations-book-img"
               src="../images/resources/revelations.png"
               alt="calgary boudoir books portfolio"
             />

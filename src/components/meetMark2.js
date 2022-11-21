@@ -43,6 +43,12 @@ const FlexMobile = styled.div`
   }
 `
 
+const MarkImg = styled.div`
+  img {
+    max-height: 600px;
+  }
+`
+
 export default function MeetMark2() {
   return (
     <Section>
@@ -99,13 +105,13 @@ export default function MeetMark2() {
               </Flex>
             </Stats> */}
           </Text>
-          <div>
+          <MarkImg>
             <img
               className="stretch"
               src={Mark}
               alt="nude and boudoir photographer in calgary, AB"
             />
-          </div>
+          </MarkImg>
         </FlexDesktop>
         <FlexMobile>
           <Text className="spacing">
