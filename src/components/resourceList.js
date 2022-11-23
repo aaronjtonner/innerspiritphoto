@@ -89,10 +89,10 @@ export default function ResourceList() {
               </AnchorPrimary>
             </ButtonWrapper>
           </Article>
-          {/* <Article to="/portfolios/books">
+          <Article to="/portfolios/books">
             <StaticImage
               className="img"
-              src="../images/boudoir-books-link.jpg"
+              src="../images/resources/podcast-img.jpg"
               alt="calgary boudoir books portfolio"
             />
             <div>
@@ -108,10 +108,10 @@ export default function ResourceList() {
                 href="https://www.fascinatingwomen.ca"
                 target="_blank"
               >
-                see our books &#x2192;
+                visit podcast &#x2192;
               </AnchorPrimary>
             </ButtonWrapper>
-          </Article> */}
+          </Article>
           {/* <Article to="/portfolios/books">
             <StaticImage
               className="img"
