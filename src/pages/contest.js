@@ -18,7 +18,7 @@ export default function Contest() {
         to2="/contest"
         link2="Contest"
       />
-      <ContestInfo />
+      {/* <ContestInfo /> */}
       <Section>
         <Container>
           <h1>enter now and win big!</h1>
