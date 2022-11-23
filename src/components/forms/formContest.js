@@ -55,7 +55,7 @@ export default function FormContest(props) {
           {/* flex item 1 */}
           <FormWrapper>
             <form
-              name="contact"
+              name="contest"
               className="spacing"
               method="POST"
               data-netlify="true"
