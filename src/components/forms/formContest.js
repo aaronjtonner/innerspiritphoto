@@ -58,6 +58,7 @@ export default function FormContest(props) {
               name="contest"
               className="spacing"
               method="POST"
+              action="https://getform.io/f/c96ad5e6-9ef7-4db1-8566-e7732f8b92ec"
               data-netlify="true"
               netlify-honeypot="bot-field"
             >
