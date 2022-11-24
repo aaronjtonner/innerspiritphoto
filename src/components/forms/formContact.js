@@ -61,8 +61,7 @@ export default function FormContact(props) {
               name="contact"
               className="spacing"
               method="POST"
-              data-netlify="true"
-              netlify-honeypot="bot-field"
+              action="https://getform.io/f/c96ad5e6-9ef7-4db1-8566-e7732f8b92ec"
             >
               <input type="hidden" name="form-name" value="contact" />
               <p hidden>
