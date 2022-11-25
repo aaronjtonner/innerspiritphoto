@@ -3,10 +3,6 @@ import styled from "styled-components"
 import { AnchorUnderline } from "../buttons"
 import { Container, GridAuto, Section } from "../layoutComponents"
 
-const device = {
-  md: "48em",
-}
-
 const Wrapper = styled.div`
   display: grid;
   grid-template-rows: 4em auto 12em;
@@ -47,7 +43,7 @@ const Flex = styled.div`
   img {
     /* width: 100%; */
   }
-  @media screen and (max-width: ${device.md}) {
+  @media screen and (max-width: 48em) {
     flex-direction: column;
   }
 
@@ -58,7 +54,7 @@ const Flex = styled.div`
   & > * + * {
     margin-left: 2em;
 
-    @media screen and (max-width: ${device.md}) {
+    @media screen and (max-width: 48em) {
       margin-left: 0;
       margin-top: var(--spacer);
     }

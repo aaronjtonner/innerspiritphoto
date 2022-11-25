@@ -12,6 +12,9 @@ import { Helmet } from "react-helmet"
 export default function Contest() {
   return (
     <Layout>
+      <Helmet>
+        {/* <script type='text/javascript' src='https://im322.infusionsoft.com/app/form/iframe/cdd5e6d034dc6adfbcbaa93a74ea5667'></script> */}
+      </Helmet>
       <ContestBanner
         img={BannerImg}
         to1="/"

@@ -58,62 +58,175 @@ export default function FormContact(props) {
           {/* flex item 1 */}
           <FormWrapper>
             <form
-              name="contact"
-              className="spacing"
+              acceptCharset="UTF-8"
+              action="https://im322.infusionsoft.com/app/form/process/874dc5be8f3ee257d63dd0f53f29707e"
+              className="infusion-form"
+              id="inf_form_874dc5be8f3ee257d63dd0f53f29707e"
               method="POST"
-              action="https://getform.io/f/c96ad5e6-9ef7-4db1-8566-e7732f8b92ec"
             >
               <input
+                name="inf_form_xid"
                 type="hidden"
-                name="_gotcha"
-                style="display:none !important"
-              ></input>
-              <input type="hidden" name="form-name" value="contact" />
-              <p hidden>
-                <label>
-                  Don’t fill this out: <input name="bot-field" />
-                </label>
-              </p>
-              <Flex>
-                <div className="spacing-sm">
-                  <Label htmlFor="fname">First Name *</Label>
-                  <Input type="name" name="fname" id="fname" required />
+                defaultValue="874dc5be8f3ee257d63dd0f53f29707e"
+              />
+              <input
+                name="inf_form_name"
+                type="hidden"
+                defaultValue="10. Marketing - Free &#a;Consultation Form (471)"
+              />
+              <input
+                name="infusionsoft_version"
+                type="hidden"
+                defaultValue="1.70.0.503005"
+              />
+              <div>
+                <div>
+                  <div className="title">
+                    <div className="title" contentid="title">
+                      <div>
+                        <span data-mce-mark={1}>
+                          <strong>
+                            <span data-mce-mark={1}>
+                              Request a Free Consultation
+                            </span>
+                          </strong>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="spacing-sm">
-                  <Label htmlFor="lname">Last Name *</Label>
-                  <Input type="name" name="lname" id="lname" required />
-                </div>
-              </Flex>
-              <Flex>
-                <div className="spacing-sm">
-                  <Label htmlFor="email">Email *</Label>
-                  <Input type="email" name="email" id="email" required />
-                </div>
-                <div className="spacing-sm">
-                  <Label htmlFor="phone">Phone *</Label>
-                  <Input type="tel" name="phone" id="phone" required />
-                </div>
-              </Flex>
-              <div className="spacing-sm">
-                <Label htmlFor="subject">Subject *</Label>
-                <Select name="subject" id="subject" required>
-                  <option value="Booking Inquiry">Booking Inquiry</option>
-                  <option value="Question">Question</option>
-                </Select>
               </div>
-
-              <div className="spacing-sm">
-                <Label htmlFor="msg">Message *</Label>
+              <div>
+                <div>&nbsp;</div>
+              </div>
+              <div className="spacing">
+                <div className="infusion-field">
+                  <Label htmlFor="inf_field_FirstName">First Name *</Label>
+                  <Input
+                    id="inf_field_FirstName"
+                    name="inf_field_FirstName"
+                    placeholder="First Name *"
+                    type="text"
+                  />
+                </div>
+                <div className="infusion-field">
+                  <Label htmlFor="inf_field_LastName">Last Name *</Label>
+                  <Input
+                    id="inf_field_LastName"
+                    name="inf_field_LastName"
+                    placeholder="Last Name *"
+                    type="text"
+                  />
+                </div>
+                <div className="infusion-field">
+                  <Label htmlFor="inf_field_Email">Email *</Label>
+                  <Input
+                    id="inf_field_Email"
+                    name="inf_field_Email"
+                    placeholder="Email *"
+                    type="text"
+                  />
+                </div>
+                <div className="infusion-field">
+                  <Label htmlFor="inf_field_Phone1">Phone Number *</Label>
+                  <Input
+                    id="inf_field_Phone1"
+                    name="inf_field_Phone1"
+                    placeholder="Phone Number *"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div>
+                <div>&nbsp;</div>
+              </div>
+              <div>
+                <div className="text">
+                  <div className="text" contentid="paragraph">
+                    <div> </div>
+                  </div>
+                </div>
+              </div>
+              <div className="infusion-field">
+                <Label htmlFor="inf_option_KeepUpWithUs">
+                  Keep Up With Us *
+                </Label>
+                <div className="infusion-radio">
+                  <div className="options-container">
+                    <span className="infusion-option">
+                      <Flex>
+                        <Label htmlFor="inf_option_KeepUpWithUs_701">
+                          Yes, I would love to get updates on contests, photo
+                          tips, specials, and more.
+                        </Label>
+                        <Input
+                          id="inf_option_KeepUpWithUs_701"
+                          name="inf_option_KeepUpWithUs"
+                          type="radio"
+                          defaultValue={701}
+                        />
+                      </Flex>
+                    </span>
+                    <span className="infusion-option">
+                      <Flex>
+                        <Label htmlFor="inf_option_KeepUpWithUs_703">
+                          No, I don't want to get updates
+                        </Label>
+                        <Input
+                          id="inf_option_KeepUpWithUs_703"
+                          name="inf_option_KeepUpWithUs"
+                          type="radio"
+                          defaultValue={703}
+                        />
+                      </Flex>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="infusion-field">
+                <Label htmlFor="inf_custom_SessionWantedFor">
+                  Session Wanted For:
+                </Label>
+                <div className="infusion-field-input-container">
+                  <Select
+                    id="inf_custom_SessionWantedFor"
+                    name="inf_custom_SessionWantedFor"
+                  >
+                    <option value>Please select one</option>
+                    <option value="Gift">Gift</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Empowerment">Empowerment</option>
+                    <option value="Mix">Mix</option>
+                    <option value="Not Sure">Not Sure</option>
+                  </Select>
+                </div>
+              </div>
+              <div>
+                <div>&nbsp;</div>
+              </div>
+              <div className="infusion-field">
+                <Label htmlFor="inf_custom_Message">Message *</Label>
                 <TextArea
-                  name="msg"
-                  id="msg"
-                  cols="30"
-                  rows="10"
-                  placeholder="How can we help?"
-                  required
+                  cols={24}
+                  id="inf_custom_Message"
+                  name="inf_custom_Message"
+                  placeholder="Message *"
+                  rows={5}
+                  defaultValue={""}
                 />
               </div>
-              <Submit type="submit" id="submit" value="send" />
+              <div>
+                <div>&nbsp;</div>
+              </div>
+              <div className="infusion-submit">
+                <button
+                  className="infusion-recaptcha"
+                  id="recaptcha_874dc5be8f3ee257d63dd0f53f29707e"
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </div>
             </form>
           </FormWrapper>
           {/* flex item 2 */}
