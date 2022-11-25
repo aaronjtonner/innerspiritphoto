@@ -146,10 +146,7 @@ export default function FormContest(props) {
                   <div className="options-container">
                     <span className="infusion-option">
                       <>
-                        <Label
-                          htmlFor="inf_option_Keepupwithus_709"
-                          className="accent"
-                        >
+                        <Label htmlFor="inf_option_Keepupwithus_709">
                           Yes, I would love to get updates on contests, photo
                           tips, specials, and more.
                         </Label>
