@@ -27,7 +27,8 @@ export default function WallArt() {
         to3="/portfolios/wall-art"
         link3="Wall Art"
         headline="Wall Art"
-        description="My wife has a beauty that you captured! I am amazed and dumbfounded! - Russ E."
+        description="My wife has a beauty that you captured! I am amazed and dumbfounded!"
+        name="- Russ E."
       />
       <WallArtPortfolio />
       <CTAsecondary />

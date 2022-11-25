@@ -16,7 +16,8 @@ export default function Portfolios() {
         img={BannerImg}
         alt="our boudoir photography portfolios"
         headline="our portfolios"
-        description="Thank you so much for making me feel & look beautiful. Never in a million years did I think I would do this!! Most fantastic experience ever! - Barb M."
+        description="Thank you so much for making me feel & look beautiful. Never in a million years did I think I would do this!! Most fantastic experience ever!"
+        name="- Barb M."
       />
       <PortfolioList />
       <CTA

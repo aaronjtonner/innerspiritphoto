@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import Banner from "../components/banners/bannerPrimary"
+import BannerExperience from "../components/banners/bannerExperience"
 import Stats from "../components/stats"
 import FullImageTestimonial from "../components/testimonials/fullImageTestimonial"
 
@@ -19,7 +19,7 @@ import CTA from "../components/CTA"
 export default function Experience() {
   return (
     <Layout>
-      <Banner
+      <BannerExperience
         img={BannerImg}
         to1="/"
         link1="Home"

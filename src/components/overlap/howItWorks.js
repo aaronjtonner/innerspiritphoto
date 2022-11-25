@@ -19,6 +19,10 @@ const WrapperTextLeft = styled.div`
 
   .img-right {
     border-radius: var(--br);
+
+    @media screen and (max-width: 82em) {
+      height: 800px;
+    }
   }
 `
 

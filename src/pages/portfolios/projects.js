@@ -27,7 +27,8 @@ export default function Projects() {
         to3="/portfolios/projects"
         link3="Projects"
         headline="projects"
-        description="I could do this only because of Mark’s incredible kindred spirit. Thanks for changing my life! - Pilar A."
+        description="I could do this only because of Mark’s incredible kindred spirit. Thanks for changing my life!"
+        name="- Pilar A."
       />
       <ProjectsPortfolio />
       <CTAsecondary />

@@ -62,6 +62,11 @@ export default function FormContest(props) {
               data-netlify="true"
               netlify-honeypot="bot-field"
             >
+              <input
+                type="hidden"
+                name="_gotcha"
+                style="display:none !important"
+              ></input>
               <input type="hidden" name="form-name" value="contact" />
               <p hidden>
                 <label>

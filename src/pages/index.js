@@ -68,7 +68,7 @@ export default function Index() {
         img={Mercedes}
         alt="review of calgary boudoir photographer"
         review="This is not about the picture. It's about the power you feel and the good that you feel about yourself. I'm 50. I have two kids. I don't have a ' model body,’ but I look great. And I feel great. I believe I owe that to Mark."
-        name="mercedes"
+        name="mercedes b."
         to="/experience"
         link="explore the experience &#x2192;"
       />

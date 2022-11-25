@@ -7,12 +7,12 @@ import FullImageTestimonial from "../../components/testimonials/fullImageTestimo
 import CTA from "../../components/CTA"
 
 import Christine from "../../images/testimonials/calgary-boudoir-testimonial-christine.jpg"
-import BannerSecondary from "../../components/banners/bannerSecondary"
+import BannerFaq from "../../components/banners/bannerFaq"
 
 export default function Faq() {
   return (
     <Layout>
-      <BannerSecondary
+      <BannerFaq
         img={BannerImg}
         to1="/"
         link1="Home"

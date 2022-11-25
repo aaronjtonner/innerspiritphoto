@@ -73,6 +73,7 @@
 html {
   scroll-behavior: smooth;
   background: #fff;
+  scrollbar-color: var(--clr-accent) white;
 }
 
 body {

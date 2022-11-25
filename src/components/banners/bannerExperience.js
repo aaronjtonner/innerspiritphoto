@@ -83,7 +83,7 @@ const Text = styled.div`
 `
 
 // banner with only 2 links in the breadcrumb
-export default function BannerSecondary(props) {
+export default function BannerExperience(props) {
   return (
     <Wrapper>
       <HeroBannerPadding />
@@ -111,9 +111,7 @@ export default function BannerSecondary(props) {
               book planning session now &#x2192;
             </ButtonPrimary>
           </Actions>
-          <p>
-            <span className="italics">"{props.description}"</span> {props.name}{" "}
-          </p>
+          <p>{props.description}</p>
         </Text>
       </Container>
     </Wrapper>

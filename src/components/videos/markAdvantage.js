@@ -1,7 +1,11 @@
 import React from "react"
 import styled from "styled-components"
 import { AnchorUnderline } from "../buttons"
-import { Container, GridAuto, Section, Flex } from "../layoutComponents"
+import { Container, GridAuto, Section } from "../layoutComponents"
+
+const device = {
+  md: "48em",
+}
 
 const Wrapper = styled.div`
   display: grid;
@@ -36,6 +40,29 @@ const Video = styled.div`
 
 const Text = styled.div`
   color: var(--txt-light);
+`
+
+const Flex = styled.div`
+  display: flex;
+  img {
+    /* width: 100%; */
+  }
+  @media screen and (max-width: ${device.md}) {
+    flex-direction: column;
+  }
+
+  & > * {
+    width: 100%;
+  }
+
+  & > * + * {
+    margin-left: 2em;
+
+    @media screen and (max-width: ${device.md}) {
+      margin-left: 0;
+      margin-top: var(--spacer);
+    }
+  }
 `
 
 export default function MarkAdvantage() {
@@ -77,11 +104,11 @@ export default function MarkAdvantage() {
                 title="Widescreen 2 Placeholder"
               />
             </div>
-            <center>
+            {/* <center>
               <AnchorUnderline href="">
                 watch the full video &#x2192;
               </AnchorUnderline>
-            </center>
+            </center> */}
           </Container>
         </Video>
       </Wrapper>

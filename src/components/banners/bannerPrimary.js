@@ -127,7 +127,10 @@ export default function Banner(props) {
                 book planning session now &#x2192;
               </ButtonPrimary>
             </Actions>
-            <p>{props.description}</p>
+            <p>
+              <span className="italics">"{props.description}"</span>{" "}
+              {props.name}{" "}
+            </p>
           </Text>
         </Container>
       </GridWrapper>

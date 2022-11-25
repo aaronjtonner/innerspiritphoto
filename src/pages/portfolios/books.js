@@ -27,7 +27,8 @@ export default function Books() {
         to3="/portfolios/books"
         link3="Books"
         headline="Books"
-        description="Thank you for such an awe-inspiring experience. I can honestly believe I am an amazing woman! - Judy M."
+        description="Thank you for such an awe-inspiring experience. I can honestly believe I am an amazing woman!"
+        name="- Judy M."
       />
       <BooksPortfolio />
       <CTAsecondary />

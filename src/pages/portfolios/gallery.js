@@ -28,7 +28,8 @@ export default function Gallery() {
         to3="/portfolios/gallery"
         link3="Gallery"
         headline="gallery"
-        description="Now I know what it feels like to be transformed into pure art!!! - Julie K."
+        description="Now I know what it feels like to be transformed into pure art!!!"
+        name="- Julie K."
       />
       <GalleryPortfolio />
       <CTAsecondary />

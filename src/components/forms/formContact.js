@@ -63,6 +63,11 @@ export default function FormContact(props) {
               method="POST"
               action="https://getform.io/f/c96ad5e6-9ef7-4db1-8566-e7732f8b92ec"
             >
+              <input
+                type="hidden"
+                name="_gotcha"
+                style="display:none !important"
+              ></input>
               <input type="hidden" name="form-name" value="contact" />
               <p hidden>
                 <label>
