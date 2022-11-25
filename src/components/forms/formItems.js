@@ -21,6 +21,12 @@ export const Input = styled.input`
     outline: none;
     border-bottom: 2px solid var(--clr-accent);
   }
+
+  &.radio {
+    height: 20px;
+    width: 20px;
+    display: inline;
+  }
 `
 export const Select = styled.select`
   display: block;

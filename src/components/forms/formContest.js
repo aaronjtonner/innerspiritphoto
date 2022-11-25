@@ -145,31 +145,36 @@ export default function FormContest(props) {
                 <div className="infusion-radio">
                   <div className="options-container">
                     <span className="infusion-option">
-                      <Flex>
-                        <Label htmlFor="inf_option_Keepupwithus_709">
+                      <>
+                        <Label
+                          htmlFor="inf_option_Keepupwithus_709"
+                          className="accent"
+                        >
                           Yes, I would love to get updates on contests, photo
                           tips, specials, and more.
                         </Label>
                         <Input
                           id="inf_option_Keepupwithus_709"
                           name="inf_option_Keepupwithus"
+                          className="radio"
                           type="radio"
                           defaultValue={709}
                         />
-                      </Flex>
+                      </>
                     </span>
                     <span className="infusion-option">
-                      <Flex>
+                      <>
                         <Label htmlFor="inf_option_Keepupwithus_711">
                           No, I don't want to get updates
                         </Label>
                         <Input
                           id="inf_option_Keepupwithus_711"
+                          className="radio"
                           name="inf_option_Keepupwithus"
                           type="radio"
                           defaultValue={711}
                         />
-                      </Flex>
+                      </>
                     </span>
                   </div>
                 </div>

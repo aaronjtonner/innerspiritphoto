@@ -154,7 +154,7 @@ export default function FormContact(props) {
                 <div className="infusion-radio">
                   <div className="options-container">
                     <span className="infusion-option">
-                      <Flex>
+                      <>
                         <Label htmlFor="inf_option_KeepUpWithUs_701">
                           Yes, I would love to get updates on contests, photo
                           tips, specials, and more.
@@ -163,12 +163,13 @@ export default function FormContact(props) {
                           id="inf_option_KeepUpWithUs_701"
                           name="inf_option_KeepUpWithUs"
                           type="radio"
+                          className="radio"
                           defaultValue={701}
                         />
-                      </Flex>
+                      </>
                     </span>
                     <span className="infusion-option">
-                      <Flex>
+                      <>
                         <Label htmlFor="inf_option_KeepUpWithUs_703">
                           No, I don't want to get updates
                         </Label>
@@ -176,9 +177,10 @@ export default function FormContact(props) {
                           id="inf_option_KeepUpWithUs_703"
                           name="inf_option_KeepUpWithUs"
                           type="radio"
+                          className="radio"
                           defaultValue={703}
                         />
-                      </Flex>
+                      </>
                     </span>
                   </div>
                 </div>
