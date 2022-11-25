@@ -7,6 +7,7 @@ import ContestInfo from "../components/Contest/ContestInfo"
 import { ButtonPrimary } from "../components/buttons"
 import { Container, Section } from "../components/layoutComponents"
 import FormContest from "../components/forms/formContest"
+import { Helmet } from "react-helmet"
 
 export default function Contest() {
   return (
@@ -19,6 +20,7 @@ export default function Contest() {
         link2="Contest"
       />
       {/* <ContestInfo /> */}
+
       <Section>
         <Container>
           <h1 className="caps">The "Tis The Season" Contest!</h1>
