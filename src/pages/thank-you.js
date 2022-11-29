@@ -13,7 +13,7 @@ export default function ThankYou() {
       <Section>
         <Container>
           <h1 className="headline">thank you for contacting us!</h1>
-          <p>We Will Be Reaching Out To You Soon.</p>
+          <p>We Will be Reaching Out To You Soon.</p>
         </Container>
       </Section>
     </Layout>
