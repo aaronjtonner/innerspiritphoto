@@ -8,12 +8,17 @@ import Nervous from "../components/nervous"
 import Guarantee from "../components/guarantee"
 import FullImageTestimonial from "../components/testimonials/fullImageTestimonial"
 import CTA from "../components/CTA"
+import SEO from "../components/seo"
 
 import Barb from "../images/testimonials/calgary-boudoir-testimonial-barb.jpg"
 
 export default function BookNow() {
   return (
     <Layout>
+      <SEO
+        title="Book Your Inner Spirit Photography Session"
+        description="We’d be honoured to welcome you to our family of Inner Spirit Goddesses! To get started, book your introductory call today."
+      />
       <BannerBooking
         img={BannerImg}
         to1="/"

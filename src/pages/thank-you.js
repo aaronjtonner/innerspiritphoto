@@ -5,10 +5,15 @@ import {
   HeroBannerPadding,
   Section,
 } from "../components/layoutComponents"
+import SEO from "../components/seo"
 
 export default function ThankYou() {
   return (
     <Layout>
+      <SEO
+        title="Thank you for filling out our contact form!"
+        description="Thank you!"
+      />
       <HeroBannerPadding />
       <Section>
         <Container>

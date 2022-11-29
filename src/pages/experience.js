@@ -15,10 +15,15 @@ import CTAsecondary from "../components/CTAsecondary"
 import WhatToDo from "../components/overlap/whatToDo"
 import ReassuranceVideoTestimonial from "../components/videos/reassuranceVideoTestimonial"
 import CTA from "../components/CTA"
+import SEO from "../components/seo"
 
 export default function Experience() {
   return (
     <Layout>
+      <SEO
+        title="Your Experience of a Lifetime | Inner Spirit Photography"
+        description="An Inner Spirit photography session is the experience of a lifetime! Choose from dozens of creative sets to create your unique photography session."
+      />
       <BannerExperience
         img={BannerImg}
         to1="/"

@@ -17,7 +17,10 @@ const Text = styled.div`
 export default function Projects() {
   return (
     <Layout>
-      <SEO title="" description="" />
+      <SEO
+        title="Projects | Inner Spirit Photography"
+        description="Inner Spirit Photography hosts unique and creative boudoir sessions. View our projects here!"
+      />
       <BannerSecondary
         img={BannerImg}
         to1="/"

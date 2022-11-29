@@ -17,7 +17,10 @@ const Text = styled.div`
 export default function WallArt() {
   return (
     <Layout>
-      <SEO title="" description="" />
+      <SEO
+        title="Wall Art | Inner Spirit Photography"
+        description="Inner Spirit Photography can create boudoir wall art!"
+      />
       <BannerSecondary
         img={BannerImg}
         to1="/"

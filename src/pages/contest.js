@@ -8,10 +8,16 @@ import { ButtonPrimary } from "../components/buttons"
 import { Container, Section } from "../components/layoutComponents"
 import FormContest from "../components/forms/formContest"
 import { Helmet } from "react-helmet"
+import SEO from "../components/seo"
 
 export default function Contest() {
   return (
     <Layout>
+      <SEO
+        title="Contest | Inner Spirit Photography"
+        description="This could solve
+              your gift-giving need or create a perfect gift for yourself."
+      />
       <Helmet>
         {/* <script type='text/javascript' src='https://im322.infusionsoft.com/app/form/iframe/cdd5e6d034dc6adfbcbaa93a74ea5667'></script> */}
       </Helmet>

@@ -8,10 +8,15 @@ import CTA from "../../components/CTA"
 
 import Christine from "../../images/testimonials/calgary-boudoir-testimonial-christine.jpg"
 import BannerFaq from "../../components/banners/bannerFaq"
+import SEO from "../../components/seo"
 
 export default function Faq() {
   return (
     <Layout>
+      <SEO
+        title="FAQ | Inner Spirit Photography"
+        description="Get answers to your questions about boudoir and nude photography!"
+      />
       <BannerFaq
         img={BannerImg}
         to1="/"

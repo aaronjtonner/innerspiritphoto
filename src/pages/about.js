@@ -10,10 +10,15 @@ import Why from "../components/overlap/why"
 import Stats from "../components/stats"
 import Team from "../components/team"
 import BannerImg from "../images/banners/about-banner.jpg"
+import SEO from "../components/seo"
 
 export default function About() {
   return (
     <Layout>
+      <SEO
+        title="About Inner Spirit Photography"
+        description="Inner Spirit Photography is a boudoir photography studio founded over 40 years ago by Canada’s most awarded portrait photographer, Mark Laurie."
+      />
       <Banner
         img={BannerImg}
         to1="/"

@@ -9,6 +9,7 @@ import Layout from "../components/layout"
 import { Container, Flex, Section } from "../components/layoutComponents"
 import MeetMark from "../components/meetMark"
 import RevealSlider from "../components/revealSlider"
+import SEO from "../components/seo"
 import Stats from "../components/stats"
 import FullImageTestimonial from "../components/testimonials/fullImageTestimonial"
 import ReviewSlider from "../components/testimonials/reviewSlider"
@@ -21,6 +22,10 @@ import Mercedes from "../images/calgary-boudoir-mercedes-review.jpg"
 export default function Index() {
   return (
     <Layout>
+      <SEO
+        title="Boudoir Photography Calgary | See How Amazing You Truly Are | Inner Spirit Photo"
+        description="Encouraging, supportive, life-changing. Calgary boudoir photography to build your self-esteem, love yourself more deeply, and see how amazing you truly are!"
+      />
       <HeroBasic />
       <Stats />
       <HomeMain />

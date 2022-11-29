@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Inner Spirit Photo",
+    title: "",
     titleTemplate: "%s",
     description: "Inner Spirit",
     url: "https://www.innerspiritphoto.com", // No trailing slash allowed!

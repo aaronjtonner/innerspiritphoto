@@ -18,7 +18,10 @@ const Text = styled.div`
 export default function Gallery() {
   return (
     <Layout>
-      <SEO title="" description="" />
+      <SEO
+        title="Gallery | Inner Spirit Photography"
+        description="Here is the full gallery of Inner Spirit Photography!"
+      />
       <BannerSecondary
         img={BannerImg}
         to1="/"

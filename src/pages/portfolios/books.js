@@ -17,7 +17,10 @@ const Text = styled.div`
 export default function Books() {
   return (
     <Layout>
-      <SEO title="" description="" />
+      <SEO
+        title="Books | Inner Spirit Photography"
+        description="Inner Spirit Photography can create boudoir books!"
+      />
       <BannerSecondary
         img={BannerImg}
         to1="/"

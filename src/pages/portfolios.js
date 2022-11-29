@@ -4,10 +4,15 @@ import Layout from "../components/layout"
 import PortfolioList from "../components/portfolioList"
 import CTA from "../components/CTA"
 import BannerImg from "../images/banners/portfolio-banner.jpg"
+import SEO from "../components/seo"
 
 export default function Portfolios() {
   return (
     <Layout>
+      <SEO
+        title="Portfolios | Inner Spirit Photography"
+        description="Here you'll be able to choose which of our creative boudoir portfolios to view!"
+      />
       <Banner
         to1="/"
         link1="Home"

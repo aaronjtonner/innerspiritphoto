@@ -47,7 +47,7 @@ const BlogIndex = ({
   if (!posts.length) {
     return (
       <Layout>
-        <SEO title="Blog - Inner Spirit Photography" />
+        <SEO title="Blog | Inner Spirit Photography" />
 
         <p>
           No blog posts found. Add posts to your WordPress site and they'll
