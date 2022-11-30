@@ -19,7 +19,7 @@ export default function WallArt() {
     <Layout>
       <SEO
         title="Wall Art | Inner Spirit Photography"
-        description="Inner Spirit Photography can create boudoir wall art!"
+        description="Inner Spirit Photography can create boudoir wall art."
       />
       <BannerSecondary
         img={BannerImg}

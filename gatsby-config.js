@@ -5,7 +5,7 @@ module.exports = {
     description: "Inner Spirit",
     url: "https://www.innerspiritphoto.com", // No trailing slash allowed!
     siteUrl: "https://www.innerspiritphoto.com",
-    image: "/logo.svg", // Path to your image you placed in the 'static' folder
+    image: "/small-sprite.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "",
   },
   plugins: [
