@@ -28,7 +28,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        url: `http://innerspiritphoto.com/graphql`,
+        url: `https://innerspiritphoto.com/graphql`,
       },
     },
     // sitemap
