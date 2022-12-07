@@ -132,41 +132,41 @@ async function createBlogPostArchive({ posts, gatsbyUtilities }) {
  * We're passing in the utilities we got from createPages.
  * So see https://www.gatsbyjs.com/docs/node-apis/#createPages for more info!
  */
-async function getPosts({ graphql, reporter }) {
-  const graphqlResult = await graphql(/* GraphQL */ `
-    query WpPosts {
-      # Query all WordPress blog posts sorted by date
-      allWpPost(sort: { fields: [date], order: DESC }) {
-        edges {
-          previous {
-            id
-          }
+// async function getPosts({ graphql, reporter }) {
+//   const graphqlResult = await graphql(`
+//     query WpPosts {
+//       # Query all WordPress blog posts sorted by date
+//       allWpPost(sort: { fields: [date], order: DESC }) {
+//         edges {
+//           previous {
+//             id
+//           }
 
-          # note: this is a GraphQL alias. It renames "node" to "post" for this query
-          # We're doing this because this "node" is a post! It makes our code more readable further down the line.
-          post: node {
-            id
-            uri
-          }
+//           # note: this is a GraphQL alias. It renames "node" to "post" for this query
+//           # We're doing this because this "node" is a post! It makes our code more readable further down the line.
+//           post: node {
+//             id
+//             uri
+//           }
 
-          next {
-            id
-          }
-        }
-      }
-    }
-  `)
+//           next {
+//             id
+//           }
+//         }
+//       }
+//     }
+//   `)
 
-  if (graphqlResult.errors) {
-    reporter.panicOnBuild(
-      `There was an error loading your blog posts`,
-      graphqlResult.errors
-    )
-    return
-  }
+//   if (graphqlResult.errors) {
+//     reporter.panicOnBuild(
+//       `There was an error loading your blog posts`,
+//       graphqlResult.errors
+//     )
+//     return
+//   }
 
-  return graphqlResult.data.allWpPost.edges
-}
+//   return graphqlResult.data.allWpPost.edges
+// }
 
 // creates a contest page for created pages in WP
 // async function createContestPage({ actions, graphql, gatsbyUtilities }) {
