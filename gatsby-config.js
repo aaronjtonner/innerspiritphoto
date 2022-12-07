@@ -32,12 +32,7 @@ module.exports = {
       },
     },
     // sitemap
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        exclude: [`/privacy-policy/`, `/terms-of-use/`],
-      },
-    },
+    `gatsby-plugin-sitemap`,
     // GA
     {
       resolve: `gatsby-plugin-google-analytics`,
