@@ -4,7 +4,7 @@ export const useWallArtQuery = () => {
   const data = useStaticQuery(graphql`
     query WallArtQuery {
       wpPage(databaseId: { eq: 2485 }) {
-        ACF_WallArtPage {
+        aCF_WallArtPage {
           gallery {
             id
             altText

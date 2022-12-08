@@ -4,7 +4,7 @@ export const useGalleryQuery = () => {
   const data = useStaticQuery(graphql`
     query GalleryQuery {
       wpPage(databaseId: { eq: 41 }) {
-        ACF_GalleryPage {
+        aCF_GalleryPage {
           gallery {
             id
             altText

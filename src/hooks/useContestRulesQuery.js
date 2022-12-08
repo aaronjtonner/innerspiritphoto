@@ -5,7 +5,7 @@ export const useContestRulesQuery = () => {
     query ContestRulesQuery {
       wpPage(databaseId: { eq: 3459 }) {
         id
-        ACF_ContestRules {
+        aCF_ContestRules {
           contestRules
         }
       }
