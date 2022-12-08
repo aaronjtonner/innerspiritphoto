@@ -31,7 +31,7 @@ module.exports = {
         url: `https://staging.innerspiritphoto.com/graphql`,
       },
     },
-    // sitemap is here
+    // sitemap here
     `gatsby-plugin-sitemap`,
     // GA
     {
