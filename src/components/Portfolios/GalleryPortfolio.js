@@ -41,7 +41,7 @@ export default function GalleryPortfolio() {
       <Section>
         <Container>
           <Grid>
-            {data.wpPage.ACF_GalleryPage.gallery.map(localFile => {
+            {data.wpPage.aCF_GalleryPage.gallery.map(localFile => {
               return (
                 <StyledImg
                   image={localFile.localFile.childImageSharp.gatsbyImageData}

@@ -41,7 +41,7 @@ export default function ProjectsPortfolio() {
       <Section>
         <Container>
           <Grid>
-            {data.wpPage.ACF_ProjectsPage.gallery.map(localFile => {
+            {data.wpPage.aCF_ProjectsPage.gallery.map(localFile => {
               return (
                 <GatsbyImage
                   image={localFile.localFile.childImageSharp.gatsbyImageData}

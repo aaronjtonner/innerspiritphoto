@@ -105,7 +105,7 @@ export default function ContestBanner(props) {
           <GatsbyImage
             class="img stretch clip-img"
             image={
-              data.wpPage.ACF_ContestPage.hero.localFile.childImageSharp
+              data.wpPage.aCF_ContestPage.hero.localFile.childImageSharp
                 .gatsbyImageData
             }
             alt=""

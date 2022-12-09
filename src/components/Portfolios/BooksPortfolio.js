@@ -41,7 +41,7 @@ export default function BooksPortfolio() {
       <Section>
         <Container>
           <Grid>
-            {data.wpPage.ACF_BooksPage.gallery.map(localFile => {
+            {data.wpPage.aCF_BooksPage.gallery.map(localFile => {
               return (
                 <GatsbyImage
                   image={localFile.localFile.childImageSharp.gatsbyImageData}
