@@ -12,7 +12,7 @@ export default function ContestHero() {
     <Section>
       <GatsbyImage
         image={
-          data.wpPage.aCF_ContestPage.hero.localFile.childImageSharp
+          data.wpPage.ACF_ContestPage.hero.localFile.childImageSharp
             .gatsbyImageData
         }
         alt=""

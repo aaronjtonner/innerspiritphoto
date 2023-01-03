@@ -5,7 +5,7 @@ export const useContestQuery = () => {
     query ContestQuery {
       wpPage(databaseId: { eq: 2510 }) {
         id
-        aCF_ContestPage {
+        ACF_ContestPage {
           contestInformation
           headline
           subhead

@@ -10,7 +10,7 @@ export default function ContestRulesInfo() {
         <div
           contentEditable="true"
           dangerouslySetInnerHTML={{
-            __html: `${data.wpPage.aCF_ContestRules.contestRules}`,
+            __html: `${data.wpPage.ACF_ContestRules.contestRules}`,
           }}
         ></div>
       </Container>

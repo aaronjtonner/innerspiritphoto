@@ -41,7 +41,7 @@ export default function WallArtPortfolio() {
       <Section>
         <Container>
           <Grid>
-            {data.wpPage.aCF_WallArtPage.gallery.map(localFile => {
+            {data.wpPage.ACF_WallArtPage.gallery.map(localFile => {
               return (
                 <GatsbyImage
                   image={localFile.localFile.childImageSharp.gatsbyImageData}

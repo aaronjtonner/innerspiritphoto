@@ -4,7 +4,7 @@ export const useBooksQuery = () => {
   const data = useStaticQuery(graphql`
     query BooksQuery {
       wpPage(databaseId: { eq: 2475 }) {
-        aCF_BooksPage {
+        ACF_BooksPage {
           gallery {
             id
             altText
