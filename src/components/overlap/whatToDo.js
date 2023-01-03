@@ -27,7 +27,7 @@ const TextBox = styled.div`
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  min-height: 120px;
+  min-height: 200px;
   display: grid;
   place-items: center;
 
@@ -48,7 +48,7 @@ export default function WhatToDo() {
           <BottomWrapper>
             <StaticImage
               class="img-top"
-              src="../../images/bound-boudoir-photography-book-in-calgary.jpg"
+              src="../../images/bound-boudoir-photography-book-in-calgary-2.jpg"
               alt="bound book of boudoir photography session"
             />
             <TextBox>
@@ -63,7 +63,7 @@ export default function WhatToDo() {
           <BottomWrapper>
             <StaticImage
               class="img-top"
-              src="../../images/boudoir-wall-art-in-calgary-2.jpg"
+              src="../../images/boudoir-wall-art-in-calgary-3.jpg"
               alt="wall art of boudoir photography session"
             />
             <TextBox>
