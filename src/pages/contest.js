@@ -46,7 +46,7 @@ export default function Contest() {
             </p>
             {/* <p>
               <span className="bold">Prize:</span> <br />
-              1st place is our{" "}
+              1st place is our {" "}
               <span className="bold">Connoisseur 2 hour Photo session</span>,
               complete with makeup and hair PLUS an 8 X 10 print – total value
               $565.00
