@@ -32,21 +32,19 @@ export default function Contest() {
 
       <Section>
         <Container>
-          <h1 className="caps">The "Tis The Season" Contest!</h1>
+          <h1 className="caps">
+            The Luxury Boudoir Contest – Over $10,000 in prizes; runs for only
+            two weeks
+          </h1>
           <div className="spacing">
             <p>
-              Yup, that time of year, Christmas on the horizon, This could solve
-              your gift-giving need or create a perfect gift for yourself.{" "}
-              <br />
-              So the contest question is: tell us what the season is for you,
-              and how you want to be photographed. <br />
-              How daring or bold you would like to be (we understand for some
-              women just doing a beauty shot in front of the camera is bold)!{" "}
-              <br />
-              The most colourful story has the best chance.
+              What a way to launch the New year. Entry opens Jan 24. You can be
+              one of the first to enter. <br />
+              Fill out the Enter to win form here; when the contest comes
+              online, we will send you a link to enter.
               <br />
             </p>
-            <p>
+            {/* <p>
               <span className="bold">Prize:</span> <br />
               1st place is our{" "}
               <span className="bold">Connoisseur 2 hour Photo session</span>,
@@ -61,7 +59,7 @@ export default function Contest() {
               The contest ends on Dec 15, 2022. <br />
               Winner Announcement shortly afterward. <br />
               Read the full rules on our contest Below.
-            </p>
+            </p> */}
           </div>
         </Container>
       </Section>
