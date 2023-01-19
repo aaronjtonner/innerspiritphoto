@@ -9,6 +9,13 @@ export const useContestQuery = () => {
           contestInformation
           headline
           subhead
+          contestAsidePhoto {
+            localFile {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
+          }
           hero {
             localFile {
               childImageSharp {
