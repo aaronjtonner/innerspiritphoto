@@ -12,7 +12,7 @@ export default function ContestAsidePhoto() {
     <Section>
       <GatsbyImage
         image={
-          data.wpPage.ACF_ContestPage.ContestAsidePhoto.localFile
+          data.wpPage.ACF_ContestPage.contestAsidePhoto.localFile
             .childImageSharp.gatsbyImageData
         }
         alt=""
