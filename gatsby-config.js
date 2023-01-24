@@ -51,7 +51,6 @@ module.exports = {
         defer: false,
       },
     },
-    // facebook pixel
     {
       resolve: `gatsby-plugin-facebook-pixel`,
       options: {
