@@ -126,7 +126,7 @@ export default function MeetMark() {
             </AnchorLink> */}
             <a
               className="button-underline"
-              href="https://staging.innerspiritphoto.com/about#mark"
+              href="https://innerspiritphoto.com/about#mark"
             >
               more about mark &#x2192;
             </a>
