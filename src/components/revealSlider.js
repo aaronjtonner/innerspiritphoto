@@ -11,17 +11,17 @@ const Wrapper = styled.div`
 
 const FIRST_IMAGE = {
   imageUrl:
-    "https://www.staging.innerspiritphoto.com/wp-content/uploads/2022/08/before-boudoir.jpg",
+    "https://staging.innerspiritphoto.com/wp-content/uploads/2022/08/before-boudoir.jpg",
 }
 const SECOND_IMAGE = {
   imageUrl:
-    "https://www.staging.innerspiritphoto.com/wp-content/uploads/2022/08/after-boudoir.jpg",
+    "https://staging.innerspiritphoto.com/wp-content/uploads/2022/08/after-boudoir.jpg",
 }
 export default function RevealSlider() {
   const before =
-    "https://www.staging.innerspiritphoto.com/wp-content/uploads/2022/08/before-boudoir.jpg"
+    "https://staging.innerspiritphoto.com/wp-content/uploads/2022/08/before-boudoir.jpg"
   const after =
-    "https://www.staging.innerspiritphoto.com/wp-content/uploads/2022/08/after-boudoir.jpg"
+    "https://staging.innerspiritphoto.com/wp-content/uploads/2022/08/after-boudoir.jpg"
   return (
     <Wrapper className="spacing">
       {/* <ReactBeforeSliderComponent
