@@ -12,6 +12,7 @@ import RevealSlider from "../components/revealSlider"
 import SEO from "../components/seo"
 import Stats from "../components/stats"
 import FullImageTestimonial from "../components/testimonials/fullImageTestimonial"
+import MercedesTestimonial from "../components/testimonials/MercedesTestimonial"
 import ReviewSlider from "../components/testimonials/reviewSlider"
 import HomeMain from "../components/videos/homeMain"
 import MainPageTestimonials from "../components/videos/mainPageTestimonials"
@@ -69,9 +70,7 @@ export default function Index() {
         </Container>
       </Section>
       <MainPageTestimonials />
-      <FullImageTestimonial
-        img={Mercedes}
-        alt="review of calgary boudoir photographer"
+      <MercedesTestimonial
         review="This is not about the picture. It's about the power you feel and the good that you feel about yourself. I'm 50. I have two kids. I don't have a ' model body,’ but I look great. And I feel great. I believe I owe that to Mark."
         name="mercedes b."
         to="/experience"
