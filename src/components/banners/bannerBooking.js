@@ -102,7 +102,7 @@ export default function BannerBooking(props) {
   return (
     <Wrapper>
       <HeroBannerPadding />
-      <Container className="container">
+      <Container className="container ">
         <img className="stretch clip-img " src={props.img} alt={props.alt} />
         <Text className="spacing">
           <div>

@@ -19,7 +19,7 @@
     "gatsby-plugin-sitemap": "^5.21.0",
     "gatsby-plugin-styled-components": "^5.21.0",
     "gatsby-source-filesystem": "^4.21.1",
-    "gatsby-source-wordpress": "^6.25.2",
+    "gatsby-source-wordpress": "^5.12.0-alpha-wordpress.27",
     "gatsby-transformer-sharp": "^4.21.0",
     "html-react-parser": "^3.0.4",
     "prop-types": "^15.8.1",
