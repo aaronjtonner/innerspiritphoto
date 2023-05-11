@@ -124,14 +124,6 @@ export default function ContestBanner(props) {
               </h1>
             </div>
             <p>{data.wpPage.ACF_ContestPage.subhead}</p>
-            <Actions>
-              <ButtonPrimary className="btn-light" to="/book-now">
-                enter contest &#x2192;
-              </ButtonPrimary>
-              <ButtonPrimary className="btn-accent" to="/book-now">
-                enter contest &#x2192;
-              </ButtonPrimary>
-            </Actions>
           </Text>
         </Container>
       </GridWrapper>
